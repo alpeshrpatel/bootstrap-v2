@@ -9,21 +9,21 @@
 
 // Grays
 // -------------------------
-@black:                 #000;
-@grayDarker:            #222;
-@grayDark:              #333;
-@gray:                  #555;
-@grayLight:             #999;
-@grayLighter:           #eee;
-@white:                 #fff;
+@black:                 #1a1a1a;
+@grayDarker:            #2b2b2b;
+@grayDark:              #333333;
+@gray:                  #555555;
+@grayLight:             #999999;
+@grayLighter:           #eeeeee;
+@white:                 #fafafa;
 
 
 // Accent colors
 // -------------------------
-@blue:                  #049cdb;
-@blueDark:              #0064cd;
+@blue:                  #4c7dae;
+@blueDark:              #005495;
 @green:                 #46a546;
-@red:                   #9d261d;
+@red:                   #cc0000;
 @yellow:                #ffc40d;
 @orange:                #f89406;
 @pink:                  #c3325f;
@@ -38,22 +38,24 @@
 
 // Links
 // -------------------------
-@linkColor:             #08c;
+@linkColor:             #005495;
 @linkColorHover:        darken(@linkColor, 15%);
 
 
 // Typography
 // -------------------------
 @sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
-@serifFontFamily:       Georgia, "Times New Roman", Times, serif;
+@serifDisplayFontFamily:"Mercury Display A", "Mercury Display B", Georgia, serif;
+@serifFontFamily:       "Mercury SSm A", "Mercury SSm B", Georgia, serif;
+/*@slabSerifFontFamily:   "Mercury SSm A", "Mercury SSm B", Georgia, serif;*/
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
 @baseFontSize:          14px;
-@baseFontFamily:        @sansFontFamily;
+@baseFontFamily:        @serifFontFamily;
 @baseLineHeight:        20px;
 @altFontFamily:         @serifFontFamily;
 
-@headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
+@headingsFontFamily:    @serifDisplayFontFamily; // empty to use BS default, @baseFontFamily
 @headingsFontWeight:    bold;    // instead of browser default, bold
 @headingsColor:         inherit; // empty to use BS default, @textColor
 
@@ -102,7 +104,7 @@
 // Dropdowns
 // -------------------------
 @dropdownBackground:            @white;
-@dropdownBorder:                rgba(0,0,0,.2);
+@dropdownBorder:                #262626;
 @dropdownDividerTop:            #e5e5e5;
 @dropdownDividerBottom:         @white;
 
