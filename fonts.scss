@@ -1,0 +1,127 @@
+@import "compass/css3";
+@import "compass/css3/columns";
+@import "compass/utilities/general/clearfix";
+
+@mixin sans-font {
+    font-family: 'Helevetica Neue', Arial, sans-serif;
+}
+
+@mixin small-font {
+    /*font-family: 'Mercury SSm A', 'Mercury SSm B';*/
+    font-family: Georgia, Times, serif;
+}
+
+@mixin body-font {
+    font-family: Georgia, Times, serif;
+}
+
+@mixin headline-font {
+    /*font-family: 'Mercury Display A', 'Mercury Display B', Times, serif;*/
+    font-family: Georgia, Times, serif;
+}
+
+@mixin normal-weight {
+    font-weight: 400;
+}
+
+@mixin bold-weight {
+    font-weight: 700;
+}
+
+// Set an element to a full width, centered block
+@mixin container {
+    max-width:$full-size;
+    margin:0 auto;
+    display: block;
+    position: static;
+    @include legacy-pie-clearfix;
+}
+
+@mixin section-header {
+    @include serif-font-bold;
+    font-size: 18px;
+    border-bottom: 1px solid $rule-color;
+    padding: 0 0 5px 0;
+    margin: 0 0 10px 0;
+}
+
+@mixin smaller-section-header {
+    @include serif-font-bold;
+    font-size: 16px;
+    border-bottom: 1px solid $rule-color;
+    padding: 0 0 2px 0;
+    margin: 0 0 5px 0;
+}
+
+@mixin link-color($link, $hover: auto, $underline: false) {
+    a {
+        font-weight: normal; /* Override common.css font-weight for links */
+        &:link,
+        &:visited {
+            color: $link;
+            @if $underline {text-decoration:underline;}
+            @else {text-decoration:none;}
+        }
+
+        @if $hover == auto {
+            &:hover,
+            &:active {color: $link; @include opacity(.8);}
+        } @else {
+            &:hover,
+            &:active {color: $hover;}
+        }
+    }
+}
+
+@mixin no-border { border: none; }
+@mixin lt-top { border-top: 1px solid $light-rule-color; }
+@mixin lt-bottom { border-bottom: 1px solid $light-rule-color; }
+@mixin dk-top { border-top: 1px solid $dark-rule-color; }
+@mixin dk-right { border-right: 1px solid $dark-rule-color; }
+@mixin dk-bottom { border-bottom: 1px solid $dark-rule-color; }
+@mixin dk-left { border-left: 1px solid $dark-rule-color; }
+@mixin overline-hed {
+  border-top: 2px solid $lightest-grey;
+  text-transform: uppercase;
+  color: $light-grey;
+  @include headline-font;
+}
+
+@mixin article-headline {
+    color:$text-color;
+    line-height: 1.1em;
+    margin: 0 0 15px 0;
+    @include xlarge;
+}
+
+@mixin photo-matting {
+    background-color: white;
+    padding:17px;
+    border:1px solid $very-light-grey;
+    @include box-shadow(0 1px 8px $lightest-grey);
+    @include border-radius(2px);
+}
+
+@mixin invert-photo-matting {
+    background-color: $darkest-grey;
+    padding:17px;
+    border:1px solid $grey;
+}
+
+@mixin columns($count, $width, $gap: 20px ) {
+
+    -moz-column-count: $count;
+    -moz-column-gap: $gap;
+    -webkit-column-count: $count;
+    -webkit-column-gap: $gap;
+    column-count: $count;
+    column-gap: $gap;
+
+    @if $width {
+        -moz-column-width: $width;
+        -webkit-column-width: $width;
+        column-width: $width;
+    }
+
+}
+
