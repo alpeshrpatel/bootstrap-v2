@@ -1,5 +1,3 @@
-@import "http://fonts.chicagotribune.com/3799/3E3C173ED91E9BCD4.css";
-
 /*!
  * Bootstrap v2.1.0
  *
@@ -760,7 +758,7 @@ dd {
 hr {
   margin: 20px 0;
   border: 0;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #d0d0d0;
   border-bottom: 1px solid #fafafa;
 }
 
@@ -777,7 +775,7 @@ abbr.initialism {
 blockquote {
   padding: 0 0 0 15px;
   margin: 0 0 20px;
-  border-left: 5px solid #eeeeee;
+  border-left: 5px solid #d0d0d0;
 }
 
 blockquote p {
@@ -801,7 +799,7 @@ blockquote.pull-right {
   float: right;
   padding-right: 15px;
   padding-left: 0;
-  border-right: 5px solid #eeeeee;
+  border-right: 5px solid #d0d0d0;
   border-left: 0;
 }
 
@@ -957,7 +955,7 @@ input[type="color"],
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
-  color: #555555;
+  color: #757575;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
@@ -1298,7 +1296,7 @@ input[readonly],
 select[readonly],
 textarea[readonly] {
   cursor: not-allowed;
-  background-color: #eeeeee;
+  background-color: #d0d0d0;
 }
 
 input[type="radio"][disabled],
@@ -1515,7 +1513,7 @@ select:focus:required:invalid:focus {
   line-height: 20px;
   text-align: center;
   text-shadow: 0 1px 0 #fafafa;
-  background-color: #eeeeee;
+  background-color: #d0d0d0;
   border: 1px solid #ccc;
 }
 
@@ -3676,7 +3674,7 @@ input[type="submit"].btn.btn-mini {
 
 .nav > li > a:hover {
   text-decoration: none;
-  background-color: #eeeeee;
+  background-color: #d0d0d0;
 }
 
 .nav > .pull-right {
@@ -3787,12 +3785,12 @@ input[type="submit"].btn.btn-mini {
 }
 
 .nav-tabs > li > a:hover {
-  border-color: #eeeeee #eeeeee #dddddd;
+  border-color: #d0d0d0 #d0d0d0 #dddddd;
 }
 
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover {
-  color: #555555;
+  color: #757575;
   cursor: default;
   background-color: #fafafa;
   border: 1px solid #ddd;
@@ -3900,8 +3898,8 @@ input[type="submit"].btn.btn-mini {
 }
 
 .nav-tabs .active .dropdown-toggle .caret {
-  border-top-color: #555555;
-  border-bottom-color: #555555;
+  border-top-color: #757575;
+  border-bottom-color: #757575;
 }
 
 .nav > .dropdown.active > a:hover {
@@ -4015,7 +4013,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .tabs-left > .nav-tabs > li > a:hover {
-  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+  border-color: #d0d0d0 #dddddd #d0d0d0 #d0d0d0;
 }
 
 .tabs-left > .nav-tabs .active > a,
@@ -4038,7 +4036,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .tabs-right > .nav-tabs > li > a:hover {
-  border-color: #eeeeee #eeeeee #eeeeee #dddddd;
+  border-color: #d0d0d0 #d0d0d0 #d0d0d0 #dddddd;
 }
 
 .tabs-right > .nav-tabs .active > a,
@@ -4062,7 +4060,7 @@ input[type="submit"].btn.btn-mini {
   *z-index: 2;
   margin-bottom: 20px;
   overflow: visible;
-  color: #555555;
+  color: #757575;
 }
 
 .navbar-inner {
@@ -4101,7 +4099,7 @@ input[type="submit"].btn.btn-mini {
   margin-left: -20px;
   font-size: 20px;
   font-weight: 200;
-  color: #555555;
+  color: #757575;
   text-shadow: 0 1px 0 #ffffff;
 }
 
@@ -4115,7 +4113,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar-link {
-  color: #555555;
+  color: #757575;
 }
 
 .navbar-link:hover {
@@ -4286,7 +4284,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav > li > a {
   float: none;
   padding: 10px 15px 10px;
-  color: #555555;
+  color: #757575;
   text-decoration: none;
   text-shadow: 0 1px 0 #ffffff;
 }
@@ -4305,7 +4303,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
 .navbar .nav > .active > a:focus {
-  color: #555555;
+  color: #757575;
   text-decoration: none;
   background-color: #e5e5e5;
   -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
@@ -4411,20 +4409,20 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav li.dropdown.open > .dropdown-toggle,
 .navbar .nav li.dropdown.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle {
-  color: #555555;
+  color: #757575;
   background-color: #e5e5e5;
 }
 
 .navbar .nav li.dropdown > .dropdown-toggle .caret {
-  border-top-color: #555555;
-  border-bottom-color: #555555;
+  border-top-color: #757575;
+  border-bottom-color: #757575;
 }
 
 .navbar .nav li.dropdown.open > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.active > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
-  border-top-color: #555555;
-  border-bottom-color: #555555;
+  border-top-color: #757575;
+  border-bottom-color: #757575;
 }
 
 .navbar .pull-right > li > .dropdown-menu,
@@ -5163,7 +5161,7 @@ a.thumbnail:hover {
 
 .thumbnail .caption {
   padding: 9px;
-  color: #555555;
+  color: #757575;
 }
 
 .label,
@@ -5176,7 +5174,7 @@ a.thumbnail:hover {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   white-space: nowrap;
   vertical-align: baseline;
-  background-color: #999999;
+  background-color: #757575;
 }
 
 .label {
@@ -5623,7 +5621,7 @@ a.badge:hover {
 .hero-unit {
   padding: 60px;
   margin-bottom: 30px;
-  background-color: #eeeeee;
+  background-color: #d0d0d0;
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
@@ -5666,4 +5664,160 @@ a.badge:hover {
 
 .affix {
   position: fixed;
+}
+
+/* navigation for member center */
+
+.navbar-ct {
+  margin: 2px 0 20px 0;
+  border-bottom: solid 1px #999999;
+}
+
+.navbar-ct .navbar-inner {
+  min-height: 0;
+  padding: 12px 0 0 0;
+  margin-bottom: 1px;
+  background: transparent;
+  border: 0;
+  border-bottom: solid 2px #1a1a1a;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+  -webkit-box-shadow: transparent 0 0 0;
+     -moz-box-shadow: transparent 0 0 0;
+          box-shadow: transparent 0 0 0;
+}
+
+.navbar-ct .nav {
+  margin: 0;
+}
+
+.navbar-ct .nav .dropdown-toggle .caret {
+  margin-top: 4px;
+}
+
+.navbar-ct .nav li.dropdown.open > .dropdown-toggle,
+.navbar-ct .nav li.dropdown.active > .dropdown-toggle,
+.navbar-ct .nav li.dropdown.open.active > .dropdown-toggle {
+  background: transparent;
+}
+
+.navbar-ct .nav > .active > a,
+.navbar-ct .nav > .active > a:hover,
+.navbar-ct .nav > .active > a:focus {
+  padding-bottom: 6px;
+  color: #1a1a1a;
+  background: transparent;
+  border-bottom: 3px solid #1a1a1a;
+  -webkit-box-shadow: inset transparent 0 0 0;
+     -moz-box-shadow: inset transparent 0 0 0;
+          box-shadow: inset transparent 0 0 0;
+}
+
+.navbar-ct .nav > .active > a > [class^="icon-"],
+.navbar-ct .nav > .active > a > [class*=" icon-"],
+.navbar-ct [class^="icon-"],
+.navbar-ct [class*=" icon-"] {
+  margin-top: -4px;
+  margin-bottom: -1px;
+  vertical-align: baseline;
+  background-image: url("../img/glyphicons-halflings.png");
+}
+
+.navbar-ct .nav > li {
+  height: 10px;
+  margin: 8px 0 3px 0;
+  font-size: 16px;
+  border-right: 1px solid #eeeeee;
+}
+
+.navbar-ct .nav > li > a {
+  padding: 0 10px 0;
+  margin-top: -6px;
+  line-height: 10px;
+  color: #999999;
+}
+
+.navbar-ct .btn-navbar {
+  padding: 0;
+  background: transparent;
+}
+
+.navbar-ct .btn-navbar:hover,
+.navbar-ct .btn-navbar:focus {
+  color: #1a1a1a;
+  background: transparent;
+}
+
+.diamond {
+  position: relative;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-bottom-color: #1a1a1a;
+}
+
+.diamond:after {
+  position: absolute;
+  top: 4px;
+  left: -4px;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-top-color: #1a1a1a;
+  content: '';
+}
+
+.plus-icon {
+  display: inline-block;
+  width: 10px;
+  height: 12px;
+  margin-top: -2px;
+  background-image: url(images/plus-icon.gif);
+}
+
+.digitallite-digital {
+  font-weight: bold;
+  text-transform: lowercase;
+}
+
+.digitallite-lite {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.digitalplus-digital {
+  font-family: "Mercury Display A", "Mercury Display B", Georgia, serif;
+  font-weight: bold;
+  color: #005495;
+  text-transform: lowercase;
+}
+
+.digitalplus-plus {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #1a1a1a;
+  text-transform: uppercase;
+}
+
+span#sectionBreadcrumb {
+  display: block;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  font-family: "Mercury Display A", "Mercury Display B", Georgia, serif;
+  font-size: 45px;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  background: #fafafa url('images/bg-line.png') no-repeat 0 27px;
+}
+
+span#sectionBreadcrumb a:link,
+span#sectionBreadcrumb a:visited {
+  padding: 0 20px;
+  color: #1a1a1a;
+  text-decoration: none;
+  background: #fafafa;
 }

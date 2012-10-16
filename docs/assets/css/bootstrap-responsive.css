@@ -902,7 +902,7 @@
   }
 }
 
-@media (max-width: 979px) {
+@media (max-width: 650px) {
   body {
     padding-top: 0;
   }
@@ -946,14 +946,14 @@
     display: none;
   }
   .nav-collapse .nav .nav-header {
-    color: #555555;
+    color: #757575;
     text-shadow: none;
   }
   .nav-collapse .nav > li > a,
   .nav-collapse .dropdown-menu a {
     padding: 9px 15px;
     font-weight: bold;
-    color: #555555;
+    color: #757575;
     -webkit-border-radius: 3px;
        -moz-border-radius: 3px;
             border-radius: 3px;
