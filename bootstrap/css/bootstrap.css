@@ -5721,7 +5721,7 @@ a.badge:hover {
   margin-top: -4px;
   margin-bottom: -1px;
   vertical-align: baseline;
-  background-image: url("../img/glyphicons-halflings.png");
+  background-image: url(../img/glyphicons-halflings.png);
 }
 
 .navbar-ct .nav > li {
@@ -5774,7 +5774,7 @@ a.badge:hover {
   width: 10px;
   height: 12px;
   margin-top: -2px;
-  background-image: url(images/plus-icon.gif);
+  background-image: url(../img/plus-icon.gif);
 }
 
 .digitallite-digital {
@@ -5811,7 +5811,7 @@ span#sectionBreadcrumb {
   line-height: normal;
   text-align: center;
   text-transform: uppercase;
-  background: #fafafa url('images/bg-line.png') no-repeat 0 27px;
+  background: #fafafa url(../img/bg-line.png) no-repeat 0 27px;
 }
 
 span#sectionBreadcrumb a:link,
