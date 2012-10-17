@@ -5769,38 +5769,6 @@ a.badge:hover {
   content: '';
 }
 
-.plus-icon {
-  display: inline-block;
-  width: 10px;
-  height: 12px;
-  margin-top: -2px;
-  background-image: url(../img/plus-icon.gif);
-}
-
-.digitallite-digital {
-  font-weight: bold;
-  text-transform: lowercase;
-}
-
-.digitallite-lite {
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.digitalplus-digital {
-  font-family: "Mercury Display A", "Mercury Display B", Georgia, serif;
-  font-weight: bold;
-  color: #005495;
-  text-transform: lowercase;
-}
-
-.digitalplus-plus {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  color: #1a1a1a;
-  text-transform: uppercase;
-}
-
 span#sectionBreadcrumb {
   display: block;
   width: auto;
