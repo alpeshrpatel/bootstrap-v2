@@ -2044,7 +2044,7 @@ table .span24 {
 }
 
 .table tbody tr.info td {
-  background-color: #c4ddf0;
+  background-color: #e3ebf1;
 }
 
 [class^="icon-"],
@@ -3644,8 +3644,8 @@ input[type="submit"].btn.btn-mini {
 
 .alert-info {
   color: #005494;
-  background-color: #c4ddf0;
-  border-color: #a8d7e9;
+  background-color: #e3ebf1;
+  border-color: #b4ccde;
 }
 
 .alert-block {
@@ -3674,7 +3674,7 @@ input[type="submit"].btn.btn-mini {
 
 .nav > li > a:hover {
   text-decoration: none;
-  background-color: #d0d0d0;
+  background-color: #eeeeee;
 }
 
 .nav > .pull-right {
