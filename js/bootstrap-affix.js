@@ -56,6 +56,12 @@
 
     if (this.affixed === affix) return
 
+    // automatically set the width of the element so it doesn't jump around
+    if (this.options.autoWidth) {
+      if (affix) this.$element.css('width', '');
+      else this.$element.css('width', this.$element.width() + 'px');
+    }
+
     this.affixed = affix
     this.unpin = affix == 'bottom' ? position.top - scrollTop : null
 
@@ -79,7 +85,8 @@
   $.fn.affix.Constructor = Affix
 
   $.fn.affix.defaults = {
-    offset: 0
+    offset: 0,
+    autoWidth: false
   }
 
 
