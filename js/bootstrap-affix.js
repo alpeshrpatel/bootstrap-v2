@@ -56,10 +56,10 @@
 
     if (this.affixed === affix) return
 
-    // automatically set the width of the element so it doesn't jump around
+    // automatically set the width of the element to its parent's so it doesn't jump around
     if (this.options.autoWidth) {
       if (affix) this.$element.css('width', '');
-      else this.$element.css('width', this.$element.width() + 'px');
+      else this.$element.css('width', this.$element.parent().width() + 'px');
     }
 
     this.affixed = affix
