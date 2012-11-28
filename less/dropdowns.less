@@ -80,6 +80,7 @@
     line-height: @baseLineHeight;
     color: @dropdownLinkColor;
     white-space: nowrap;
+    text-shadow: 0 0 0 transparent;
   }
 }
 
@@ -91,7 +92,7 @@
   text-decoration: none;
   color: @dropdownLinkColorHover;
   background-color: @dropdownLinkBackgroundHover;
-  #gradient > .vertical(@dropdownLinkBackgroundHover, darken(@dropdownLinkBackgroundHover, 5%));
+  /*#gradient > .vertical(@dropdownLinkBackgroundHover, darken(@dropdownLinkBackgroundHover, 5%));*/
 }
 
 // Active state
@@ -102,7 +103,7 @@
   text-decoration: none;
   outline: 0;
   background-color: @dropdownLinkBackgroundActive;
-  #gradient > .vertical(@dropdownLinkBackgroundActive, darken(@dropdownLinkBackgroundActive, 5%));
+  /*#gradient > .vertical(@dropdownLinkBackgroundActive, darken(@dropdownLinkBackgroundActive, 5%));*/
 }
 
 // Disabled state
