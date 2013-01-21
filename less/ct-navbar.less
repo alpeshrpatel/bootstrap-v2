@@ -77,6 +77,38 @@
     }
 }
 
+.navbar-ct.navbar-ct-fixed-top {
+    margin: 0;
+    .navbar-inner {
+        background: @white;
+        .nav > li {
+            border: none;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .logo {
+            border-right: 1px solid @grayLight;
+            float: left;
+            margin-top: -7px;
+            padding-right: 13px;
+            img {
+                height: 18px;
+                width: auto;
+            }
+        }
+        div#ssorNavHeader {
+            position: absolute;
+            right: 10px;
+            top: 0;
+            line-height: 12px;
+            margin-top: 0;
+        }
+    }
+}
+
 .diamond {
     width: 0;
     height: 0;
@@ -116,3 +148,24 @@ span#sectionBreadcrumb {
     }
 }
 
+@media (max-width: 940px) {
+    .navbar-ct.navbar-ct-fixed-top {
+        .navbar-inner {
+            margin-top: 12px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar-ct.navbar-ct-fixed-top {
+        .navbar-inner {
+            .nav {
+                clear: left;
+            }
+            .logo {
+                height: 36px;
+                border: none;
+            }
+        }
+    }
+}
