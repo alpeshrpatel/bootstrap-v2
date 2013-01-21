@@ -6149,11 +6149,20 @@ a.badge:hover {
 }
 
 .navbar-ct.navbar-ct-fixed-top {
+  padding: 0;
   margin: 0;
 }
 
 .navbar-ct.navbar-ct-fixed-top .navbar-inner {
-  background: #fafafa;
+  background-color: #e9e9e9;
+  background-image: -moz-linear-gradient(top, #fafafa, #d0d0d0);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fafafa), to(#d0d0d0));
+  background-image: -webkit-linear-gradient(top, #fafafa, #d0d0d0);
+  background-image: -o-linear-gradient(top, #fafafa, #d0d0d0);
+  background-image: linear-gradient(to bottom, #fafafa, #d0d0d0);
+  background-repeat: repeat-x;
+  border-bottom: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffafafa', endColorstr='#ffd0d0d0', GradientType=0);
 }
 
 .navbar-ct.navbar-ct-fixed-top .navbar-inner .nav > li {
