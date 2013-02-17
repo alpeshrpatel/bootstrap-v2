@@ -1,0 +1,206 @@
+/* styles to make a ct.com style page header */
+.diamond {
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-bottom-color: @black;
+    position: relative;
+    top: 20px;
+}
+.diamond:after {
+    content: '';
+    position: absolute;
+    left: -4px;
+    top: 4px;
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-top-color: @black;
+}
+
+span#sectionBreadcrumb {
+    font-family: @serifDisplayFontFamily;
+    background: @white url(../img/bg-line.png) repeat-x 0 27px;
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 45px;
+    line-height: normal;
+    width: auto;
+
+    a:link, a:visited {
+        padding: 0 20px;
+        background: @white;
+        text-decoration: none;
+        color: @black;
+    }
+}
+
+
+#nameplate {
+    margin: 14px auto 0;
+    width: 152px;
+    height: 23px;
+}
+
+header {
+    clear:both;
+    text-align: center;
+    text-decoration:none;
+
+    h1 {
+        font-size: 45px;
+        letter-spacing: -1px;
+        margin-top: 5px;
+    }
+    h2 {
+        text-decoration:none;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 1px;
+        margin: 0;
+        color: #222;
+    }
+
+    h1, h2 {
+        list-style-type: none;
+        text-transform: uppercase;
+        font-weight: normal;
+    }
+    a {
+        list-style-type: none;
+        text-decoration:none;
+    }
+}
+
+/* Footer Styles */
+
+div#footer {
+    padding: 2px 0 0 0;
+    margin: 20px 0 0 0;
+    clear: both;
+    font-family: @sansFontFamily;
+    border-top: 3px solid @grayDark;
+    a { color: @black; }
+
+    #siteOverview {
+        border-top: 1px solid @grayLighter;
+        padding: 10px 0 0 0;
+        margin: 0 0 15px 0;
+        width: 30%;
+        text-align: right;
+        float: left;
+        ul {
+            float: right;
+            clear: right;
+            margin: 0 10px 0 0;
+            width: auto;
+            border-right: 1px solid @grayDark;
+
+            li {
+                margin: 0 15px 10px 0;
+                padding: 1px 10px 2px 0;
+                margin: 0;
+
+                a.mainNav {
+                    font-weight: bold;
+                    font-size: @fontSizeMini;
+                }
+            }
+        }
+    }
+    #footerlogo { display: none; }
+    #footerContainer {
+        border-top: 1px solid @grayLighter;
+        width: 70%;
+        float: left;
+        padding: 10px 0 0 0;
+        margin: 0 0 15px 0;
+        font-size: @fontSizeMini;
+        a { color: @grayLighter; }
+    }
+
+    #footertext {
+        float: none;
+        ul.links {
+            margin: 3px 0 0 0;
+            padding: 0;
+            li {
+                padding: 0 8px;
+                border-right: 1px solid @grayLighter;
+                float: left;
+
+                a { color: @gray; }
+            }
+            li#footer-item-3 { border: none; }
+            li.lastMenuItem {
+                border-right: none;
+                padding: 8px 0 0 0;
+                display: block;
+                font-size: @fontSizeSmall;
+                clear: both;
+                a { color: @grayLight; }
+            }
+            li.firstMenuItem { padding-left:0px; }
+        }
+    }
+}
+
+div.family {
+    padding: 0;
+    text-align: left;
+    font-size: @fontSizeSmall;
+    font-style: normal;
+}
+
+@media (max-width: 940px) {
+    .navbar-ct.navbar-ct-fixed-top {
+        .navbar-inner {
+            margin-top: 12px;
+        }
+    }
+}
+
+@media all and (max-width: 599px) {
+    .navbar-ct.navbar-ct-fixed-top {
+        .navbar-inner {
+            .nav {
+                clear: left;
+            }
+            .logo {
+                height: 36px;
+                border: none;
+            }
+        }
+    }
+
+    div#footer {
+        div#siteOverview {
+            width: 100%;
+            text-align: left;
+            margin: 0;
+            ul {
+                float: none;
+                border: none;
+            }
+        }
+        div#footerContainer {
+            padding: 0;
+            border: none;
+            div#footertext ul.links {
+                margin: 0;
+                li {
+                    padding: 0;
+                    border: none;
+                    float: none;
+                    font-weight: bold;
+                    a { color: @black; }
+                }
+                    li.lastMenuItem { font-weight: normal; }
+            }
+            .family a { color: @black; }
+        }
+    }
+}
