@@ -6396,6 +6396,41 @@ div.family {
     height: 36px;
     border: none;
   }
+  header {
+    overflow: hidden;
+    text-align: left;
+  }
+  #nameplate {
+    float: left;
+    padding: 0;
+  }
+  #nameplate img {
+    width: 100px;
+  }
+  .diamond {
+    display: none;
+  }
+  span#sectionBreadcrumb {
+    float: left;
+    padding: 0;
+    margin: 0 10px 0 0;
+    clear: left;
+    font-size: 25px;
+    background: #fafafa;
+  }
+  span#sectionBreadcrumb a:link,
+  span#sectionBreadcrumb a:visited {
+    padding: 0;
+  }
+  #sponsor {
+    float: right;
+  }
+  #sponsor img {
+    width: 100px;
+  }
+  .navbar-ct .nav > li:first-child > a {
+    padding-left: 0;
+  }
   div#footer div#siteOverview {
     width: 100%;
     margin: 0;
