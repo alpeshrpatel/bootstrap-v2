@@ -6690,10 +6690,10 @@ a:hover {
   line-height: 22px;
 }
 
-/* bylines and credits */
+/* bylines, credits and source line */
 
 .twitter-follow-button {
-  margin: 0 8px -5px 2px;
+  margin: 0 8px -5px 4px;
 }
 
 .trib-byline {
@@ -6702,16 +6702,16 @@ a:hover {
   line-height: 20px;
 }
 
-.byline-name {
+.caps {
   text-transform: uppercase;
 }
 
-.byline-date {
+.date {
   font-style: italic;
-  color: #757575;
 }
 
-.byline-credits {
+.credits,
+.date {
   color: #757575;
 }
 
@@ -6730,7 +6730,7 @@ a:hover {
   margin: 0;
 }
 
-.credits {
+.credits-type {
   margin: 0;
   font-family: 'helvetica neue', helvetica, sans-serif;
   font-size: 14px;
