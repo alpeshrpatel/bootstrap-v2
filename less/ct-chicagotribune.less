@@ -17,7 +17,7 @@ h4, h5, h6 { margin-bottom: 10px; }
 
 /* breakout/bullet styles */
 .trib-article .pull-out { font-family: 'helvetica neue', helvetica, sans-serif;  padding: 20px; border-left: 2px solid @gray; margin: 35px 0; background-color: @grayVeryLight; width: 680px; }
-.trib-article .pull-out p { width: 100%; font-size: 17px; }
+.trib-article .pull-out p { width: 100%; font-size: 16px; line-height: 20px; }
 .trib-article .pull-out p:last-child { margin-bottom: 0; }
 
 /* trib notched media styles */
@@ -34,7 +34,7 @@ h4, h5, h6 { margin-bottom: 10px; }
 figure { .media-wrapper; }
 figure.left { padding: 5px 0 5px 15px; border-left: 2px solid @grayDarker; border-bottom: none; border-top: none; }
 figcaption { .media-info; font-size: 14px; margin-bottom: 10px; }
-.media-credit { text-transform: uppercase; font-size: 12px; text-align: right; }
+.media-credit { text-transform: uppercase; font-size: 12px; text-align: right; margin-bottom: 0; }
 
 /* aside styles */
 aside { .media-wrapper; }
@@ -64,13 +64,14 @@ a:hover { color: @grayDark; }
 
 /* bylines and credits */
 .twitter-follow-button { margin: 0 8px -5px 2px; }
-.trib-byline { font-family: 'helvetica neue', helvetica, sans-serif; }
+.trib-byline { font-family: 'helvetica neue', helvetica, sans-serif; font-size: 14px; line-height: 20px; }
 .byline-name { text-transform: uppercase;}
-.byline-date { color: @gray; font-style: italic;  }
-.credits-wrapper { padding: 5px; border: 1px solid @grayLighter; margin-top: 20px; }
-.credits-wrapper h4 { text-align: center; margin-left: 11%; }
+.byline-date { color: @gray; font-style: italic; }
+.byline-credits { color: @gray; }
+.credits-box { padding: 5px; border: 1px solid @grayLighter; margin-top: 20px; }
+.credits-box h4 { text-align: center; margin-left: 11%; }
 .credits-group { margin: 0; }
-.credits { font-family: 'helvetica neue', helvetica, sans-serif; margin: 0; }
+.credits { .trib-byline; margin: 0; }
 .credits-cat p { .credits; text-align: right; font-weight: bold; }
 .credits-names p { .credits; }
 

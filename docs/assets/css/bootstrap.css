@@ -6525,7 +6525,8 @@ h6 {
 
 .trib-article .pull-out p {
   width: 100%;
-  font-size: 17px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .trib-article .pull-out p:last-child {
@@ -6603,6 +6604,7 @@ figcaption {
 }
 
 .media-credit {
+  margin-bottom: 0;
   font-size: 12px;
   text-align: right;
   text-transform: uppercase;
@@ -6696,6 +6698,8 @@ a:hover {
 
 .trib-byline {
   font-family: 'helvetica neue', helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .byline-name {
@@ -6707,13 +6711,17 @@ a:hover {
   color: #757575;
 }
 
-.credits-wrapper {
+.byline-credits {
+  color: #757575;
+}
+
+.credits-box {
   padding: 5px;
   margin-top: 20px;
   border: 1px solid #d0d0d0;
 }
 
-.credits-wrapper h4 {
+.credits-box h4 {
   margin-left: 11%;
   text-align: center;
 }
@@ -6725,18 +6733,24 @@ a:hover {
 .credits {
   margin: 0;
   font-family: 'helvetica neue', helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .credits-cat p {
   margin: 0;
   font-family: 'helvetica neue', helvetica, sans-serif;
+  font-size: 14px;
   font-weight: bold;
+  line-height: 20px;
   text-align: right;
 }
 
 .credits-names p {
   margin: 0;
   font-family: 'helvetica neue', helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 /* navbar styles */
