@@ -459,6 +459,11 @@
                         <p class="credits">By <span class="caps">First Last</span>, <span class="caps">First Last</span> and <span class="caps">First Last</span> - <span class="caps">Chicago Tribune</span></p>
                     </div>
                 </div>
+<pre class="prettyprint linenums">
+&lt;div class="trib-byline"&gt;
+    &lt;p class="credits"&gt;&lt;span class="caps"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+</pre>
                 <h3>Project credits box</h3>
                 <p>Use a project credits box when bylines from multiple departments should appear. This style of credit box should be reserved for larger projects.</p>
                 <div class="bs-docs-example">
@@ -580,10 +585,30 @@
                      <h1>Chapter/project header navigation</h1>
                  </div>
                  <h2>Fixed traveling header</h2>
-                 <p>Explain why we need <code>#social-media</code>, which needs a new name.</p>
+                 <p>The default "traveling" header is held in an element with ID <code>#social-media</code>. Once the user scrolls past this element, it sticks to top of the page, providing the user with social media buttons, page navigation, and project title.</p>
+                 <p>The behavior is controlled by the <code>{% setup_scripts %}</code> block in the base Tribune Graphics template. This block also sets up "scrollspy" behavior, as seen in the next section.</p>
+                 
+<pre class="prettyprint linenums">
+{% block setup_scripts %}
+&lt;script type="text/javascript"&gt;
+     $.waypoints.settings.scrollThrottle = 30;
+     $('body').scrollspy({ offset: $('#social-media').height(), target: "#social-media"});
+     $('.advert-wrapper').each(function() {
+         new AdvertView({ el: $(this), path: '{{ ad_path }}' });
+     });
+     $('#social-media').height($('#social-media').outerHeight());
+     new TravelerView({ traveler: $('#social-media'), target: $('#page-body') });
+&lt;/script&gt;
+{% endblock %}              
+</pre>
+
+                <p>Line 9 is of particular interest, as it sets up the traveling behavior using <code>TravelerView</code> in the Tribune Graphics <code>app.js</code>. The <code>traveler</code> configuration option represents the element that will be fixed, the <code>target</code> option means that the traveler will be fixed when the target element is within the browser viewport.</p>  
+                 
                  <h2>Nav pills in the header</h2>
                  <p>Wrap a regular <code>ul</code> of links with <code>.nav</code> and <code>nav-pills</code> and placed to the right of a <code>.trib-title</code>.
                      Wrap everything with <code>#social-media</code>.</p>
+                     
+                 <p>If the pills link to anchors on the page, the pills will automatically get the <code>active</code> class as the anchors scroll through the viewport. This is configured using Twitter Bootstrap's default "scrollspy" mechanism, and can be seen in line 4 above.</p>
                  <div class="bs-docs-example">
                      <div class="container">
                          <div class="trib-title"><a href="">project title</a></div>
@@ -643,7 +668,7 @@
 &lt;/div&gt;
 </pre>    
 
-                  <h2>Boostrap</h2>
+                  <h2>Bootsrap</h2>
                   <div class="bs-docs-example">
                       <div class="navbar">
                           <div class="navbar-inner">
