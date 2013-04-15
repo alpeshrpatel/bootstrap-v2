@@ -6469,11 +6469,18 @@ div.family {
 h4,
 h5,
 h6 {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .caps {
   text-transform: uppercase;
+}
+
+.sublabel {
+  margin-bottom: 12px;
+  font-family: 'Helvetica Neue', arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 /* story body copy paragraph style */
@@ -6537,7 +6544,7 @@ h6 {
   margin-bottom: 0;
 }
 
-/* trib notched media styles */
+/* notched media styles */
 
 .trib-media {
   float: right;
