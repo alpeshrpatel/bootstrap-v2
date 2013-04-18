@@ -6795,3 +6795,70 @@ a:hover {
   color: #333333;
   background-color: #e5e5e5;
 }
+
+/* colors */
+
+.color-styles {
+  padding: 5px 0 5px 5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.tribblue {
+  padding: 5px 0 5px 5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #2b547e;
+}
+
+.tribblue2 {
+  padding: 5px 0 5px 5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #488ac7;
+}
+
+.tribbluelite {
+  padding: 5px 0 5px 5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #659ec7;
+}
+
+.tribred {
+  padding: 5px 0 5px 5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #c34a2c;
+}
+
+.tribredlite {
+  padding: 5px 0 5px 5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #e77471;
+}
+
+.tribyellow {
+  padding: 5px 0 5px 5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #c8b560;
+}
+
+.tribyellowlite {
+  padding: 5px 0 5px 5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #ecd872;
+}
+
+.tribgreen {
+  padding: 5px 0 5px 5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #4e8975;
+}
+
+.tribgreenlite {
+  padding: 5px 0 5px 5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #8bb381;
+}
+
+.tribpurple {
+  padding: 5px 0 5px 5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #7e587e;
+}
