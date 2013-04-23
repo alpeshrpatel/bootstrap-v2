@@ -2,8 +2,10 @@
 
 h4, h5, h6 { margin-bottom: 15px; }
 .caps { text-transform: uppercase; }
-.sublabel { font-size: 15px; font-family: 'Helvetica Neue', arial, sans-serif; font-weight: bold; margin-bottom: 12px; }
-
+.sublabel { font-size: 15px; font-family: @sansFontFamily; font-weight: bold; margin-bottom: 12px; }
+td.sublabel { padding-left: 15px; }
+tr { border-bottom: 1px dotted @grayLight; }
+tr:last-child { border-bottom: none; }
 /* story body copy paragraph style */
 .trib-article p { width: 680px; font-size: 16px; line-height: 26px; margin-bottom: 22px; }
 
@@ -18,7 +20,7 @@ h4, h5, h6 { margin-bottom: 15px; }
 .lead-in .drop-cap { margin: 0 12px -10px 0; font-size: 515%; line-height: 100%; }
 
 /* breakout/bullet styles */
-.trib-article .pull-out { font-family: 'helvetica neue', helvetica, sans-serif; padding: 20px; border-left: 2px solid @gray; margin: 35px 0; background-color: @grayVeryLight; width: 680px; }
+.trib-article .pull-out { font-family: @sansFontFamily; padding: 20px; border-left: 2px solid @gray; margin: 35px 0; background-color: @grayVeryLight; width: 680px; }
 .trib-article .pull-out p { width: 100%; font-size: 16px; line-height: 20px; }
 .trib-article .pull-out p:last-child { margin-bottom: 0; }
 
@@ -26,7 +28,7 @@ h4, h5, h6 { margin-bottom: 15px; }
 .trib-media { float: right; width: 55%; margin: 0 0 30px 40px; }
 
 /* figure and aside styles */
-.media-info { font-family: 'helvetica neue', helvetica, sans-serif; line-height: 20px; margin: 0; color: @gray; width: 100%; }
+.media-info { font-family: @sansFontFamily; line-height: 20px; margin: 0; color: @gray; width: 100%; }
 .media-wrapper { margin: 0; padding: 15px 0; border-top: 1px solid @grayLighter; border-bottom: 1px solid @grayLighter; }
 figure, aside { .media-wrapper; }
 figure.left { padding: 5px 0 5px 15px; border-left: 2px solid @grayDarker; border-bottom: none; border-top: none; }
@@ -52,12 +54,12 @@ figcaption { .media-info; font-size: 14px; margin-bottom: 10px; }
 /* link styles */
 a { color: @blueDark; }
 a:hover { color: @grayDark; }
-.media-link { font-weight: bold; font-size: 15px; line-height: 20px; font-family: 'helvetica neue', helvetica, sans-serif;  text-align: right; }
-.lite-media-link { font-weight: normal; font-size: 16px; line-height: 22px; font-family: 'helvetica neue', helvetica, sans-serif; }
+.media-link { font-weight: bold; font-size: 15px; line-height: 20px; font-family: @sansFontFamily; text-align: right; }
+.lite-media-link { font-weight: normal; font-size: 16px; line-height: 22px; font-family: @sansFontFamily; }
 
 /* bylines, credits and source line */
 .twitter-follow-button { margin: 0 8px -5px 4px; }
-.trib-byline { font-family: 'helvetica neue', helvetica, sans-serif; font-size: 14px; line-height: 20px; }
+.trib-byline { font-family: @sansFontFamily; font-size: 14px; line-height: 20px; }
 .date { font-style: italic; }
 .credits, .date { color: @gray; }
 
@@ -84,18 +86,18 @@ a:hover { color: @grayDark; }
 
 
 /* colors */
-.color-styles { padding: 5px 0 5px 5px; font-family: @sansFontFamily; }
+.color-styles { padding: 8px 15px 8px 15px; font-family: @sansFontFamily; color: white; text-align: center; border: 1px solid white; }
 
-.tribblue { color: @tribblue; .color-styles; }
-.tribblue2 { color: @tribblue2; .color-styles; }
-.tribbluelite { color: @tribbluelite; .color-styles; }
-.tribred { color: @tribred; .color-styles; }
-.tribredlite { color: @tribredlite; .color-styles; }
-.tribyellow { color: @tribyellow; .color-styles; }
-.tribyellowlite { color: @tribyellowlite; .color-styles; }
-.tribgreen { color: @tribgreen; .color-styles; }
-.tribgreenlite { color: @tribgreenlite; .color-styles; }
-.tribpurple { color: @tribpurple; .color-styles; }
+.tribblue { background-color: @tribblue; .color-styles; }
+.tribblue2 { background-color: @tribblue2; .color-styles; }
+.tribbluelite { background-color: @tribbluelite; .color-styles; }
+.tribred { background-color: @tribred; .color-styles; }
+.tribredlite { background-color: @tribredlite; .color-styles; }
+.tribyellow { background-color: @tribyellow; .color-styles; }
+.tribyellowlite { background-color: @tribyellowlite; .color-styles; }
+.tribgreen { background-color: @tribgreen; .color-styles; }
+.tribgreenlite { background-color: @tribgreenlite; .color-styles; }
+.tribpurple { background-color: @tribpurple; .color-styles; }
 
 
 
