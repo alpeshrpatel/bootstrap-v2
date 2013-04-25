@@ -132,25 +132,25 @@
                     <h1>story-copy</h1>
                 </div>
                 <h2>Story body copy</h2>
-                <p>Paragraphs within a <code>.trib-article</code> have a <code>font-size</code> is <strong>16px</strong>, with a <code>line-height</code> of <strong>26px</strong> and receive a <code>margin-bottom</code> of <strong>22px</strong>. This is applied to all <code>&lt;p&gt;</code> tags within <code>.trib-article</code> elements. Body copy has a <code>width</code> of <strong>680px</strong> at it's widest. <code>width</code> should be set using a percentage of the container holding the paragraphs to reach <strong>680px</strong>.</p>
+                <p>Wrap story elements in an <code>article</code> tag and use <code>.trib-article</code> to define the width of the narrative container. Use a percentage to set the <code>width</code>, which shouldn't exceed <strong>680px</strong>.</p>
                 <div class="bs-docs-example">
-                    <div class="trib-article">
+                    <article class="trib-article">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam orci sapien, ullamcorper at blandit vitae, viverra sed diam. Sed id neque purus. Suspendisse potenti. Donec pretium, nunc quis cursus euismod, nibh lectus luctus sapien, vitae viverra tellus est eget enim. Nulla eu porttitor nulla. Maecenas sed dui et elit commodo interdum. Aliquam consequat ipsum ac lacus venenatis at tincidunt nunc aliquam.</p>
-                    </div>
+                    </article>
                 </div>
 <pre class="prettyprint linenums">
-&lt;div class="trib-article"&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;/div&gt; 
+&lt;article class="trib-article"&gt;
+    &lt;p&gt;&lt;/p&gt;
+&lt;/article&gt; 
 </pre>
 
                 <h2>Drop caps</h2>
                 <p>A drop cap can be used at a start of a section or chapter. A <code>span</code> around the first letter in a paragraph and <code>.drop-cap</code> will increase the <code>font-size</code> and <code>line-height</code> and aligns the letter with the top of the paragraph.</p>
                 <div class="bs-docs-example">
-                    <div class="trib-article">
+                    <article class="trib-article">
                         <p><span class="drop-cap">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Etiam orci sapien, ullamcorper at blandit vitae, viverra sed diam. Sed id neque purus. Suspendisse potenti. Donec pretium, nunc quis cursus euismod, nibh lectus luctus sapien, vitae viverra tellus est eget enim. Nulla eu porttitor nulla. Maecenas sed dui et elit commodo interdum. Aliquam consequat ipsum ac lacus venenatis at tincidunt nunc aliquam.</p>
                         <p>Aliquam ac augue ac nisi ullamcorper vehicula vel eget tellus. Proin venenatis ullamcorper magna, eget rutrum nunc imperdiet nec. Donec et leo mauris. Pellentesque risus felis, mollis id facilisis at, sollicitudin sit amet augue. Phasellus lobortis ullamcorper odio, eget pharetra neque dictum eget. Morbi dignissim dictum posuere. Aliquam erat volutpat. Nam at massa turpis, et aliquet urna.</p>
-                    </div>
+                    </article>
                 </div>
 <pre class="prettyprint linenums">
 &lt;p&gt;&lt;span class="drop-cap"&gt;L&lt;/span&gt;orem ipsum dolor sit amet&lt;/p&gt; 
@@ -159,24 +159,24 @@
                 <h2>Story intro</h2>
                 <p>Wrap your paragraphs with <code>.lead-in</code> to scale up <code>p</code> elements and <code>.drop-cap</code>.</p>
                 <div class="bs-docs-example">
-                    <div class="trib-article">
+                    <article class="trib-article">
                         <div class="lead-in">
                             <p><span class="drop-cap">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Etiam orci sapien, ullamcorper at blandit vitae, viverra sed diam. Sed id neque purus. Suspendisse potenti. Donec pretium, nunc quis cursus euismod, nibh lectus luctus sapien, vitae viverra tellus est eget enim. Nulla eu porttitor nulla. Maecenas sed dui et elit commodo interdum. Aliquam consequat ipsum ac lacus venenatis at tincidunt nunc aliquam.</p>
                             <p>Aliquam ac augue ac nisi ullamcorper vehicula vel eget tellus. Proin venenatis ullamcorper magna, eget rutrum nunc imperdiet nec. Donec et leo mauris. Pellentesque risus felis, mollis id facilisis at, sollicitudin sit amet augue. Phasellus lobortis ullamcorper odio, eget pharetra neque dictum eget. Morbi dignissim dictum posuere. Aliquam erat volutpat. Nam at massa turpis, et aliquet urna.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
 <pre class="prettyprint linenums">
-&lt;div class="trib-article"&gt;
-&lt;div class="lead-in"&gt;
-&lt;p&gt;&lt;span class="drop-cap"&gt;L&lt;/span&gt;orem ipsum dolor sit amet&lt;/p&gt;
-&lt;/div&gt; 
-&lt;/div&gt;
+&lt;article class="trib-article"&gt;
+    &lt;div class="lead-in"&gt;
+    &lt;p&gt;&lt;span class="drop-cap"&gt;L&lt;/span&gt;orem ipsum dolor sit amet&lt;/p&gt;
+    &lt;/div&gt; 
+&lt;/article&gt;
 </pre>
                 <h2>Breakout/bullet lists within the narrative</h2>
                 <p>To separate sections of the narrative that are lists or bullets, wrap <code>.pull-out</code> around a <code>p</code> tag(s).</p>
                 <div class="bs-docs-example">
-                    <div class="trib-article">
+                    <article class="trib-article">
                         <p>Aliquam ac augue ac nisi ullamcorper vehicula vel eget tellus. Proin venenatis ullamcorper magna, eget rutrum nunc imperdiet nec. Donec et leo mauris. Pellentesque risus felis, mollis id facilisis at, sollicitudin sit amet augue. Phasellus lobortis ullamcorper odio, eget pharetra neque dictum eget. Morbi dignissim dictum posuere. Aliquam erat volutpat. Nam at massa turpis, et aliquet urna.</p>
                         <div class="pull-out">
                             <p><strong>Nunc diam lectus</strong>, molestie sit amet ultricies sed, molestie ac quam.</p> 
@@ -185,16 +185,16 @@
                             <p><strong>Pellentesque habitant morbi</strong> tristique senectus et netus et malesuada fames ac turpis egestas.</p>
                         </div>
                         <p>Duis scelerisque, felis in pretium sollicitudin, ligula nibh gravida odio, sit amet pretium lorem justo in lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam non magna metus. Sed auctor tristique condimentum. Ut non elit eget tellus vestibulum mattis.</p>
-                    </div>
+                    </article>
                 </div>
 <pre class="prettyprint linenums">
-&lt;div class="trib-article"&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;div class="pull-out"&gt;
-&lt;p&gt;&lt;strong&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;/p&gt; 
-&lt;/div&gt;
+&lt;article class="trib-article"&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;div class="pull-out"&gt;
+    &lt;p&gt;&lt;strong&gt;&lt;/strong&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;p&gt;&lt;/p&gt; 
+&lt;/article&gt;
 </pre>
             </section>
 
@@ -214,7 +214,7 @@
                 </div>
 <pre class="prettyprint linenums">
 &lt;figure&gt;
-&lt;h4&gt;&lt;/h4&gt;
+    &lt;h4&gt;&lt;/h4&gt;
 &lt;/figure&gt; 
 </pre>
                 <h3>Other wrapper styles</h3>
@@ -226,7 +226,7 @@
                 </div>
 <pre class="prettyprint linenums">
 &lt;figure class="left"&gt;
-&lt;h4&gt;&lt;/h4&gt;
+    &lt;h4&gt;&lt;/h4&gt;
 &lt;/figure&gt; 
 </pre>
             </section>
@@ -249,9 +249,9 @@
                 </div>
 <pre class="prettyprint linenums">
 &lt;figure&gt;
-&lt;img src="" class="trib-img"&gt;
-&lt;figcaption&gt;&lt;/figcaption&gt;
-&lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
+    &lt;img src="" class="trib-img"&gt;
+    &lt;figcaption&gt;&lt;/figcaption&gt;
+    &lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 </pre>
                 <h2>Photo sizes</h2>
@@ -266,9 +266,9 @@
                 </div>
 <pre class="prettyprint linenums">
 &lt;figure class="small-photo"&gt;
-&lt;img src="" class="trib-img"&gt;
-&lt;figcaption&gt;&lt;/figcaption&gt;
-&lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
+    &lt;img src="" class="trib-img"&gt;
+    &lt;figcaption&gt;&lt;/figcaption&gt;
+    &lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 </pre>
                 <h3><code>.medium-photo</code></h3>
@@ -282,9 +282,9 @@
                 </div>
 <pre class="prettyprint linenums">
 &lt;figure class="medium-photo"&gt;
-&lt;img src="" class="trib-img"&gt;
-&lt;figcaption&gt;&lt;/figcaption&gt;
-&lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
+    &lt;img src="" class="trib-img"&gt;
+    &lt;figcaption&gt;&lt;/figcaption&gt;
+    &lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 </pre>
                 <h3><code>.large-photo</code></h3>
@@ -298,9 +298,9 @@
                 </div>
 <pre class="prettyprint linenums">
 &lt;figure class="large-photo"&gt;
-&lt;img src="" class="trib-img"&gt;
-&lt;figcaption&gt;&lt;/figcaption&gt;
-&lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
+    &lt;img src="" class="trib-img"&gt;
+    &lt;figcaption&gt;&lt;/figcaption&gt;
+    &lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 </pre>
                 <h2>Responsive video container</h2>
@@ -316,7 +316,7 @@
                 </div>
 <pre class="prettyprint linenums">
 &lt;div class="video-wrapper"&gt;
-&lt;iframe&gt;&lt;/iframe&gt;
+    &lt;iframe&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 </pre>
             </section>
@@ -344,10 +344,10 @@
                 </div>     
 <pre class="prettyprint linenums">
 &lt;aside&gt;
-&lt;h4&gt;&lt;h4&gt;
-&lt;p class="sublabel"&gt;&lt;/p&gt;
-&lt;p class="related-content"&gt;&lt;/p&gt;
-&lt;p class="media-link"&gt;&lt;a href="#"&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;h4&gt;&lt;h4&gt;
+    &lt;p class="sublabel"&gt;&lt;/p&gt;
+    &lt;p class="related-content"&gt;&lt;/p&gt;
+    &lt;p class="media-link"&gt;&lt;a href="#"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/aside&gt;
 </pre>
                 <h3>Related content as a link</h3>
@@ -364,7 +364,7 @@
                 </div>
 <pre class="prettyprint linenums">
 &lt;aside&gt;
-&lt;p class="lite-media-link"&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;p class="lite-media-link"&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/aside&gt;
 </pre>
                 <h3>Related content as navigation</h3>
@@ -381,7 +381,7 @@
                 </div>
 <pre class="prettyprint linenums">
 &lt;aside class="related-feature"&gt;
-&lt;p class="lite-media-link"&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;p class="lite-media-link"&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/aside&gt;
 </pre>
             </section>
@@ -396,7 +396,7 @@
                 <h2>Notched media</h2>
                 <p>To integrate story assets with the main narrative, wrap a <code>figure</code> with <code>.trib-media</code>, which will notch the content into the <code>.trib-article</code> paragraphs.</p>
                 <div class="bs-docs-example">
-                    <div class="trib-article">
+                    <article class="trib-article">
                         <p>Morbi iaculis erat egestas turpis rhoncus pharetra. Suspendisse potenti. Nunc bibendum fringilla mi, sed suscipit mi feugiat a. Vestibulum tincidunt congue ornare. Proin sit amet mi nunc. Quisque tellus quam, faucibus vitae sagittis sit amet, consequat ut quam. Vestibulum sodales lacus in ligula aliquet congue. Ut dictum, enim at consectetur ullamcorper, tellus leo convallis odio, ut tempor sem nisi at ante.</p>
                         <div class="trib-media">
                             <figure class="small-photo">
@@ -407,18 +407,19 @@
                         </div>
                         <p>Aliquam ac augue ac nisi ullamcorper vehicula vel eget tellus. Proin venenatis ullamcorper magna, eget rutrum nunc imperdiet nec. Donec et leo mauris. Pellentesque risus felis, mollis id facilisis at, sollicitudin sit amet augue. Phasellus lobortis ullamcorper odio, eget pharetra neque dictum eget. Morbi dignissim dictum posuere. Aliquam erat volutpat. Nam at massa turpis, et aliquet urna.</p>
                         <p>Duis scelerisque, felis in pretium sollicitudin, ligula nibh gravida odio, sit amet pretium lorem justo in lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam non magna metus. Sed auctor tristique condimentum. Ut non elit eget tellus vestibulum mattis.</p>
-                    </div>
+                    </article>
                 </div>
 <pre class="prettyprint linenums">
-&lt;p&gt;&lt;/p&gt;
-&lt;div class="trib-media"&gt;
-&lt;figure class="small-photo"&gt;
-&lt;img src="" class="trib-img"&gt;
-&lt;figcaption&gt;&lt;/figcaption&gt;
-&lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;/p&gt;
+&lt;article class="trib-media"&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;figure class="small-photo"&gt;
+       &lt;img src="" class="trib-img"&gt;
+       &lt;figcaption&gt;&lt;/figcaption&gt;
+       &lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
+    &lt;/figure&gt;
+    &lt;p&gt;&lt;/p&gt;
+&lt;/article&gt;
+
 </pre>
             </section>
 
@@ -439,7 +440,7 @@
                 </div>
 <pre class="prettyprint linenums">
 &lt;div class="trib-byline"&gt;
-&lt;p&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;/p&gt;
 &lt;/div&gt;
 </pre>
                 <h3>Alternative byline</h3>
@@ -452,7 +453,7 @@
                 </div>
 <pre class="prettyprint linenums">
 &lt;div class="trib-byline"&gt;
-&lt;p&gt;&lt;span class="caps"&gt;&lt;/span&gt;Twitter handle&lt;span class="date"&gt;&lt;/span&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;span class="caps"&gt;&lt;/span&gt;Twitter handle&lt;span class="date"&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 </pre>
                 <h2>Credits</h2>
@@ -464,7 +465,7 @@
                 </div>
 <pre class="prettyprint linenums">
 &lt;div class="trib-byline"&gt;
-&lt;p class="credits"&gt;&lt;span class="caps"&gt;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class="credits"&gt;&lt;span class="caps"&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 </pre>
                 <h3>Project credits box</h3>
@@ -502,17 +503,16 @@
                 </div>
 <pre class="prettyprint linenums">
 &lt;div class="row-fluid"&gt;
-&lt;div class="span12 credits-box"&gt;
-&lt;h4&gt;&lt;/h4&gt;
-&lt;div class="row-fluid credits-group"&gt;
-    &lt;div class="span6 credits-cat"&gt;
-        &lt;p&gt;&lt;/p&gt;
+    &lt;div class="span12 credits-box"&gt;
+    &lt;h4&gt;&lt;/h4&gt;
+    &lt;div class="row-fluid credits-group"&gt;
+        &lt;div class="span6 credits-cat"&gt;
+            &lt;p&gt;&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="span6 credits-names"&gt;
+            &lt;p&gt;&lt;/p&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class="span6 credits-names"&gt;
-        &lt;p&gt;&lt;/p&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
 &lt;/div&gt;
 </pre>
                 <h4>Alternative project credits box</h4>
@@ -550,17 +550,16 @@
                 </div>
 <pre class="prettyprint linenums">
 &lt;div class="row-fluid"&gt;
-&lt;div class="span12 credits-box"&gt;
-&lt;h4&gt;&lt;/h4&gt;
-&lt;div class="row-fluid credits-group"&gt;
-    &lt;div class="span6 credits-cat"&gt;
-        &lt;p&gt;&lt;/p&gt;
+    &lt;div class="span12 credits-box"&gt;
+    &lt;h4&gt;&lt;/h4&gt;
+    &lt;div class="row-fluid credits-group"&gt;
+        &lt;div class="span6 credits-cat"&gt;
+            &lt;p&gt;&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="span6 credits-names"&gt;
+            &lt;p&gt;&lt;span class="caps"&gt;&lt;/span&gt;&lt;/p&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class="span6 credits-names"&gt;
-        &lt;p&gt;&lt;span class="caps"&gt;&lt;/span&gt;&lt;/p&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
 &lt;/div&gt;
 </pre>
                 <h2>Source lines</h2>
@@ -573,8 +572,8 @@
                 </div>
 <pre class="prettyprint linenums">
 &lt;div class="trib-byline"&gt;
-&lt;p class="credits"&gt;&lt;/p&gt;
-&lt;p class="credits"&gt;&lt;span class="caps"&gt;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class="credits"&gt;&lt;/p&gt;
+    &lt;p class="credits"&gt;&lt;span class="caps"&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 </pre>
             </section>
@@ -628,15 +627,15 @@ new TravelerView({ traveler: $('#social-media'), target: $('#page-body') });
                 </div>
 <pre class="prettyprint linenums">
 &lt;div id="social-media"&gt;
-&lt;div class="container"&gt;
-&lt;div class="trib-title"&gt;&lt;a href=""&gt;project title&lt;/a&gt;&lt;/div&gt;
-&lt;div class="nav-items"&gt;
-    &lt;ul class="nav nav-pills"&gt;
-        &lt;li class="active"&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="trib-title"&gt;&lt;a href=""&gt;project title&lt;/a&gt;&lt;/div&gt;
+        &lt;div class="nav-items"&gt;
+            &lt;ul class="nav nav-pills"&gt;
+                &lt;li class="active"&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 </pre>
                 <h3>Alternative style</h3>
@@ -659,15 +658,15 @@ new TravelerView({ traveler: $('#social-media'), target: $('#page-body') });
                 </div>
 <pre class="prettyprint linenums">
 &lt;div id="social-media"&gt;
-&lt;div class="container"&gt;
-&lt;div class="trib-title"&gt;&lt;a href=""&gt;project title&lt;/a&gt;&lt;/div&gt;
-&lt;div class="alt"&gt;
-    &lt;ul class="nav nav-pills"&gt;
-        &lt;li class="active"&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="trib-title"&gt;&lt;a href=""&gt;project title&lt;/a&gt;&lt;/div&gt;
+        &lt;div class="alt"&gt;
+            &lt;ul class="nav nav-pills"&gt;
+                &lt;li class="active"&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 </pre>    
 
