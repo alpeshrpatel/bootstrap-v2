@@ -6463,3 +6463,451 @@ div.family {
     color: #1a1a1a;
   }
 }
+
+/*  styles for ct.com project*/
+
+h4,
+h5,
+h6 {
+  margin-bottom: 15px;
+}
+
+.caps {
+  font-variant: small-caps;
+}
+
+.sublabel {
+  margin-bottom: 12px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+td.sublabel {
+  padding-left: 15px;
+}
+
+tr {
+  border-bottom: 1px dotted #999999;
+}
+
+tr:last-child {
+  border-bottom: none;
+}
+
+/* story body copy paragraph style */
+
+.trib-article p {
+  width: 68%;
+  max-width: 680px;
+  margin-bottom: 22px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+/* section/chapter title styles */
+
+.section-heading {
+  padding-top: 20px;
+  margin-bottom: 10px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+/* drop cap styles */
+
+.drop-cap {
+  float: left;
+  margin: 0 7px -1px 0;
+  font-size: 325%;
+  line-height: 100%;
+}
+
+/* lead in styles */
+
+.trib-article .lead-in p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.lead-in .drop-cap {
+  margin: 0 12px -10px 0;
+  font-size: 515%;
+  line-height: 100%;
+}
+
+/* breakout/bullet styles */
+
+.trib-article .pull-out {
+  width: 680px;
+  padding: 20px;
+  margin: 35px 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #eeeeee;
+  border-left: 2px solid #757575;
+}
+
+.trib-article .pull-out p {
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.trib-article .pull-out p:last-child {
+  margin-bottom: 0;
+}
+
+/* notched media styles */
+
+.trib-media {
+  float: right;
+  width: 55%;
+  margin: 0 0 24px 40px;
+}
+
+.trib-media.flush {
+  float: none;
+  width: 68%;
+  max-width: 680px;
+  margin: 0;
+}
+
+.trib-media.flush figure {
+  float: right;
+  margin: 0 0 24px 40px;
+}
+
+/* figure and aside styles */
+
+.media-info {
+  width: 100%;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 20px;
+  color: #757575;
+}
+
+.media-wrapper {
+  padding: 15px 0;
+  margin: 0;
+  border-top: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+figure,
+aside {
+  padding: 15px 0;
+  margin: 0;
+  border-top: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+figure.left {
+  padding: 5px 0 5px 15px;
+  border-top: none;
+  border-bottom: none;
+  border-left: 2px solid #2b2b2b;
+}
+
+figcaption {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #757575;
+}
+
+.media-credit {
+  margin-bottom: 0;
+  font-size: 14px;
+  text-align: right;
+  font-variant: small-caps;
+}
+
+/* related media styles */
+
+.related-content {
+  font-size: 18px;
+  line-height: 28px;
+  color: #757575;
+}
+
+.related-feature {
+  border: none;
+}
+
+/* image styles */
+
+.small-photo {
+  max-width: 300px;
+}
+
+.medium-photo {
+  max-width: 500px;
+}
+
+.large-photo {
+  max-width: 620px;
+}
+
+.trib-img {
+  max-width: 100%;
+  margin: 0 0 10px 0;
+}
+
+/* video styles */
+
+.video-wrapper {
+  position: relative;
+  z-index: 1;
+  padding-top: 30px;
+  padding-bottom: 50.7%;
+  overflow: hidden;
+}
+
+.video-wrapper iframe,
+.video-wrapper object,
+.video-wrapper embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+/* link styles */
+
+a {
+  color: #005495;
+}
+
+a:hover {
+  color: #333333;
+}
+
+.media-link {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: right;
+}
+
+.lite-media-link {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 22px;
+}
+
+/* bylines, credits and source line */
+
+.twitter-follow-button {
+  margin: 0 8px -5px 4px;
+}
+
+.trib-byline {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+time {
+  font-size: 13px;
+  font-style: italic;
+}
+
+.credits,
+time {
+  color: #757575;
+}
+
+.credits-box {
+  padding: 5px;
+  margin-top: 20px;
+  border: 1px solid #d0d0d0;
+}
+
+.credits-box h4 {
+  margin-left: 11%;
+  text-align: center;
+}
+
+.credits-group {
+  margin: 0;
+}
+
+.credits-type {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.credits-cat p {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: right;
+}
+
+.credits-names p {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-variant: small-caps;
+}
+
+/* navbar styles */
+
+.container > div {
+  float: left;
+}
+
+.trib-title {
+  margin-right: 20px;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.trib-title a {
+  color: #999999;
+}
+
+.nav {
+  margin: -2px 0 0;
+  margin-right: 20px;
+}
+
+.nav-pills > li > a {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover {
+  background-color: #333;
+}
+
+/* alternative navbar styles*/
+
+.nav-items-alt > .nav-pills > li > a {
+  font-size: 13px;
+  font-style: italic;
+  font-weight: bold;
+  color: #757575;
+  text-transform: uppercase;
+}
+
+.nav-items-alt > .nav-pills > .active > a,
+.nav-items-alt > .nav-pills > .active > a:hover {
+  color: #333333;
+  background-color: #e5e5e5;
+}
+
+/* colors */
+
+.color-styles {
+  padding: 8px 15px 8px 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: center;
+  border: 1px solid white;
+}
+
+.tribblue {
+  padding: 8px 15px 8px 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: center;
+  background-color: #2b547e;
+  border: 1px solid white;
+}
+
+.tribblue2 {
+  padding: 8px 15px 8px 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: center;
+  background-color: #488ac7;
+  border: 1px solid white;
+}
+
+.tribbluelite {
+  padding: 8px 15px 8px 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: center;
+  background-color: #659ec7;
+  border: 1px solid white;
+}
+
+.tribred {
+  padding: 8px 15px 8px 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: center;
+  background-color: #c34a2c;
+  border: 1px solid white;
+}
+
+.tribredlite {
+  padding: 8px 15px 8px 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: center;
+  background-color: #e77471;
+  border: 1px solid white;
+}
+
+.tribyellow {
+  padding: 8px 15px 8px 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: center;
+  background-color: #c8b560;
+  border: 1px solid white;
+}
+
+.tribyellowlite {
+  padding: 8px 15px 8px 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: center;
+  background-color: #ecd872;
+  border: 1px solid white;
+}
+
+.tribgreen {
+  padding: 8px 15px 8px 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: center;
+  background-color: #4e8975;
+  border: 1px solid white;
+}
+
+.tribgreenlite {
+  padding: 8px 15px 8px 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: center;
+  background-color: #8bb381;
+  border: 1px solid white;
+}
+
+.tribpurple {
+  padding: 8px 15px 8px 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: center;
+  background-color: #7e587e;
+  border: 1px solid white;
+}
