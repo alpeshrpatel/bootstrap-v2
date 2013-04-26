@@ -6473,7 +6473,7 @@ h6 {
 }
 
 .caps {
-  text-transform: uppercase;
+  font-variant: small-caps;
 }
 
 .sublabel {
@@ -6498,7 +6498,8 @@ tr:last-child {
 /* story body copy paragraph style */
 
 .trib-article p {
-  width: 680px;
+  width: 68%;
+  max-width: 680px;
   margin-bottom: 22px;
   font-size: 16px;
   line-height: 26px;
@@ -6561,7 +6562,19 @@ tr:last-child {
 .trib-media {
   float: right;
   width: 55%;
-  margin: 0 0 30px 40px;
+  margin: 0 0 24px 40px;
+}
+
+.trib-media.flush {
+  float: none;
+  width: 68%;
+  max-width: 680px;
+  margin: 0;
+}
+
+.trib-media.flush figure {
+  float: right;
+  margin: 0 0 24px 40px;
 }
 
 /* figure and aside styles */
@@ -6608,9 +6621,9 @@ figcaption {
 
 .media-credit {
   margin-bottom: 0;
-  font-size: 12px;
+  font-size: 14px;
   text-align: right;
-  text-transform: uppercase;
+  font-variant: small-caps;
 }
 
 /* related media styles */
@@ -6702,12 +6715,13 @@ a:hover {
   line-height: 20px;
 }
 
-.date {
+time {
+  font-size: 13px;
   font-style: italic;
 }
 
 .credits,
-.date {
+time {
   color: #757575;
 }
 
@@ -6747,6 +6761,7 @@ a:hover {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
+  font-variant: small-caps;
 }
 
 /* navbar styles */
@@ -6783,27 +6798,18 @@ a:hover {
 
 /* alternative navbar styles*/
 
-#social-media .alt > .nav {
-  margin-right: 20px;
-}
+/*.nav-items-alt>.nav-pills>li>a { padding-top: 4px; padding-bottom: 4px; .caps; font-style: italic; font-weight: bold; font-size: 13px; line-height: 13px; color: @gray; }*/
 
-#social-media .alt > .nav {
-  margin: -2px 0 0;
-}
-
-#social-media .alt > .nav-pills > li > a {
-  padding-top: 4px;
-  padding-bottom: 4px;
+.nav-items-alt > .nav-pills > li > a {
   font-size: 13px;
   font-style: italic;
   font-weight: bold;
-  line-height: 13px;
   color: #757575;
   text-transform: uppercase;
 }
 
-#social-media .alt > .nav-pills > .active > a,
-#social-media .alt > .nav-pills > .active > a:hover {
+.nav-items-alt > .nav-pills > .active > a,
+.nav-items-alt > .nav-pills > .active > a:hover {
   color: #333333;
   background-color: #e5e5e5;
 }

@@ -393,8 +393,9 @@
                 <div class="page-header">
                     <h1>Story asset integration</h1>
                 </div>
+
                 <h2>Notched media</h2>
-                <p>To integrate story assets with the main narrative, wrap a <code>figure</code> with <code>.trib-media</code>, which will notch the content into the <code>.trib-article</code> paragraphs.</p>
+                <p>To integrate story assets with the main narrative, wrap a <code>figure</code> in a div with class <code>.trib-media</code>, which will notch the content into the <code>.trib-article</code> paragraphs.</p>
                 <div class="bs-docs-example">
                     <article class="trib-article">
                         <p>Morbi iaculis erat egestas turpis rhoncus pharetra. Suspendisse potenti. Nunc bibendum fringilla mi, sed suscipit mi feugiat a. Vestibulum tincidunt congue ornare. Proin sit amet mi nunc. Quisque tellus quam, faucibus vitae sagittis sit amet, consequat ut quam. Vestibulum sodales lacus in ligula aliquet congue. Ut dictum, enim at consectetur ullamcorper, tellus leo convallis odio, ut tempor sem nisi at ante.</p>
@@ -410,17 +411,51 @@
                     </article>
                 </div>
 <pre class="prettyprint linenums">
-&lt;article class="trib-media"&gt;
+&lt;article class="trib-article"&gt;
     &lt;p&gt;&lt;/p&gt;
-    &lt;figure class="small-photo"&gt;
-       &lt;img src="" class="trib-img"&gt;
-       &lt;figcaption&gt;&lt;/figcaption&gt;
-       &lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
-    &lt;/figure&gt;
+    &lt;div class="trib-media"&gt;
+        &lt;figure class="small-photo"&gt;
+           &lt;img src="" class="trib-img"&gt;
+           &lt;figcaption&gt;&lt;/figcaption&gt;
+           &lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/div&gt;
     &lt;p&gt;&lt;/p&gt;
 &lt;/article&gt;
 
 </pre>
+
+                <h2>Flush notched media</h2>
+                <p>To get the media to sit flush with the right edge of the text, add <code>flush</code> to your div with class <code>trib-media</code>.</p>
+                <div class="bs-docs-example">
+                    <article class="trib-article">
+                        <p>Morbi iaculis erat egestas turpis rhoncus pharetra. Suspendisse potenti. Nunc bibendum fringilla mi, sed suscipit mi feugiat a. Vestibulum tincidunt congue ornare. Proin sit amet mi nunc. Quisque tellus quam, faucibus vitae sagittis sit amet, consequat ut quam. Vestibulum sodales lacus in ligula aliquet congue. Ut dictum, enim at consectetur ullamcorper, tellus leo convallis odio, ut tempor sem nisi at ante.</p>
+                        <div class="trib-media flush">
+                            <figure class="small-photo">
+                                <img src="http://placekitten.com/g/300/200" class="trib-img">
+                                <figcaption>This is a caption about a kitten who likes to be photographed in black and white</figcaption>
+                                <figcaption class="media-credit">First Last - Organization</figcaption>
+                            </figure>
+                        </div>
+                        <p>Aliquam ac augue ac nisi ullamcorper vehicula vel eget tellus. Proin venenatis ullamcorper magna, eget rutrum nunc imperdiet nec. Donec et leo mauris. Pellentesque risus felis, mollis id facilisis at, sollicitudin sit amet augue. Phasellus lobortis ullamcorper odio, eget pharetra neque dictum eget. Morbi dignissim dictum posuere. Aliquam erat volutpat. Nam at massa turpis, et aliquet urna.</p>
+                        <p>Duis scelerisque, felis in pretium sollicitudin, ligula nibh gravida odio, sit amet pretium lorem justo in lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam non magna metus. Sed auctor tristique condimentum. Ut non elit eget tellus vestibulum mattis.</p>
+                    </article>
+                </div>
+<pre class="prettyprint linenums">
+&lt;article class="trib-article"&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;div class="trib-media flush"&gt;
+        &lt;figure class="small-photo"&gt;
+           &lt;img src="" class="trib-img"&gt;
+           &lt;figcaption&gt;&lt;/figcaption&gt;
+           &lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/div&gt;
+    &lt;p&gt;&lt;/p&gt;
+&lt;/article&gt;
+
+</pre>
+
             </section>
 
             <!-- Bylines and credits
@@ -434,28 +469,18 @@
                 <p>Story/article byline style</p>
                 <div class="bs-docs-example">
                     <div class="trib-byline">
-                        <p>By <span class="caps">Trib Apps</span> <a href="https://twitter.com/tribapps" class="twitter-follow-button" data-show-count="false">Follow @tribapps</a>
+                        <p><span class="caps">By Trib Apps</span> <a href="https://twitter.com/tribapps" class="twitter-follow-button" data-show-count="false">Follow @tribapps</a>
                         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>&nbsp|&nbsp&nbspTribune reporter</p>
+                        <time>Month Day, Year</time>
                     </div>
                 </div>
 <pre class="prettyprint linenums">
 &lt;div class="trib-byline"&gt;
-    &lt;p&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;span class="caps"&gt;By Trib Apps&lt;/span&gt; Twitter handle&lt;/p&gt;
+    &lt;time&gt;Month Day, Year&lt;/time&gt;
 &lt;/div&gt;
 </pre>
-                <h3>Alternative byline</h3>
-                <p>Includes a publication date and all-caps the authors name.</p>
-                <div class="bs-docs-example">
-                    <div class="trib-byline">
-                        <p>By <span class="caps">Trib Apps</span> <a href="https://twitter.com/tribapps" class="twitter-follow-button" data-show-count="false">Follow @tribapps</a>
-                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script><span class="date">Month Day, Year</span></p>
-                    </div>
-                </div>
-<pre class="prettyprint linenums">
-&lt;div class="trib-byline"&gt;
-    &lt;p&gt;&lt;span class="caps"&gt;&lt;/span&gt;Twitter handle&lt;span class="date"&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-</pre>
+
                 <h2>Credits</h2>
                 <p>Credits go at the bottom of the page and used in projects with a smaller team and produced mostly by one department. It should include bylines and organization.</p>
                 <div class="bs-docs-example">
@@ -515,53 +540,7 @@
     &lt;/div&gt;
 &lt;/div&gt;
 </pre>
-                <h4>Alternative project credits box</h4>
-                <p>Credits box with all caps names</p>
-                <div class="bs-docs-example">
-                    <div class="row-fluid">
-                        <div class="span12 credits-box">
-                            <h4>Credits</h4>
-                            <div class="row-fluid credits-group">
-                                <div class="span6 credits-cat">
-                                    <p>Reporting</p>
-                                </div>
-                                <div class="span6 credits-names">
-                                    <p><span class="caps">First Last</span> and <span class="caps">First Last</span></p>
-                                </div>
-                            </div>
-                            <div class="row-fluid credits-group">
-                                <div class="span6 credits-cat">
-                                    <p>Photography</p>
-                                </div>
-                                <div class="span6 credits-names">
-                                    <p><span class="caps">First Last</span> and <span class="caps">First Last</span></p>
-                                </div>
-                            </div>
-                            <div class="row-fluid credits-group">
-                                <div class="span6 credits-cat">
-                                    <p>Applications & Design</p>
-                                </div>
-                                <div class="span6 credits-names">
-                                    <p><span class="caps">First Last</span>, <span class="caps">First Last</span> and <span class="caps">First Last</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-<pre class="prettyprint linenums">
-&lt;div class="row-fluid"&gt;
-    &lt;div class="span12 credits-box"&gt;
-    &lt;h4&gt;&lt;/h4&gt;
-    &lt;div class="row-fluid credits-group"&gt;
-        &lt;div class="span6 credits-cat"&gt;
-            &lt;p&gt;&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class="span6 credits-names"&gt;
-            &lt;p&gt;&lt;span class="caps"&gt;&lt;/span&gt;&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</pre>
+
                 <h2>Source lines</h2>
                 <p></p>
                 <div class="bs-docs-example">
@@ -644,7 +623,7 @@ new TravelerView({ traveler: $('#social-media'), target: $('#page-body') });
                     <div id="social-media">
                         <div class="container">
                             <div class="trib-title"><a href="">project title</a></div>
-                            <div class="alt">
+                            <div class="nav-items nav-items-alt">
                                 <ul class="nav nav-pills">
                                     <li class="active"><a href="#">Ch.1 pill</a></li>
                                     <li><a href="#">Ch.2 link</a></li>
@@ -660,7 +639,7 @@ new TravelerView({ traveler: $('#social-media'), target: $('#page-body') });
 &lt;div id="social-media"&gt;
     &lt;div class="container"&gt;
         &lt;div class="trib-title"&gt;&lt;a href=""&gt;project title&lt;/a&gt;&lt;/div&gt;
-        &lt;div class="alt"&gt;
+        &lt;div class="nav-items nav-items-alt"&gt;
             &lt;ul class="nav nav-pills"&gt;
                 &lt;li class="active"&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
                 &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
@@ -668,23 +647,7 @@ new TravelerView({ traveler: $('#social-media'), target: $('#page-body') });
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
-</pre>    
-
-                <h2>Bootstrap</h2>
-                <div class="bs-docs-example">
-                    <div class="navbar">
-                        <div class="navbar-inner">
-                            <a class="brand" href="">project title</a> 
-                            <ul class="nav nav-pills">
-                                <li class="active"><a href="#">Ch.1 pill</a></li>
-                                <li><a href="#">Ch.2 link</a></li>
-                                <li><a href="#">Ch.3 link</a></li>
-                                <li><a href="#">Ch.4 link</a></li>
-                                <li><a href="#">New page link</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+</pre>
             </section>
 
             <!-- Tables
