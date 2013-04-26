@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Chicagotribune · Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="./index.html">Bootstrap</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="">
+                <a href="./getting-started.html">Get started</a>
+              </li>
+              <li class="">
+                <a href="./scaffolding.html">Scaffolding</a>
+              </li>
+              <li class="">
+                <a href="./base-css.html">Base CSS</a>
+              </li>
+              <li class="">
+                <a href="./components.html">Components</a>
+              </li>
+              <li class="">
+                <a href="./javascript.html">JavaScript</a>
+              </li>
+              <li class="">
+                <a href="./customize.html">Customize</a>
+              </li>
+              <li class="active">
+                <a href="./chicagotribune.html">Chicago Tribune</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="jumbotron subhead" id="overview">
+        <div class="container">
+            <h1>Chicago Tribune styleguide</h1>
+            <p class="lead">Photos, captions, stories and more</p>
+        </div>
+    </header>
+
+    <div class="container">
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+        <div class="span3 bs-docs-sidebar">
+            <ul class="nav nav-list bs-docs-sidenav">
+                <li><a href="#headings"><i class="icon-chevron-right"></i> Headings</a></li>
+                <li><a href="#story-copy"><i class="icon-chevron-right"></i> Story copy</a></li>
+                <li><a href="#media-containers"><i class="icon-chevron-right"></i> Media containers</a></li>
+                <li><a href="#photos"><i class="icon-chevron-right"></i> Photos & videos</a></li>
+                <li><a href="#related-media"><i class="icon-chevron-right"></i> Related media</a></li>
+                <li><a href="#integration"><i class="icon-chevron-right"></i> Integration</a></li>
+                <li><a href="#credits-bylines"><i class="icon-chevron-right"></i> Bylines, credits & sourcing</a></li>
+                <li><a href="#navpills"><i class="icon-chevron-right"></i> Chapter/project navigation</a></li>
+                <li><a href="#tables"><i class="icon-chevron-right"></i> Tables</a></li>
+                <li><a href="#icons"><i class="icon-chevron-right"></i> Icons</a></li>
+                 <li><a href="#colors"><i class="icon-chevron-right"></i>Colour</a></li>
+            </ul>
+        </div>
+        <div class="span9">
+            <!-- Headings
+            ================================================== -->
+            <section id="headings">
+                <div class="page-header">
+                    <h1>Headings</h1>
+                </div>
+                <h2>Adjusted headings</h2>
+                <p>HTML headings <code>h4</code> through <code>h6</code> get a reduced <code>margin-bottom</code>.</p>
+                <div class="bs-docs-example">
+                    <h4>h4. Heading 4</h4>
+                    <h5>h5. Heading 5</h5>
+                    <h6>h6. Heading 6</h6>
+                </div>
+                <h2>Section headings</h2>
+                <p>Use <code>.section-heading</code> on any heading tag, but start with <code>h4</code> and work from there.</p>
+                <div class="bs-docs-example">
+                    <h4 class="section-heading">H4 section/chapter heading</h4>
+                    <h3 class="section-heading">H3 section/chapter heading</h3>
+                    <h5 class="section-heading">H5 section/chapter heading</h5>
+                </div>
+<pre class="prettyprint linenums">
+&lt;h4 class="section-heading"&gt;&lt;h4&gt;
+</pre>
+            </section>
+
+            <!-- Story copy
+            ================================================== -->
+            <section id="story-copy">
+                <div class="page-header">
+                    <h1>story-copy</h1>
+                </div>
+                <h2>Story body copy</h2>
+                <p>Wrap story elements in an <code>article</code> tag and use <code>.trib-article</code> to define the width of the narrative container. Use a percentage to set the <code>width</code>, which shouldn't exceed <strong>680px</strong>.</p>
+                <div class="bs-docs-example">
+                    <article class="trib-article">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam orci sapien, ullamcorper at blandit vitae, viverra sed diam. Sed id neque purus. Suspendisse potenti. Donec pretium, nunc quis cursus euismod, nibh lectus luctus sapien, vitae viverra tellus est eget enim. Nulla eu porttitor nulla. Maecenas sed dui et elit commodo interdum. Aliquam consequat ipsum ac lacus venenatis at tincidunt nunc aliquam.</p>
+                    </article>
+                </div>
+<pre class="prettyprint linenums">
+&lt;article class="trib-article"&gt;
+    &lt;p&gt;&lt;/p&gt;
+&lt;/article&gt; 
+</pre>
+
+                <h2>Drop caps</h2>
+                <p>A drop cap can be used at a start of a section or chapter. A <code>span</code> around the first letter in a paragraph and <code>.drop-cap</code> will increase the <code>font-size</code> and <code>line-height</code> and aligns the letter with the top of the paragraph.</p>
+                <div class="bs-docs-example">
+                    <article class="trib-article">
+                        <p><span class="drop-cap">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Etiam orci sapien, ullamcorper at blandit vitae, viverra sed diam. Sed id neque purus. Suspendisse potenti. Donec pretium, nunc quis cursus euismod, nibh lectus luctus sapien, vitae viverra tellus est eget enim. Nulla eu porttitor nulla. Maecenas sed dui et elit commodo interdum. Aliquam consequat ipsum ac lacus venenatis at tincidunt nunc aliquam.</p>
+                        <p>Aliquam ac augue ac nisi ullamcorper vehicula vel eget tellus. Proin venenatis ullamcorper magna, eget rutrum nunc imperdiet nec. Donec et leo mauris. Pellentesque risus felis, mollis id facilisis at, sollicitudin sit amet augue. Phasellus lobortis ullamcorper odio, eget pharetra neque dictum eget. Morbi dignissim dictum posuere. Aliquam erat volutpat. Nam at massa turpis, et aliquet urna.</p>
+                    </article>
+                </div>
+<pre class="prettyprint linenums">
+&lt;p&gt;&lt;span class="drop-cap"&gt;L&lt;/span&gt;orem ipsum dolor sit amet&lt;/p&gt; 
+</pre>
+
+                <h2>Story intro</h2>
+                <p>Wrap your paragraphs with <code>.lead-in</code> to scale up <code>p</code> elements and <code>.drop-cap</code>.</p>
+                <div class="bs-docs-example">
+                    <article class="trib-article">
+                        <div class="lead-in">
+                            <p><span class="drop-cap">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Etiam orci sapien, ullamcorper at blandit vitae, viverra sed diam. Sed id neque purus. Suspendisse potenti. Donec pretium, nunc quis cursus euismod, nibh lectus luctus sapien, vitae viverra tellus est eget enim. Nulla eu porttitor nulla. Maecenas sed dui et elit commodo interdum. Aliquam consequat ipsum ac lacus venenatis at tincidunt nunc aliquam.</p>
+                            <p>Aliquam ac augue ac nisi ullamcorper vehicula vel eget tellus. Proin venenatis ullamcorper magna, eget rutrum nunc imperdiet nec. Donec et leo mauris. Pellentesque risus felis, mollis id facilisis at, sollicitudin sit amet augue. Phasellus lobortis ullamcorper odio, eget pharetra neque dictum eget. Morbi dignissim dictum posuere. Aliquam erat volutpat. Nam at massa turpis, et aliquet urna.</p>
+                        </div>
+                    </article>
+                </div>
+<pre class="prettyprint linenums">
+&lt;article class="trib-article"&gt;
+    &lt;div class="lead-in"&gt;
+    &lt;p&gt;&lt;span class="drop-cap"&gt;L&lt;/span&gt;orem ipsum dolor sit amet&lt;/p&gt;
+    &lt;/div&gt; 
+&lt;/article&gt;
+</pre>
+                <h2>Breakout/bullet lists within the narrative</h2>
+                <p>To separate sections of the narrative that are lists or bullets, wrap <code>.pull-out</code> around a <code>p</code> tag(s).</p>
+                <div class="bs-docs-example">
+                    <article class="trib-article">
+                        <p>Aliquam ac augue ac nisi ullamcorper vehicula vel eget tellus. Proin venenatis ullamcorper magna, eget rutrum nunc imperdiet nec. Donec et leo mauris. Pellentesque risus felis, mollis id facilisis at, sollicitudin sit amet augue. Phasellus lobortis ullamcorper odio, eget pharetra neque dictum eget. Morbi dignissim dictum posuere. Aliquam erat volutpat. Nam at massa turpis, et aliquet urna.</p>
+                        <div class="pull-out">
+                            <p><strong>Nunc diam lectus</strong>, molestie sit amet ultricies sed, molestie ac quam.</p> 
+                            <p><strong>Sed et aliquam eros</strong>. Etiam non urna in lorem vehicula interdum eu ac erat. 
+                            <p><strong>Sed mauris massa</strong>, elementum sit amet imperdiet non, suscipit id magna. </p>
+                            <p><strong>Pellentesque habitant morbi</strong> tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        </div>
+                        <p>Duis scelerisque, felis in pretium sollicitudin, ligula nibh gravida odio, sit amet pretium lorem justo in lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam non magna metus. Sed auctor tristique condimentum. Ut non elit eget tellus vestibulum mattis.</p>
+                    </article>
+                </div>
+<pre class="prettyprint linenums">
+&lt;article class="trib-article"&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;div class="pull-out"&gt;
+    &lt;p&gt;&lt;strong&gt;&lt;/strong&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;p&gt;&lt;/p&gt; 
+&lt;/article&gt;
+</pre>
+            </section>
+
+            <!-- Media containers
+            ================================================== -->
+
+            <section id="media-containers">
+                <div class="page-header">
+                    <h1>media containers</h1>
+                </div>
+                <h2>Media wrapper</h2>
+                <p>A <code>figure</code> element applies to self-contained content, such as photos and captions. It applies a <code>border-top</code> and <code>border-bottom</code>.</p>
+                <div class="bs-docs-example">
+                    <figure>
+                        <h4>This is media content</h4>
+                    </figure>
+                </div>
+<pre class="prettyprint linenums">
+&lt;figure&gt;
+    &lt;h4&gt;&lt;/h4&gt;
+&lt;/figure&gt; 
+</pre>
+                <h3>Other wrapper styles</h3>
+                <p><code>.left</code> applies a <code>border-left</code> when it's necessary to separate similar fonts placed next to each other.</p>
+                <div class="bs-docs-example">
+                    <figure class="left">
+                        <h4>This is media content</h4>
+                    </figure>
+                </div>
+<pre class="prettyprint linenums">
+&lt;figure class="left"&gt;
+    &lt;h4&gt;&lt;/h4&gt;
+&lt;/figure&gt; 
+</pre>
+            </section>
+
+            <!-- Photos
+            ================================================== -->
+
+            <section id="photos">
+                <div class="page-header">
+                        <h1>Photos & videos</h1>
+                </div>
+                <h2>Photo, caption, credit layout</h2>
+                <p>A <code>figure</code> element with an <code>img</code>, a <code>figcaption</code> and a <code>.media-credit</code>.</p>
+                <div class="bs-docs-example">
+                    <figure class="small-photo">
+                        <img src="http://placekitten.com/g/300/200" class="trib-img">
+                        <figcaption>This is a caption about a kitten who likes to be photographed in black and white</figcaption>
+                        <figcaption class="media-credit">First Last - Organization</figcaption>
+                    </figure>
+                </div>
+<pre class="prettyprint linenums">
+&lt;figure&gt;
+    &lt;img src="" class="trib-img"&gt;
+    &lt;figcaption&gt;&lt;/figcaption&gt;
+    &lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+</pre>
+                <h2>Photo sizes</h2>
+                <h3><code>.small-photo</code></h3>
+                <p>300 x 200</p>
+                <div class="bs-docs-example">
+                    <div class="media-wrapper small-photo">
+                        <img src="http://placekitten.com/g/300/200" class="trib-img">
+                        <figcaption>This is a caption about a kitten who likes to be photographed in black and white</figcaption>
+                        <figcaption class="media-credit">First Last - Organization</figcaption>
+                    </div>
+                </div>
+<pre class="prettyprint linenums">
+&lt;figure class="small-photo"&gt;
+    &lt;img src="" class="trib-img"&gt;
+    &lt;figcaption&gt;&lt;/figcaption&gt;
+    &lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+</pre>
+                <h3><code>.medium-photo</code></h3>
+                <p>500 x 325</p>
+                <div class="bs-docs-example">
+                    <div class="media-wrapper medium-photo">
+                        <img src="http://placekitten.com/g/500/325" class="trib-img">
+                        <figcaption>This is a caption about a kitten who likes to be photographed in black and white</figcaption>
+                        <figcaption class="media-credit">First Last - Organization</figcaption>
+                    </div>
+                </div>
+<pre class="prettyprint linenums">
+&lt;figure class="medium-photo"&gt;
+    &lt;img src="" class="trib-img"&gt;
+    &lt;figcaption&gt;&lt;/figcaption&gt;
+    &lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+</pre>
+                <h3><code>.large-photo</code></h3>
+                <p>620 x 450</p>
+                <div class="bs-docs-example">
+                    <div class="media-wrapper large-photo">
+                        <img src="http://placekitten.com/g/620/450" class="trib-img">
+                        <figcaption>This is a caption about a kitten who likes to be photographed in black and white</figcaption>
+                        <figcaption class="media-credit">First Last - Organization</figcaption>
+                    </div>
+                </div>
+<pre class="prettyprint linenums">
+&lt;figure class="large-photo"&gt;
+    &lt;img src="" class="trib-img"&gt;
+    &lt;figcaption&gt;&lt;/figcaption&gt;
+    &lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+</pre>
+                <h2>Responsive video container</h2>
+                <p>Wrap the <strong>embedded</strong> video with <code>.video-wrapper</code> to apply a responsive container to the video. To adjust aspect ratio increase or decrease the <code>margin-bottom</code> applied to the <code>iframe</code>, <code>object</code> or <code>embed</code> containing the video. In this case the <code>margin-bottom</code> is <strong>50.7%</strong>.</p>
+                <div class="bs-docs-example">
+                    <div class="row-fluid">
+                        <div class="span8">
+                            <div class=" video-wrapper">
+                                <iframe width="560" height="315" src="http://www.youtube.com/embed/rnvGWHbPtZ0" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<pre class="prettyprint linenums">
+&lt;div class="video-wrapper"&gt;
+    &lt;iframe&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</pre>
+            </section>
+
+            <!-- Related media
+            ================================================== -->
+
+            <section id="related-media">
+                <div class="page-header">
+                    <h1>Related media</h1>
+                </div>
+                <h2>Text and links</h2>
+                <p>Use <code>aside</code> for content that is related to the main article, such as a sidebar, and will displayed notched in the article. Use <code>.related-content</code> to style an overview of the sidebar and <code>.media-link</code> to apply the link style.</p>
+                <div class="bs-docs-example">
+                    <div class="row-fluid">
+                        <div class="span7">
+                            <aside>
+                                <h4>Related headline</h4>
+                                <p class="sublabel">Optional subject description sublabel</p>
+                                <p class="related-content">This is information related to the story with more detailed information available elsewhere and that we can link to</p>
+                                <p class="media-link"><a href="#">This link goes elsewhere</a></p>    
+                            </aside>
+                        </div>
+                    </div>
+                </div>     
+<pre class="prettyprint linenums">
+&lt;aside&gt;
+    &lt;h4&gt;&lt;h4&gt;
+    &lt;p class="sublabel"&gt;&lt;/p&gt;
+    &lt;p class="related-content"&gt;&lt;/p&gt;
+    &lt;p class="media-link"&gt;&lt;a href="#"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;
+</pre>
+                <h3>Related content as a link</h3>
+                <p>Use <code>.lite-media-link</code> to apply muted styles to <code>a</code> tags.</p>
+                <div class="bs-docs-example">
+                    <div class="row-fluid">
+                        <div class="span7">
+                            <aside>
+                                <h4>Related headline</h4>
+                                <p class="lite-media-link"><a href="">Sed vel leo lorem. Duis risus erat, aliquam at aliquam et, vehicula id ante. Nunc in nibh tellus. Sed eget lacus ac leo mollis suscipit.</a></p>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+<pre class="prettyprint linenums">
+&lt;aside&gt;
+    &lt;p class="lite-media-link"&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;
+</pre>
+                <h3>Related content as navigation</h3>
+                <p>Use <code>.related-feature</code> when related content will not be notched into the narrative but is still related to main article to drop the borders.</p>
+                <div class="bs-docs-example">
+                    <div class="row-fluid">
+                        <div class="span7">
+                            <aside class="related-feature">
+                                <h4>Related headline</h4>
+                                <p class="lite-media-link"><a href="">Sed vel leo lorem. Duis risus erat, aliquam at aliquam et, vehicula id ante. Nunc in nibh tellus. Sed eget lacus ac leo mollis suscipit.</a></p>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+<pre class="prettyprint linenums">
+&lt;aside class="related-feature"&gt;
+    &lt;p class="lite-media-link"&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;
+</pre>
+            </section>
+
+            <!-- Integration
+            ================================================== -->
+
+            <section id="integration">
+                <div class="page-header">
+                    <h1>Story asset integration</h1>
+                </div>
+
+                <h2>Notched media</h2>
+                <p>To integrate story assets with the main narrative, wrap a <code>figure</code> in a div with class <code>.trib-media</code>, which will notch the content into the <code>.trib-article</code> paragraphs.</p>
+                <div class="bs-docs-example">
+                    <article class="trib-article">
+                        <p>Morbi iaculis erat egestas turpis rhoncus pharetra. Suspendisse potenti. Nunc bibendum fringilla mi, sed suscipit mi feugiat a. Vestibulum tincidunt congue ornare. Proin sit amet mi nunc. Quisque tellus quam, faucibus vitae sagittis sit amet, consequat ut quam. Vestibulum sodales lacus in ligula aliquet congue. Ut dictum, enim at consectetur ullamcorper, tellus leo convallis odio, ut tempor sem nisi at ante.</p>
+                        <div class="trib-media">
+                            <figure class="small-photo">
+                                <img src="http://placekitten.com/g/300/200" class="trib-img">
+                                <figcaption>This is a caption about a kitten who likes to be photographed in black and white</figcaption>
+                                <figcaption class="media-credit">First Last - Organization</figcaption>
+                            </figure>
+                        </div>
+                        <p>Aliquam ac augue ac nisi ullamcorper vehicula vel eget tellus. Proin venenatis ullamcorper magna, eget rutrum nunc imperdiet nec. Donec et leo mauris. Pellentesque risus felis, mollis id facilisis at, sollicitudin sit amet augue. Phasellus lobortis ullamcorper odio, eget pharetra neque dictum eget. Morbi dignissim dictum posuere. Aliquam erat volutpat. Nam at massa turpis, et aliquet urna.</p>
+                        <p>Duis scelerisque, felis in pretium sollicitudin, ligula nibh gravida odio, sit amet pretium lorem justo in lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam non magna metus. Sed auctor tristique condimentum. Ut non elit eget tellus vestibulum mattis.</p>
+                    </article>
+                </div>
+<pre class="prettyprint linenums">
+&lt;article class="trib-article"&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;div class="trib-media"&gt;
+        &lt;figure class="small-photo"&gt;
+           &lt;img src="" class="trib-img"&gt;
+           &lt;figcaption&gt;&lt;/figcaption&gt;
+           &lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/div&gt;
+    &lt;p&gt;&lt;/p&gt;
+&lt;/article&gt;
+
+</pre>
+
+                <h2>Flush notched media</h2>
+                <p>To get the media to sit flush with the right edge of the text, add <code>flush</code> to your div with class <code>trib-media</code>.</p>
+                <div class="bs-docs-example">
+                    <article class="trib-article">
+                        <p>Morbi iaculis erat egestas turpis rhoncus pharetra. Suspendisse potenti. Nunc bibendum fringilla mi, sed suscipit mi feugiat a. Vestibulum tincidunt congue ornare. Proin sit amet mi nunc. Quisque tellus quam, faucibus vitae sagittis sit amet, consequat ut quam. Vestibulum sodales lacus in ligula aliquet congue. Ut dictum, enim at consectetur ullamcorper, tellus leo convallis odio, ut tempor sem nisi at ante.</p>
+                        <div class="trib-media flush">
+                            <figure class="small-photo">
+                                <img src="http://placekitten.com/g/300/200" class="trib-img">
+                                <figcaption>This is a caption about a kitten who likes to be photographed in black and white</figcaption>
+                                <figcaption class="media-credit">First Last - Organization</figcaption>
+                            </figure>
+                        </div>
+                        <p>Aliquam ac augue ac nisi ullamcorper vehicula vel eget tellus. Proin venenatis ullamcorper magna, eget rutrum nunc imperdiet nec. Donec et leo mauris. Pellentesque risus felis, mollis id facilisis at, sollicitudin sit amet augue. Phasellus lobortis ullamcorper odio, eget pharetra neque dictum eget. Morbi dignissim dictum posuere. Aliquam erat volutpat. Nam at massa turpis, et aliquet urna.</p>
+                        <p>Duis scelerisque, felis in pretium sollicitudin, ligula nibh gravida odio, sit amet pretium lorem justo in lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam non magna metus. Sed auctor tristique condimentum. Ut non elit eget tellus vestibulum mattis.</p>
+                    </article>
+                </div>
+<pre class="prettyprint linenums">
+&lt;article class="trib-article"&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;div class="trib-media flush"&gt;
+        &lt;figure class="small-photo"&gt;
+           &lt;img src="" class="trib-img"&gt;
+           &lt;figcaption&gt;&lt;/figcaption&gt;
+           &lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/div&gt;
+    &lt;p&gt;&lt;/p&gt;
+&lt;/article&gt;
+
+</pre>
+
+            </section>
+
+            <!-- Bylines and credits
+            ================================================== -->
+
+            <section id="credits-bylines">
+                <div class="page-header">
+                    <h1>Bylines, Credits and Sourcing</h1>
+                </div>
+                <h2>Bylines</h2>
+                <p>Story/article byline style</p>
+                <div class="bs-docs-example">
+                    <div class="trib-byline">
+                        <p><span class="caps">By Trib Apps</span> <a href="https://twitter.com/tribapps" class="twitter-follow-button" data-show-count="false">Follow @tribapps</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>&nbsp|&nbsp&nbspTribune reporter</p>
+                        <time>Month Day, Year</time>
+                    </div>
+                </div>
+<pre class="prettyprint linenums">
+&lt;div class="trib-byline"&gt;
+    &lt;p&gt;&lt;span class="caps"&gt;By Trib Apps&lt;/span&gt; Twitter handle&lt;/p&gt;
+    &lt;time&gt;Month Day, Year&lt;/time&gt;
+&lt;/div&gt;
+</pre>
+
+                <h2>Credits</h2>
+                <p>Credits go at the bottom of the page and used in projects with a smaller team and produced mostly by one department. It should include bylines and organization.</p>
+                <div class="bs-docs-example">
+                    <div class="trib-byline">
+                        <p class="credits">By <span class="caps">First Last</span>, <span class="caps">First Last</span> and <span class="caps">First Last</span> - <span class="caps">Chicago Tribune</span></p>
+                    </div>
+                </div>
+<pre class="prettyprint linenums">
+&lt;div class="trib-byline"&gt;
+    &lt;p class="credits"&gt;&lt;span class="caps"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+                <h3>Project credits box</h3>
+                <p>Use a project credits box when bylines from multiple departments should appear. This style of credit box should be reserved for larger projects.</p>
+                <div class="bs-docs-example">
+                    <div class="row-fluid">
+                        <div class="span12 credits-box">
+                            <h4>Credits</h4>
+                            <div class="row-fluid credits-group">
+                                <div class="span6 credits-cat">
+                                    <p>Reporting</p>
+                                </div>
+                                <div class="span6 credits-names">
+                                    <p>First Last and First Last</p>
+                                </div>
+                            </div>
+                            <div class="row-fluid credits-group">
+                                <div class="span6 credits-cat">
+                                    <p>Photography</p>
+                                </div>
+                                <div class="span6 credits-names">
+                                    <p>First Last and First Last</p>
+                                </div>
+                            </div>
+                            <div class="row-fluid credits-group">
+                                <div class="span6 credits-cat">
+                                    <p>Applications & Design</p>
+                                </div>
+                                <div class="span6 credits-names">
+                                    <p>First Last, First Last and First Last</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<pre class="prettyprint linenums">
+&lt;div class="row-fluid"&gt;
+    &lt;div class="span12 credits-box"&gt;
+    &lt;h4&gt;&lt;/h4&gt;
+    &lt;div class="row-fluid credits-group"&gt;
+        &lt;div class="span6 credits-cat"&gt;
+            &lt;p&gt;&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="span6 credits-names"&gt;
+            &lt;p&gt;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+                <h2>Source lines</h2>
+                <p></p>
+                <div class="bs-docs-example">
+                    <div class="trib-byline">
+                        <p class="credits">Source: Where did the information come from?</p>
+                        <p class="credits">By <span class="caps">First Last</span>, <span class="caps">First Last</span> and <span class="caps">First Last</span> - <span class="caps">Chicago Tribune</span></p>
+                    </div>
+                </div>
+<pre class="prettyprint linenums">
+&lt;div class="trib-byline"&gt;
+    &lt;p class="credits"&gt;&lt;/p&gt;
+    &lt;p class="credits"&gt;&lt;span class="caps"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+            </section>
+
+
+            <!-- Chapter and project navigation
+            ================================================== -->
+
+            <section id="navpills">
+                <div class="page-header">
+                    <h1>Chapter/project header navigation</h1>
+                </div>
+                <h2>Fixed traveling header</h2>
+                <p>The default "traveling" header is held in an element with ID <code>#social-media</code>. Once the user scrolls past this element, it sticks to top of the page, providing the user with social media buttons, page navigation, and project title.</p>
+                <p>The behavior is controlled by the <code>{% setup_scripts %}</code> block in the base Tribune Graphics template. This block also sets up "scrollspy" behavior, as seen in the next section.</p>
+
+<pre class="prettyprint linenums">
+{% block setup_scripts %}
+&lt;script type="text/javascript"&gt;
+$.waypoints.settings.scrollThrottle = 30;
+$('body').scrollspy({ offset: $('#social-media').height(), target: "#social-media"});
+$('.advert-wrapper').each(function() {
+ new AdvertView({ el: $(this), path: '' });
+});
+$('#social-media').height($('#social-media').outerHeight());
+new TravelerView({ traveler: $('#social-media'), target: $('#page-body') });
+&lt;/script&gt;
+{% endblock %}              
+</pre>
+
+                <p>Line 9 is of particular interest, as it sets up the traveling behavior using <code>TravelerView</code> in the Tribune Graphics <code>app.js</code>. The <code>traveler</code> configuration option represents the element that will be fixed, the <code>target</code> option means that the traveler will be fixed when the target element is within the browser viewport.</p>  
+
+                <h2>Nav pills in the header</h2>
+                <p>Wrap a regular <code>ul</code> of links with <code>.nav</code> and <code>nav-pills</code> and placed to the right of a <code>.trib-title</code>.
+                    Wrap everything with <code>#social-media</code>.</p>
+
+                <p>If the pills link to anchors on the page, the pills will automatically get the <code>active</code> class as the anchors scroll through the viewport. This is configured using Twitter Bootstrap's default "scrollspy" mechanism, and can be seen in line 4 above.</p>
+                <div class="bs-docs-example">
+                    <div class="container">
+                        <div class="trib-title"><a href="">project title</a></div>
+                        <div class="nav-items">
+                            <ul class="nav nav-pills">
+                                 <li class="active"><a href="#">Ch.1 pill</a></li>
+                                 <li><a href="#">Ch.2 link</a></li>
+                                 <li><a href="#">Ch.3 link</a></li>
+                                 <li><a href="#">Ch.4 link</a></li>
+                                 <li><a href="#">New page link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+<pre class="prettyprint linenums">
+&lt;div id="social-media"&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="trib-title"&gt;&lt;a href=""&gt;project title&lt;/a&gt;&lt;/div&gt;
+        &lt;div class="nav-items"&gt;
+            &lt;ul class="nav nav-pills"&gt;
+                &lt;li class="active"&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                <h3>Alternative style</h3>
+                <p>Take the format above and wrap the <code>ul</code> with <code>.alt</code>.</p>
+                <div class="bs-docs-example">
+                    <div id="social-media">
+                        <div class="container">
+                            <div class="trib-title"><a href="">project title</a></div>
+                            <div class="nav-items nav-items-alt">
+                                <ul class="nav nav-pills">
+                                    <li class="active"><a href="#">Ch.1 pill</a></li>
+                                    <li><a href="#">Ch.2 link</a></li>
+                                    <li><a href="#">Ch.3 link</a></li>
+                                    <li><a href="#">Ch.4 link</a></li>
+                                    <li><a href="#">New page link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<pre class="prettyprint linenums">
+&lt;div id="social-media"&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="trib-title"&gt;&lt;a href=""&gt;project title&lt;/a&gt;&lt;/div&gt;
+        &lt;div class="nav-items nav-items-alt"&gt;
+            &lt;ul class="nav nav-pills"&gt;
+                &lt;li class="active"&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+            </section>
+
+            <!-- Tables
+            ================================================== -->
+
+            <section id="tables">
+                <div class="page-header">
+                    <h1>Tables</h1>
+                </div>
+                <h2>Fixed table header</h2>
+                <p>Explanation of javascript that fixes the table head that's not from bootstrap.</p>
+                <div class="bs-docs-example">
+                    <table>
+
+                    </table>
+                </div>
+            </section>
+            
+            <!-- Colors
+            ================================================== -->
+
+            <section id="colors">
+                <div class="page-header">
+                    <h1>Color</h1>
+                </div>
+                <h2>A place to start</h2>
+                <p></p>
+                <div class="bs-docs-example">
+                    <div class="row-fluid">
+                        <div class="span5">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="tribblue">#2B547E</td>
+                                        <td class="sublabel">Blue</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tribblue2">#488AC7</td>
+                                        <td class="sublabel">Blue Medium</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tribbluelite">#659EC7</td>
+                                        <td class="sublabel">Blue Lite</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tribgreen">#4E8975</td>
+                                        <td class="sublabel">Green</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tribgreenlite">#8BB381</td>
+                                        <td class="sublabel">Green Lite</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tribyellow">#C8B560</td>
+                                        <td class="sublabel">Yellow</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tribyellowlite">#ECD872</td>
+                                        <td class="sublabel">Yellow Lite</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tribred">#C34A2C</td>
+                                        <td class="sublabel">Red</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tribredlite">#E77471</td>
+                                        <td class="sublabel">Red Lite</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tribpurple">#7E587E</td>
+                                        <td class="sublabel">Purple</td>
+                                    </tr>
+                                </tbody>
+                            </table> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+        <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <p><a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <ul class="footer-links">
+          <li><a href="http://blog.getbootstrap.com">Blog</a></li>
+          <li class="muted">&middot;</li>
+          <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Issues</a></li>
+          <li class="muted">&middot;</li>
+          <li><a href="https://github.com/twitter/bootstrap/wiki">Roadmap and changelog</a></li>
+        </ul>
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/bootstrap-affix.js"></script>
+
+    <script src="assets/js/holder/holder.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+
+    <script src="assets/js/application.js"></script>
+
+
+
+  </body>
+</html>
