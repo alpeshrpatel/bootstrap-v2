@@ -6798,8 +6798,6 @@ time {
 
 /* alternative navbar styles*/
 
-/*.nav-items-alt>.nav-pills>li>a { padding-top: 4px; padding-bottom: 4px; .caps; font-style: italic; font-weight: bold; font-size: 13px; line-height: 13px; color: @gray; }*/
-
 .nav-items-alt > .nav-pills > li > a {
   font-size: 13px;
   font-style: italic;
