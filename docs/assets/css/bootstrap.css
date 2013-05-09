@@ -6584,12 +6584,6 @@ div.family {
 
 /*  styles for ct.com project*/
 
-h4,
-h5,
-h6 {
-  margin-bottom: 15px;
-}
-
 .caps {
   font-variant: small-caps;
 }
@@ -6625,7 +6619,7 @@ tr:last-child {
 
 /* section/chapter title styles */
 
-.section-heading {
+.section-head {
   padding-top: 20px;
   margin-bottom: 10px;
   font-weight: normal;
@@ -6634,7 +6628,7 @@ tr:last-child {
 
 /* drop cap styles */
 
-.drop-cap {
+span.drop-cap {
   float: left;
   margin: 0 7px -1px 0;
   font-size: 325%;
@@ -6644,13 +6638,13 @@ tr:last-child {
 /* lead in styles */
 
 .trib-article .lead-in p {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 19px;
+  line-height: 33px;
 }
 
-.lead-in .drop-cap {
+.lead-in span.drop-cap {
   margin: 0 12px -10px 0;
-  font-size: 515%;
+  font-size: 550%;
   line-height: 100%;
 }
 
@@ -6679,7 +6673,7 @@ tr:last-child {
 
 .trib-media {
   float: right;
-  width: 55%;
+  width: 63%;
   margin: 0 0 24px 40px;
 }
 
@@ -6692,7 +6686,7 @@ tr:last-child {
 
 .trib-media.flush figure {
   float: right;
-  margin: 0 0 24px 40px;
+  margin: 0 0 20px 40px;
 }
 
 /* figure and aside styles */
@@ -6782,6 +6776,7 @@ figcaption {
   z-index: 1;
   padding-top: 30px;
   padding-bottom: 50.7%;
+  margin-bottom: 30px;
   overflow: hidden;
 }
 
@@ -6827,9 +6822,13 @@ a:hover {
   margin: 0 8px -5px 4px;
 }
 
+.twitter-first {
+  margin-right: 1px;
+}
+
 .trib-byline {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
 }
 
@@ -6844,41 +6843,43 @@ time {
 }
 
 .credits-box {
-  padding: 5px;
+  padding: 10px;
   margin-top: 20px;
   border: 1px solid #d0d0d0;
 }
 
-.credits-box h4 {
-  margin-left: 11%;
+.credits-box h3 {
+  margin-bottom: 5px;
   text-align: center;
 }
 
 .credits-group {
-  margin: 0;
+  margin: 0 0 15px 0;
 }
 
 .credits-type {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
 }
 
 .credits-cat p {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   line-height: 20px;
+  line-height: 27px;
   text-align: right;
 }
 
 .credits-names p {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
+  line-height: 30px;
   font-variant: small-caps;
 }
 
@@ -7028,4 +7029,41 @@ time {
   text-align: center;
   background-color: #7e587e;
   border: 1px solid white;
+}
+
+/* mobile */
+
+@media only screen and (max-width: 480px) {
+  .trib-article p {
+    width: 100%;
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .trib-article .lead-in p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  span.drop-cap {
+    font-size: 300%;
+  }
+  .small-photo,
+  .trib-media.flush,
+  .trib-media {
+    width: 100%;
+  }
+  .trib-media.flush figure {
+    float: none;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 797px) {
+  .credits-cat p,
+  .credits-names p,
+  .credits-box h4 {
+    text-align: center;
+  }
+  .credits-box {
+    margin: 0;
+  }
 }

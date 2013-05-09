@@ -1,23 +1,23 @@
 /*  styles for ct.com project*/
 
-h4, h5, h6 { margin-bottom: 15px; }
 .caps { font-variant:small-caps; }
 .sublabel { font-size: 15px; font-family: @sansFontFamily; font-weight: bold; margin-bottom: 12px; }
 td.sublabel { padding-left: 15px; }
 tr { border-bottom: 1px dotted @grayLight; }
 tr:last-child { border-bottom: none; }
+
 /* story body copy paragraph style */
 .trib-article p { width: 68%; max-width:680px; font-size: 16px; line-height: 26px; margin-bottom: 22px; }
 
 /* section/chapter title styles */
-.section-heading { text-transform:uppercase; font-weight: normal; padding-top: 20px; margin-bottom: 10px; }
+.section-head { text-transform:uppercase; font-weight: normal; padding-top: 20px; margin-bottom: 10px; }
 
 /* drop cap styles */
-.drop-cap { margin: 0 7px -1px 0; font-size: 325%; line-height: 100%; float: left; }
+span.drop-cap { margin: 0 7px -1px 0; font-size: 325%; line-height: 100%; float: left; }
 
 /* lead in styles */
-.trib-article .lead-in p { font-size: 18px; line-height: 30px; }
-.lead-in .drop-cap { margin: 0 12px -10px 0; font-size: 515%; line-height: 100%; }
+.trib-article .lead-in p { font-size: 19px; line-height: 33px; }
+.lead-in span.drop-cap { margin: 0 12px -10px 0; font-size: 550%; line-height: 100%; }
 
 /* breakout/bullet styles */
 .trib-article .pull-out { font-family: @sansFontFamily; padding: 20px; border-left: 2px solid @gray; margin: 35px 0; background-color: @grayVeryLight; width: 680px; }
@@ -25,9 +25,9 @@ tr:last-child { border-bottom: none; }
 .trib-article .pull-out p:last-child { margin-bottom: 0; }
 
 /* notched media styles */
-.trib-media { float: right; width: 55%; margin: 0 0 24px 40px; }
-.trib-media.flush { float: none; width: 68%; max-width:680px; margin: 0; }
-.trib-media.flush figure { float:right; margin: 0 0 24px 40px; }
+.trib-media { float: right; width: 63%; margin: 0 0 24px 40px; }
+.trib-media.flush { float: none; width: 68%; max-width: 680px; margin: 0; }
+.trib-media.flush figure { float: right; margin: 0 0 20px 40px; }
 
 /* figure and aside styles */
 .media-info { font-family: @sansFontFamily; line-height: 20px; margin: 0; color: @gray; width: 100%; }
@@ -48,7 +48,7 @@ figcaption { .media-info; font-size: 14px; margin-bottom: 10px; }
 .trib-img { margin: 0 0 10px 0; max-width: 100% }
 
 /* video styles */
-.video-wrapper { position: relative; overflow: hidden; padding-bottom: 50.7%; padding-top: 30px; z-index: 1; }
+.video-wrapper { position: relative; overflow: hidden; padding-bottom: 50.7%; padding-top: 30px; z-index: 1; margin-bottom: 30px; }
 .video-wrapper iframe,
 .video-wrapper object,
 .video-wrapper embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index:1; }
@@ -61,16 +61,17 @@ a:hover { color: @grayDark; }
 
 /* bylines, credits and source line */
 .twitter-follow-button { margin: 0 8px -5px 4px; }
-.trib-byline { font-family: @sansFontFamily; font-size: 14px; line-height: 20px; }
+.twitter-first { margin-right: 1px; }
+.trib-byline { font-family: @sansFontFamily; font-size: 16px; line-height: 20px; }
 time { font-style: italic; font-size:13px; }
 .credits, time { color: @gray; }
 
-.credits-box { padding: 5px; border: 1px solid @grayLighter; margin-top: 20px; }
-.credits-box h4 { text-align: center; margin-left: 11%; }
-.credits-group { margin: 0; }
+.credits-box { padding: 10px; border: 1px solid @grayLighter; margin-top: 20px; }
+.credits-box h3 { text-align: center; margin-bottom: 5px; }
+.credits-group { margin: 0 0 15px 0; }
 .credits-type { .trib-byline; margin: 0; }
-.credits-cat p { .credits-type; text-align: right; font-weight: bold; }
-.credits-names p { .credits-type; .caps; }
+.credits-cat p { .credits-type; text-align: right; font-weight: bold; line-height: 27px; }
+.credits-names p { .credits-type; .caps; line-height: 30px; }
 
 /* navbar styles */
 .container > div { float: left; }
@@ -84,7 +85,6 @@ time { font-style: italic; font-size:13px; }
 .nav-items-alt>.nav-pills>li>a { text-transform:uppercase; font-style: italic; font-weight: bold; font-size: 13px; color: @gray; }
 .nav-items-alt>.nav-pills>.active>a,
 .nav-items-alt>.nav-pills>.active>a:hover { background-color: #e5e5e5; color: @grayDark; }
-
 
 /* colors */
 .color-styles { padding: 8px 15px 8px 15px; font-family: @sansFontFamily; color: white; text-align: center; border: 1px solid white; }
@@ -100,6 +100,20 @@ time { font-style: italic; font-size:13px; }
 .tribgreenlite { background-color: @tribgreenlite; .color-styles; }
 .tribpurple { background-color: @tribpurple; .color-styles; }
 
+/* mobile */
+@media only screen and (max-width: 480px) {
+    .trib-article p { width: 100%; font-size: 15px; line-height: 22px; }
+    .trib-article .lead-in p { font-size: 16px; line-height: 26px; }
+    span.drop-cap { font-size: 300%; }
+    .small-photo, .trib-media.flush, .trib-media { width: 100%; }
+    .trib-media.flush figure { margin-left: 0; float: none; }
+}
+
+@media only screen and (max-width: 797px) {
+    .credits-cat p, .credits-names p, .credits-box h4 { text-align: center; }   
+    .credits-box { margin: 0; }
+}
+    
 
 
 
