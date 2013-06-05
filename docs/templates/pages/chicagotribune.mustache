@@ -393,15 +393,15 @@
                 <h2>Bylines</h2>
                 <p>Story/article byline style</p>
                 <div class="bs-docs-example">
-                    <div class="trib-byline">
-                        <p><span class="caps">By Trib Apps</span> <a href="https://twitter.com/tribapps" class="twitter-follow-button" data-show-count="false">Follow @tribapps</a>
+                    <div>
+                        <p class="trib-byline"><span class="caps">By Trib Apps</span> <a href="https://twitter.com/tribapps" class="twitter-follow-button" data-show-count="false">Follow @tribapps</a>
                         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>&nbsp|&nbsp&nbspTribune reporter</p>
                         <time>Month Day, Year</time>
                     </div>
                 </div>
 <pre class="prettyprint linenums">
-&lt;div class="trib-byline"&gt;
-    &lt;p&gt;&lt;span class="caps"&gt;By Trib Apps&lt;/span&gt; Twitter handle&lt;/p&gt;
+&lt;div&gt;
+    &lt;p class="trib-byline"&gt;&lt;span class="caps"&gt;By Trib Apps&lt;/span&gt; Twitter handle&lt;/p&gt;
     &lt;time&gt;Month Day, Year&lt;/time&gt;
 &lt;/div&gt;
 </pre>
@@ -409,14 +409,10 @@
                 <h2>Credits</h2>
                 <p>Credits go at the bottom of the page and used in projects with a smaller team and produced mostly by one department. It should include bylines and organization.</p>
                 <div class="bs-docs-example">
-                    <div class="trib-byline">
-                        <p class="credits">By <span class="caps">First Last</span>, <span class="caps">First Last</span> and <span class="caps">First Last</span> - <span class="caps">Chicago Tribune</span></p>
-                    </div>
+                    <p class="credits">By <span class="caps">First Last</span>, <span class="caps">First Last</span> and <span class="caps">First Last</span> - <span class="caps">Chicago Tribune</span></p>
                 </div>
 <pre class="prettyprint linenums">
-&lt;div class="trib-byline"&gt;
-    &lt;p class="credits"&gt;&lt;span class="caps"&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
+&lt;p class="credits"&gt;&lt;span class="caps"&gt;&lt;/span&gt;&lt;/p&gt;
 </pre>
                 <h3>Project credits box</h3>
                 <p>Use a project credits box when bylines from multiple departments should appear. This style of credit box should be reserved for larger projects.</p>
