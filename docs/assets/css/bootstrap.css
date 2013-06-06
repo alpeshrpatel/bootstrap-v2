@@ -6838,14 +6838,12 @@ time {
 }
 
 .credits,
-.source,
 time {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #757575;
 }
 
-.credits,
-.source {
+.credits {
   font-size: 14px;
   line-height: 20px;
 }
