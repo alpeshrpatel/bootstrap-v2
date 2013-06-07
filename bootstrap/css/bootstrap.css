@@ -6839,7 +6839,13 @@ time {
 
 .credits,
 time {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #757575;
+}
+
+.credits {
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .credits-box {
@@ -6941,7 +6947,16 @@ time {
   border: 1px solid white;
 }
 
-.tribblue {
+.tribbluelight {
+  padding: 8px 15px 8px 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: center;
+  background-color: #659ec7;
+  border: 1px solid white;
+}
+
+.tribbluedark {
   padding: 8px 15px 8px 15px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
@@ -6950,21 +6965,12 @@ time {
   border: 1px solid white;
 }
 
-.tribblue2 {
+.tribreddark {
   padding: 8px 15px 8px 15px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
   text-align: center;
-  background-color: #488ac7;
-  border: 1px solid white;
-}
-
-.tribbluelite {
-  padding: 8px 15px 8px 15px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: white;
-  text-align: center;
-  background-color: #659ec7;
+  background-color: #990012;
   border: 1px solid white;
 }
 
@@ -6986,6 +6992,15 @@ time {
   border: 1px solid white;
 }
 
+.tribpurple {
+  padding: 8px 15px 8px 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: center;
+  background-color: #7e587e;
+  border: 1px solid white;
+}
+
 .tribyellow {
   padding: 8px 15px 8px 15px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -7004,12 +7019,21 @@ time {
   border: 1px solid white;
 }
 
+.tribgreendark {
+  padding: 8px 15px 8px 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: center;
+  background-color: #254117;
+  border: 1px solid white;
+}
+
 .tribgreen {
   padding: 8px 15px 8px 15px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
   text-align: center;
-  background-color: #4e8975;
+  background-color: #4e9258;
   border: 1px solid white;
 }
 
@@ -7022,15 +7046,113 @@ time {
   border: 1px solid white;
 }
 
-.tribpurple {
+.Blue {
   padding: 8px 15px 8px 15px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
   text-align: center;
-  background-color: #7e587e;
+  background-color: #4c7dae;
   border: 1px solid white;
 }
 
+.BlueDark {
+  padding: 8px 15px 8px 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: center;
+  background-color: #005495;
+  border: 1px solid white;
+}
+
+.Green {
+  padding: 8px 15px 8px 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: center;
+  background-color: #46a546;
+  border: 1px solid white;
+}
+
+.Red {
+  padding: 8px 15px 8px 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: center;
+  background-color: #cc0000;
+  border: 1px solid white;
+}
+
+.black {
+  padding: 8px 15px 8px 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: center;
+  background-color: #1a1a1a;
+  border: 1px solid white;
+}
+
+.grayDark {
+  padding: 8px 15px 8px 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: center;
+  background-color: #333333;
+  border: 1px solid white;
+}
+
+.gray {
+  padding: 8px 15px 8px 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: center;
+  background-color: #777777;
+  border: 1px solid white;
+}
+
+.grayLight {
+  padding: 8px 15px 8px 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: center;
+  background-color: #999999;
+  border: 1px solid white;
+}
+
+.grayLighter {
+  padding: 8px 15px 8px 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  color: black;
+  text-align: center;
+  background-color: #d0d0d0;
+  border: 1px solid white;
+}
+
+.grayVeryLight {
+  padding: 8px 15px 8px 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  color: black;
+  text-align: center;
+  background-color: #eeeeee;
+  border: 1px solid white;
+}
+
+.white {
+  padding: 8px 15px 8px 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  color: black;
+  text-align: center;
+  background-color: #fafafa;
+  border: 1px solid white;
+}
+
+/*.Yellow { .color-styles; background-color: @yellow; }         
+.Orange { .color-styles; background-color: @orange; }         
+.Pink { .color-styles; background-color: @pink; }           
+.Purple { .color-styles; background-color: @purple; }  
+*/
 /* mobile */
 
 @media only screen and (max-width: 480px) {
