@@ -1898,15 +1898,15 @@
 </pre>
 
           <h2>{{_i}}Page header{{/i}}</h2>
-          <p>{{_i}}A simple shell for an <code>h1</code> to appropriately space out and segment sections of content on a page. It can utilize the <code>h1</code>'s default <code>small</code>, element as well most other components (with additional styles).{{/i}}</p>
+          <p>{{_i}}A simple shell for an <code>h1</code> to appropriately space out and segment sections of content on a page. It can utilize the <code>h1</code>'s default <code>small</code>, element as well most other components (with additional styles). You must wrap the main text component of the header with a <code>span</code> in order to get the extra spacing.{{/i}}</p>
           <div class="bs-docs-example">
             <div class="page-header">
-              <h1>{{_i}}Example page header{{/i}} <small>{{_i}}Subtext for header{{/i}}</small></h1>
+              <h1><span>{{_i}}Example page header{{/i}}</span> <small>{{_i}}Subtext for header{{/i}}</small></h1>
             </div>
           </div>
 <pre class="prettyprint linenums">
 &lt;div class="page-header"&gt;
-  &lt;h1&gt;{{_i}}Example page header{{/i}} &lt;small&gt;{{_i}}Subtext for header{{/i}}&lt;/small&gt;&lt;/h1&gt;
+  &lt;h1&gt;&lt;span&gt;{{_i}}Example page header{{/i}}&lt;/span&gt; &lt;small&gt;{{_i}}Subtext for header{{/i}}&lt;/small&gt;&lt;/h1&gt;
 &lt;/div&gt;
 </pre>
 
