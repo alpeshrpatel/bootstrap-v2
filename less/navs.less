@@ -323,8 +323,7 @@
   margin-bottom: 0;
 }
 .tabs-below > .nav-tabs > li > a {
-  /*.border-radius(0 0 4px 4px);*/
-  .border-radius(0 0 2px 2px);
+  .border-radius(0 0 @tabBorderRadius @tabBorderRadius);
   &:hover,
   &:focus {
     border-bottom-color: transparent;
@@ -360,8 +359,7 @@
 }
 .tabs-left > .nav-tabs > li > a {
   margin-right: -1px;
-  .border-radius(2px 0 0 2px);
-  /*.border-radius(4px 0 0 4px);*/
+  .border-radius(@tabBorderRadius 0 0 @tabBorderRadius);
 }
 .tabs-left > .nav-tabs > li > a:hover,
 .tabs-left > .nav-tabs > li > a:focus {
@@ -382,8 +380,7 @@
 }
 .tabs-right > .nav-tabs > li > a {
   margin-left: -1px;
-  .border-radius(0 2px 2px 0);
-  /*.border-radius(0 4px 4px 0);*/
+  .border-radius(0 @tabBorderRadius @tabBorderRadius 0);
 }
 .tabs-right > .nav-tabs > li > a:hover,
 .tabs-right > .nav-tabs > li > a:focus {
