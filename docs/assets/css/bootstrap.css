@@ -6745,15 +6745,20 @@ figcaption {
 
 /* link styles */
 
-/*h1, h2, h3 {
-  a {
-    color:@blue;
-  }
-  a:hover,
-  a:focus {
-    color:lighten(@blue, 15%);
-  }
-}*/
+h1 a,
+h2 a,
+h3 a {
+  color: #0d3058;
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h1 a:focus,
+h2 a:focus,
+h3 a:focus {
+  color: #17549b;
+}
 
 .media-link {
   font-family: Arial, sans-serif;
@@ -7141,4 +7146,264 @@ time {
   .credits-box {
     margin: 0;
   }
+}
+
+@font-face {
+  font-family: 'trb_Icons';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../img/trbicons.eot');
+  src: url('../img/trbicons.eot?#iefix') format('embedded-opentype'), url('../img/trbicons.woff') format('woff'), url('../img/trbicons.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'trb_WeatherIcons';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../img/laiconsweather-webfont.eot');
+  src: url('../img/laiconsweather-webfont.eot?#iefix') format('embedded-opentype'), url('../img/laiconsweather-webfont.woff') format('woff'), url('../img/laiconsweather-webfont.ttf') format('truetype');
+}
+
+/* Tribune webfont icons */
+
+[class^="cticon-"],
+[class*=" cticon-"] {
+  display: inline-block;
+  font-family: trb_Icons;
+  font-size: 120%;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1em;
+}
+
+.cticon-edit:before {
+  content: "a";
+}
+
+.cticon-pintrest:before {
+  content: "b";
+}
+
+.cticon-comment:before {
+  content: "c";
+}
+
+.cticon-refresh:before {
+  content: "d";
+}
+
+.cticon-back:before {
+  content: "e";
+}
+
+.cticon-facebook:before {
+  content: "f";
+}
+
+.cticon-gplus:before {
+  content: "g";
+}
+
+.cticon-linkedin:before {
+  content: "i";
+}
+
+.cticon-gear:before {
+  content: "j";
+}
+
+.cticon-check:before {
+  content: "k";
+}
+
+.cticon-link:before {
+  content: "l";
+}
+
+.cticon-mail:before {
+  content: "m";
+}
+
+.cticon-starburst:before {
+  content: "o";
+}
+
+.cticon-print:before {
+  content: "p";
+}
+
+.cticon-plusone:before {
+  content: "q";
+}
+
+.cticon-rss:before {
+  content: "r";
+}
+
+.cticon-share:before {
+  content: "s";
+}
+
+.cticon-twitter:before {
+  content: "t";
+}
+
+.cticon-stumble:before {
+  content: "u";
+}
+
+.cticon-user:before {
+  content: "z";
+}
+
+.cticon-flag:before {
+  content: "ß";
+}
+
+.cticon-grid:before {
+  content: "æ";
+}
+
+.cticon-linkout:before {
+  content: "ì";
+}
+
+.cticon-fullscreen:before {
+  content: "ò";
+}
+
+.cticon-video:before {
+  content: "ô";
+}
+
+.cticon-gallery:before {
+  content: "ü";
+}
+
+.cticon-file:before {
+  content: "ö";
+}
+
+.cticon-broadcast:before {
+  content: "û";
+}
+
+.cticon-camera:before {
+  content: "õ";
+}
+
+.cticon-reddit:before {
+  content: "ý";
+}
+
+.cticon-digg:before {
+  content: "ÿ";
+}
+
+.cticon-menu:before {
+  content: "ł";
+}
+
+.cticon-lock:before {
+  content: "ø";
+}
+
+.cticon-bull:before {
+  content: "ı";
+}
+
+.cticon-chevron-left:before {
+  content: "ç";
+}
+
+.cticon-chevron-right:before {
+  content: "ç";
+}
+
+.cticon-chevron-med-left:before {
+  content: "é";
+}
+
+.cticon-chevron-med-right:before {
+  content: "ë";
+}
+
+.cticon-chevron-hair-left:before {
+  content: "è";
+}
+
+.cticon-chevron-hair-right:before {
+  content: "í";
+}
+
+.cticon-left:before {
+  content: "v";
+}
+
+.cticon-right:before {
+  content: "w";
+}
+
+.cticon-up:before {
+  content: "y";
+}
+
+.cticon-down:before {
+  content: "x";
+}
+
+.cticon-search:before {
+  content: "á";
+}
+
+.cticon-search-med:before {
+  content: "à";
+}
+
+.cticon-search-hair:before {
+  content: "â";
+}
+
+.cticon-close:before {
+  content: "ä";
+}
+
+.cticon-close-med:before {
+  content: "ã";
+}
+
+.cticon-close-hair:before {
+  content: "å";
+}
+
+.cticon-triangle-down:before {
+  content: "ï";
+}
+
+.cticon-triangle-up:before {
+  content: "î";
+}
+
+.cticon-triangle-left:before {
+  content: "ñ";
+}
+
+.cticon-triangle-right:before {
+  content: "ó";
+}
+
+.cticon-thumbs-up:before {
+  content: "ù";
+}
+
+.cticon-thumbs-down:before {
+  content: "ú";
+}
+
+.cticon-circle-left:before {
+  content: "œ";
+}
+
+.cticon-circle-right:before {
+  content: "š";
 }

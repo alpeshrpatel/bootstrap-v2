@@ -6745,15 +6745,20 @@ figcaption {
 
 /* link styles */
 
-/*h1, h2, h3 {
-  a {
-    color:@blue;
-  }
-  a:hover,
-  a:focus {
-    color:lighten(@blue, 15%);
-  }
-}*/
+h1 a,
+h2 a,
+h3 a {
+  color: #0d3058;
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h1 a:focus,
+h2 a:focus,
+h3 a:focus {
+  color: #17549b;
+}
 
 .media-link {
   font-family: Arial, sans-serif;
