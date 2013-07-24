@@ -54,8 +54,15 @@ figcaption { .media-info; font-size: 14px; margin-bottom: 10px; }
 .video-wrapper embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index:1; }
 
 /* link styles */
-/*a { color: @blueDark; }*/
-/*a:hover { color: @grayDark; }*/
+/*h1, h2, h3 {
+  a {
+    color:@blue;
+  }
+  a:hover,
+  a:focus {
+    color:lighten(@blue, 15%);
+  }
+}*/
 .media-link { font-weight: bold; font-size: 15px; line-height: 20px; font-family: @sansFontFamily; text-align: right; }
 .lite-media-link { font-weight: normal; font-size: 16px; line-height: 22px; font-family: @sansFontFamily; }
 
@@ -75,17 +82,43 @@ time { font-style: italic; font-size:13px; }
 .credits-names p { .credits-type; .caps; line-height: 30px; }
 
 /* navbar styles */
-.container > div { float: left; }
-.trib-title { font-size: 16px; line-height: 22px; text-transform:uppercase; margin-right: 20px; }
-.trib-title a { color: @grayLight; }
-.nav { margin: -2px 0 0; }
-.nav-pills>li>a { padding-top: 4px; padding-bottom: 4px; }
-.nav-pills>.active>a, .nav-pills>.active>a:hover { background-color: #333; }
+.container > div {
+  float: left;
+}
+.trib-title {
+  font-size: 16px;
+  line-height: 22px;
+  text-transform:uppercase;
+  margin-right: 20px;
+}
+.trib-title a {
+  color: @grayLight;
+}
+.nav {
+  margin: -2px 0 0;
+}
+.nav-pills>li>a {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.nav-pills>.active>a,
+.nav-pills>.active>a:hover {
+  background-color: #333;
+}
 
 /* alternative navbar styles*/
-.nav-items-alt>.nav-pills>li>a { text-transform:uppercase; font-style: italic; font-weight: bold; font-size: 13px; color: @gray; }
+.nav-items-alt>.nav-pills>li>a {
+  text-transform:uppercase;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 13px;
+  color: @gray;
+}
 .nav-items-alt>.nav-pills>.active>a,
-.nav-items-alt>.nav-pills>.active>a:hover { background-color: #e5e5e5; color: @grayDark; }
+.nav-items-alt>.nav-pills>.active>a:hover {
+  background-color: #e5e5e5;
+  color: @grayDark;
+}
 
 /* colors */
 .color-styles { padding: 8px 15px 8px 15px; font-family: @sansFontFamily; color: white; text-align: center; border: 1px solid white; }
