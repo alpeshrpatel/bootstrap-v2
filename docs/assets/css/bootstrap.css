@@ -7174,6 +7174,7 @@ time {
   font-style: normal;
   font-weight: normal;
   line-height: 1em;
+  text-transform: none;
 }
 
 .cticon-edit:before {
@@ -7317,7 +7318,7 @@ time {
 }
 
 .cticon-chevron-right:before {
-  content: "ç";
+  content: "ê";
 }
 
 .cticon-chevron-med-left:before {
