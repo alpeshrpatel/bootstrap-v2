@@ -6924,6 +6924,10 @@ time {
   border-right: solid 1px #999999;
 }
 
+.barker-carousel table.thumbnails td img {
+  width: 100%;
+}
+
 .barker-carousel table.thumbnails td.no-image:before {
   display: block;
   width: 100%;
