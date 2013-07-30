@@ -20,9 +20,9 @@
   vertical-align: middle;
   cursor: pointer;
   .buttonBackground(@btnBackground, @btnBackgroundHighlight);
-  border-width:0;
-  // border: 1px solid @btnBorder;
-  // *border: 0; // Remove the border to prevent IE7's black border on input:focus
+  // border-width:0;
+  border: 1px solid @btnBackground;
+  *border: 0; // Remove the border to prevent IE7's black border on input:focus
   // border-bottom-color: darken(@btnBorder, 10%);
   // .border-radius(@baseBorderRadius);
   .ie7-restore-left-whitespace(); // Give IE7 some love
@@ -31,7 +31,7 @@
   // Hover/focus state
   &:hover,
   &:focus {
-    /*color: @grayDark;*/
+    // color: @grayDark;
     text-decoration: none;
     background-position: 0 -15px;
 

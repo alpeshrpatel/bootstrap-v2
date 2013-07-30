@@ -1063,3 +1063,71 @@ form.bs-docs-example {
     padding-bottom: 20px;
   }
 }
+
+
+/* colors */
+.swatch {
+  padding: 8px 15px 8px 15px;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+  border: 1px solid white;
+}
+
+.black {
+  background-color: #1a1a1a;
+}
+
+.grayDarker {
+  background-color: #2b2b2b;
+}
+
+.grayDark {
+  background-color: #333333;
+}
+
+.gray {
+  background-color: #777777;
+}
+
+.grayLight {
+  background-color: #999999;
+}
+
+.grayLighter {
+  color:black;
+  background-color: #d0d0d0;
+}
+
+.grayVeryLight {
+  color: black;
+  background-color: #eeeeee;
+}
+
+.white {
+  color: black;
+  background-color: #fbfcfc;
+}
+
+.blueDarkest {
+  background-color: #0D1123;
+}
+.blueDarker {
+  background-color: #12182D;
+}
+.blueDark {
+  background-color: #17274A;
+}
+.blue {
+  background-color: #0D3058;
+}
+.blueLight {
+  background-color: #144A7C;
+}
+.blueLighter {
+  background-color: #549ac4;
+}
+.blueLightest {
+  background-color: #C7D9E9;
+  color:black;
+}
