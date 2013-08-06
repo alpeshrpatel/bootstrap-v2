@@ -20,7 +20,7 @@ build:
 	@echo "Running JSHint on javascript...             ${CHECK} Done"
 	@./node_modules/recess/node_modules/.bin/lessc ${BOOTSTRAP_LESS} > ${BOOTSTRAP}
 	@./node_modules/recess/node_modules/.bin/lessc ${BOOTSTRAP_RESPONSIVE_LESS} > ${BOOTSTRAP_RESPONSIVE}
-	@echo "Compiling LESS with lessc...               ${CHECK} Done"
+	@echo "Compiling LESS with lessc...                ${CHECK} Done"
 	@#./node_modules/.bin/recess --compile ${BOOTSTRAP_LESS} > ${BOOTSTRAP}
 	@#./node_modules/.bin/recess --compile ${BOOTSTRAP_RESPONSIVE_LESS} > ${BOOTSTRAP_RESPONSIVE}
 	@#echo "Compiling LESS with Recess...               ${CHECK} Done"

@@ -14,12 +14,14 @@
 
 // Make links block level
 .nav > li > a {
+  color: @navLinkColor;
   display: block;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: @blueLightest;
+  color: @navLinkColorHover;
+  background-color: @navLinkBackgroundHover;
 }
 
 // Prevent IE8 from misplacing imgs
@@ -71,9 +73,9 @@
 .nav-list > .active > a,
 .nav-list > .active > a:hover,
 .nav-list > .active > a:focus {
-  color: @white;
+  color: @navLinkColorActive;
   text-shadow: 0 -1px 0 rgba(0,0,0,.2);
-  background-color: @linkColor;
+  background-color: @navLinkBackgroundActive;
 }
 .nav-list [class^="icon-"],
 .nav-list [class*=" icon-"] {

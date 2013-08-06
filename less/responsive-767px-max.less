@@ -120,9 +120,19 @@
 
 @media (max-width: 480px) {
 
-  // Smooth out the collapsing/expanding nav
-  .nav-collapse {
-    -webkit-transform: translate3d(0, 0, 0); // activate the GPU
+  // Remove page header decorations
+  .page-header {
+    text-align:left;
+
+    h1 {
+      background-color:transparent;
+      span:before, span:after {
+        display:none;
+      }
+    }
+  }
+  .page-header:before {
+    display:none;
   }
 
   // Block level the page header small tag for readability
