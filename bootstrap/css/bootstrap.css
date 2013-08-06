@@ -4755,7 +4755,7 @@ input[type="submit"].btn.btn-mini {
   border-bottom-color: #fbfcfc;
 }
 
-.navbar-inverse .dropdown-submenu:hover > a:after {
+.navbar-inverse .dropdown-submenu:hover > a:before {
   border-left-color: #fbfcfc;
 }
 
