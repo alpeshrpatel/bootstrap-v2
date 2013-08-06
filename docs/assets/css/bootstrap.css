@@ -5121,6 +5121,11 @@ a.badge:focus {
   position: fixed;
 }
 /*  styles for ct.com project*/
+.container-fluid {
+  max-width: 1148px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .caps {
   font-variant: small-caps;
 }
