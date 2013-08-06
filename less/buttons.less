@@ -19,9 +19,10 @@
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
-  .buttonBackground(@btnBackground, @btnBackgroundHighlight);
-  // border-width:0;
-  border: 1px solid @btnBackground;
+  .buttonBackground(@btnBackground, @btnBackgroundHighlight, @btnBorder,
+    @black, 0 1px 0 rgba(255,255,255,.25));
+  border-width: 1px;
+  border-style:solid;
   *border: 0; // Remove the border to prevent IE7's black border on input:focus
   // border-bottom-color: darken(@btnBorder, 10%);
   // .border-radius(@baseBorderRadius);
@@ -146,27 +147,27 @@ input[type="button"] {
 // Set the backgrounds
 // -------------------------
 .btn-primary {
-  .buttonBackground(@btnPrimaryBackground, @btnPrimaryBackgroundHighlight);
+  .buttonBackground(@btnPrimaryBackground, @btnPrimaryBackgroundHighlight, @btnPrimaryBackground);
 }
 // Warning appears are orange
 .btn-warning {
-  .buttonBackground(@btnWarningBackground, @btnWarningBackgroundHighlight);
+  .buttonBackground(@btnWarningBackground, @btnWarningBackgroundHighlight, @btnWarningBackground);
 }
 // Danger and error appear as red
 .btn-danger {
-  .buttonBackground(@btnDangerBackground, @btnDangerBackgroundHighlight);
+  .buttonBackground(@btnDangerBackground, @btnDangerBackgroundHighlight, @btnDangerBackground);
 }
 // Success appears as green
 .btn-success {
-  .buttonBackground(@btnSuccessBackground, @btnSuccessBackgroundHighlight);
+  .buttonBackground(@btnSuccessBackground, @btnSuccessBackgroundHighlight, @btnSuccessBackground);
 }
 // Info appears as a neutral blue
 .btn-info {
-  .buttonBackground(@btnInfoBackground, @btnInfoBackgroundHighlight);
+  .buttonBackground(@btnInfoBackground, @btnInfoBackgroundHighlight, @btnInfoBackground);
 }
 // Inverse appears as dark gray
 .btn-inverse {
-  .buttonBackground(@btnInverseBackground, @btnInverseBackgroundHighlight);
+  .buttonBackground(@btnInverseBackground, @btnInverseBackgroundHighlight, @btnInverseBackground);
 }
 
 

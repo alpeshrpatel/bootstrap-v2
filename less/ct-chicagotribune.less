@@ -1,4 +1,9 @@
 /*  styles for ct.com project*/
+.container-fluid {
+  max-width:@gridRowWidth1200;
+  margin-left:auto;
+  margin-right:auto;
+}
 
 .caps { font-variant:small-caps; }
 .sublabel { font-size: 15px; font-family: @sansFontFamily; font-weight: bold; margin-bottom: 12px; }
@@ -82,9 +87,6 @@ time { font-style: italic; font-size:13px; }
 .credits-names p { .credits-type; .caps; line-height: 30px; }
 
 /* navbar styles */
-.container > div {
-  float: left;
-}
 .trib-title {
   font-size: 16px;
   line-height: 22px;
@@ -94,9 +96,7 @@ time { font-style: italic; font-size:13px; }
 .trib-title a {
   color: @grayLight;
 }
-.nav {
-  margin: -2px 0 0;
-}
+/*
 .nav-pills>li>a {
   padding-top: 4px;
   padding-bottom: 4px;
@@ -105,6 +105,7 @@ time { font-style: italic; font-size:13px; }
 .nav-pills>.active>a:hover {
   background-color: #333;
 }
+*/
 
 /* alternative navbar styles*/
 .nav-items-alt>.nav-pills>li>a {

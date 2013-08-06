@@ -112,9 +112,9 @@
 
 // Buttons
 // -------------------------
-@btnBackground:                     @gray;
-@btnBackgroundHighlight:            lighten(@gray, 10%);
-@btnBorder:                         @btnBackgroundHighlight;
+@btnBackground:                     @grayVeryLight;
+@btnBackgroundHighlight:            darken(@grayVeryLight, 10%);
+@btnBorder:                         darken(@grayVeryLight, 12%);
 
 @btnPrimaryBackground:              @blueLight;
 @btnPrimaryBackgroundHighlight:     lighten(@blueLight, 15%);
@@ -131,8 +131,8 @@
 @btnDangerBackground:               @red;
 @btnDangerBackgroundHighlight:      darken(@red, 10%);
 
-@btnInverseBackground:              @blueDarker;
-@btnInverseBackgroundHighlight:     lighten(@blueDarker, 10%);
+@btnInverseBackground:              @gray;
+@btnInverseBackgroundHighlight:     lighten(@gray, 10%);
 
 
 // Forms
@@ -147,16 +147,16 @@
 
 // Dropdowns
 // -------------------------
-@dropdownBackground:            @white;
-@dropdownBorder:                @blueDarker;
-@dropdownDividerTop:            #e5e5e5;
-@dropdownDividerBottom:         @white;
+@dropdownBackground:            @grayVeryLight;
+@dropdownBorder:                darken(@grayVeryLight, 12%);
+@dropdownDividerTop:            @grayLighter;
+@dropdownDividerBottom:         @grayVeryLight;
 
 @dropdownLinkColor:             @grayDark;
-@dropdownLinkColorHover:        @white;
-@dropdownLinkColorActive:       @white;
+@dropdownLinkColorHover:        @black;
+@dropdownLinkColorActive:       @black;
 
-@dropdownLinkBackgroundActive:  @linkColor;
+@dropdownLinkBackgroundActive:  darken(@grayVeryLight, 5%);
 @dropdownLinkBackgroundHover:   @dropdownLinkBackgroundActive;
 
 
@@ -205,7 +205,7 @@
 
 // Navbar
 // -------------------------
-@navbarCollapseWidth:             940px;
+@navbarCollapseWidth:             1000px;
 @navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
 
 @navbarHeight:                    40px;
@@ -232,7 +232,7 @@
 @navbarInverseLinkColorHover:            @white;
 @navbarInverseLinkColorActive:           @navbarInverseLinkColorHover;
 @navbarInverseLinkBackgroundHover:       @blueDark;
-@navbarInverseLinkBackgroundActive:      @navbarInverseBackground;
+@navbarInverseLinkBackgroundActive:      @navbarInverseLinkBackgroundHover;
 
 @navbarInverseSearchBackground:          @gray;
 @navbarInverseSearchBackgroundFocus:     @white;
@@ -323,7 +323,7 @@
 
 // 1200px min
 @gridColumnWidth1200:     70px;
-@gridGutterWidth1200:     30px;
+@gridGutterWidth1200:     28px;
 @gridRowWidth1200:        (@gridColumns * @gridColumnWidth1200) + (@gridGutterWidth1200 * (@gridColumns - 1));
 
 // 768px-979px
