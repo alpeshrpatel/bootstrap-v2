@@ -2592,7 +2592,7 @@ table th[class*="span"],
   margin-top: 0;
   margin-bottom: 0;
 }
-.dropdown-submenu > a:after {
+.dropdown-submenu > a:before {
   display: block;
   content: " ";
   float: right;
@@ -2604,7 +2604,7 @@ table th[class*="span"],
   border-left-color: #bbbbbb;
   margin-top: 5px;
 }
-.dropdown-submenu:hover > a:after {
+.dropdown-submenu:hover > a:before {
   border-left-color: #1a1a1a;
 }
 .dropdown-submenu.pull-left {
@@ -5543,64 +5543,64 @@ time {
   content: "z";
 }
 .cticon-flag:before {
-  content: "ß";
+  content: "\df";
 }
 .cticon-grid:before {
-  content: "æ";
+  content: "\e6";
 }
 .cticon-linkout:before {
-  content: "ì";
+  content: "\ec";
 }
 .cticon-fullscreen:before {
-  content: "ò";
+  content: "\f2";
 }
 .cticon-video:before {
-  content: "ô";
+  content: "\f4";
 }
 .cticon-gallery:before {
-  content: "ü";
+  content: "\fc";
 }
 .cticon-file:before {
-  content: "ö";
+  content: "\f6";
 }
 .cticon-broadcast:before {
-  content: "û";
+  content: "\fb";
 }
 .cticon-camera:before {
-  content: "õ";
+  content: "\f5";
 }
 .cticon-reddit:before {
-  content: "ý";
+  content: "\fd";
 }
 .cticon-digg:before {
-  content: "ÿ";
+  content: "\ff";
 }
 .cticon-menu:before {
-  content: "ł";
+  content: "\142";
 }
 .cticon-lock:before {
-  content: "ø";
+  content: "\f8";
 }
 .cticon-bull:before {
-  content: "ı";
+  content: "\131";
 }
 .cticon-chevron-left:before {
-  content: "ç";
+  content: "\e7";
 }
 .cticon-chevron-right:before {
-  content: "ê";
+  content: "\ea";
 }
 .cticon-chevron-med-left:before {
-  content: "é";
+  content: "\e9";
 }
 .cticon-chevron-med-right:before {
-  content: "ë";
+  content: "\eb";
 }
 .cticon-chevron-hair-left:before {
-  content: "è";
+  content: "\e8";
 }
 .cticon-chevron-hair-right:before {
-  content: "í";
+  content: "\ed";
 }
 .cticon-left:before {
   content: "v";
@@ -5615,46 +5615,46 @@ time {
   content: "x";
 }
 .cticon-search:before {
-  content: "á";
+  content: "\e1";
 }
 .cticon-search-med:before {
-  content: "à";
+  content: "\e0";
 }
 .cticon-search-hair:before {
-  content: "â";
+  content: "\e2";
 }
 .cticon-close:before {
-  content: "ä";
+  content: "\e4";
 }
 .cticon-close-med:before {
-  content: "ã";
+  content: "\e3";
 }
 .cticon-close-hair:before {
-  content: "å";
+  content: "\e5";
 }
 .cticon-triangle-down:before {
-  content: "ï";
+  content: "\ef";
 }
 .cticon-triangle-up:before {
-  content: "î";
+  content: "\ee";
 }
 .cticon-triangle-left:before {
-  content: "ñ";
+  content: "\f1";
 }
 .cticon-triangle-right:before {
-  content: "ó";
+  content: "\f3";
 }
 .cticon-thumbs-up:before {
-  content: "ù";
+  content: "\f9";
 }
 .cticon-thumbs-down:before {
-  content: "ú";
+  content: "\fa";
 }
 .cticon-circle-left:before {
-  content: "œ";
+  content: "\153";
 }
 .cticon-circle-right:before {
-  content: "š";
+  content: "\161";
 }
 /* barkers is medium and there are sizes for small and large, and their common components */
 .barker {
