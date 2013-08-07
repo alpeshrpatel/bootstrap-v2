@@ -5399,16 +5399,22 @@ time {
 .trib-title a {
   color: #999999;
 }
-/*
-.nav-pills>li>a {
-  padding-top: 4px;
-  padding-bottom: 4px;
+.navbar .nav:last-child {
+  margin-right: 0;
 }
-.nav-pills>.active>a,
-.nav-pills>.active>a:hover {
-  background-color: #333;
+a.dropdown-toggle {
+  cursor: pointer;
 }
-*/
+.navbar .brand .ct-logo {
+  width: 160px;
+  height: 24px;
+  margin: -4px 0 -4px 0;
+  display: inline-block;
+}
+.navbar .nav.nav-compact i {
+  font-size: 18px;
+  line-height: 16px;
+}
 /* alternative navbar styles*/
 .nav-items-alt > .nav-pills > li > a {
   text-transform: uppercase;
@@ -5421,6 +5427,19 @@ time {
 .nav-items-alt > .nav-pills > .active > a:hover {
   background-color: #e5e5e5;
   color: #333333;
+}
+/* footer styles */
+.page-footer {
+  margin-top: 20px;
+  padding: 10px 0 8px;
+  text-align: center;
+  border-top: 1px solid #dfdfdf;
+}
+.page-footer .nav-pills {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
 }
 /* mobile */
 @media only screen and (max-width: 480px) {
