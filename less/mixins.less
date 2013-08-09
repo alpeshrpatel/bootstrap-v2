@@ -515,7 +515,7 @@
   color: @textColor;
   text-shadow: @textShadow;
   background-color:@startColor;
-  border-color: @borderColor;
+  border-color: @startColor;
 
   *background-color: @endColor; /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   .reset-filter();
@@ -524,12 +524,14 @@
   &:hover, &:focus, &:active, &.active, &.disabled, &[disabled] {
     color: @textColor;
     background-color: @endColor;
+    border-color: @endColor;
     *background-color: darken(@endColor, 5%);
   }
 
   // IE 7 + 8 can't handle box-shadow to show active, so we darken a bit ourselves
   &:active,
   &.active {
+    border-color: darken(@endColor, 10%) e("\9");
     background-color: darken(@endColor, 10%) e("\9");
   }
 }
