@@ -845,11 +845,11 @@ new TravelerView({ traveler: $('#social-media'), target: $('#page-body') });
                 <p>Our current ad JS is located at <a href="http://media.apps.chicagotribune.com/ads/v1/ads.js">http://media.apps.chicagotribune.com/ads/v1/ads.js</a>. You're going to load that script and some dependencies, create one or more elements to contain the actual ads with the <code>advert-wrapper</code> class, make sure to serve an <a href="http://media.apps.chicagotribune.com/ads/v1/ad-iframe.html">ad-iframe.html file</a> from the same domain you're on, include a brief template somewhere on the page, run a line of JS and set the ad-path in order to get the right inventory displayed. Easy enough! (It's easier than it sounds, promise :)</p>
 								<h3>Dependencies</h3>
 								<p>You'll need to include the following, in order:</p>
-								<ol>
-									<li><a href="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js">underscore</a></li>
-									<li><a href="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js">backbone</a></li>
-									<li><a href="http://media.apps.chicagotribune.com/ads/v1/ads.js">our own ads.js</a></li>
-								</ol>
+<pre class="prettyprint linenums">
+&lt;script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="//media.apps.chicagotribune.com/ads/v1/ads.js"&gt;&lt;/script&gt;
+</pre>
 								<p>You'll also need to include an <a href="http://media.apps.chicagotribune.com/ads/v1/ad-iframe.html">ad-iframe.html</a> file served from the same domain your app will be running on. The easiest way to do this is probably to make a copy of that file and include it directly in your repo.</p>
 								
 								<h3>Create an ad container</h3>
