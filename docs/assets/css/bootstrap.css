@@ -212,7 +212,7 @@ body {
   font-family: Georgia, Times, serif;
   font-size: 13px;
   line-height: 20px;
-  color: #666666;
+  color: #333333;
   background-color: #fbfcfc;
 }
 a {
@@ -1431,7 +1431,7 @@ select:focus:invalid:focus {
 }
 .help-block,
 .help-inline {
-  color: #8c8c8c;
+  color: #595959;
   font-family: Arial, sans-serif;
 }
 .help-block {
@@ -2918,7 +2918,7 @@ input[type="button"].btn-block {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #4e9258;
   border-color: #4e9258;
-  *background-color: #76b680;
+  *background-color: #66ad70;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
@@ -2930,14 +2930,14 @@ input[type="button"].btn-block {
 .btn-success.disabled,
 .btn-success[disabled] {
   color: #ffffff;
-  background-color: #76b680;
-  border-color: #76b680;
-  *background-color: #66ad70;
+  background-color: #66ad70;
+  border-color: #66ad70;
+  *background-color: #57a362;
 }
 .btn-success:active,
 .btn-success.active {
-  border-color: #57a362 \9;
-  background-color: #57a362 \9;
+  border-color: #4e9258 \9;
+  background-color: #4e9258 \9;
 }
 .btn-info {
   color: #ffffff;
@@ -3188,7 +3188,7 @@ input[type="submit"].btn.btn-mini {
   background-color: #cc0018;
 }
 .btn-group.open .btn-success.dropdown-toggle {
-  background-color: #76b680;
+  background-color: #66ad70;
 }
 .btn-group.open .btn-info.dropdown-toggle {
   background-color: #8dbcd8;
@@ -5163,14 +5163,6 @@ tr {
 tr:last-child {
   border-bottom: none;
 }
-/* story body copy paragraph style */
-.trib-article p {
-  width: 68%;
-  max-width: 680px;
-  font-size: 16px;
-  line-height: 26px;
-  margin-bottom: 22px;
-}
 /* section/chapter title styles */
 .section-head {
   text-transform: uppercase;
@@ -5179,24 +5171,39 @@ tr:last-child {
   margin-bottom: 10px;
 }
 /* drop cap styles */
-span.drop-cap {
+.drop-cap:first-letter {
   margin: 0 7px -1px 0;
   font-size: 325%;
   line-height: 100%;
   float: left;
 }
+/* story body copy paragraph style */
+article p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 22px;
+}
+article p,
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+  max-width: 680px;
+}
 /* lead in styles */
-.trib-article .lead-in p {
+article .lead {
   font-size: 19px;
   line-height: 33px;
 }
-.lead-in span.drop-cap {
+.lead.drop-cap:first-letter {
   margin: 0 12px -10px 0;
   font-size: 550%;
   line-height: 100%;
 }
 /* breakout/bullet styles */
-.trib-article .pull-out {
+article .pull-out {
   font-family: Arial, sans-serif;
   padding: 20px;
   border-left: 2px solid #666666;
@@ -5204,12 +5211,12 @@ span.drop-cap {
   background-color: #eeeeee;
   width: 680px;
 }
-.trib-article .pull-out p {
+article .pull-out p {
   width: 100%;
   font-size: 16px;
   line-height: 20px;
 }
-.trib-article .pull-out p:last-child {
+article .pull-out p:last-child {
   margin-bottom: 0;
 }
 /* notched media styles */
@@ -5316,7 +5323,7 @@ figcaption {
 h1 a,
 h2 a,
 h3 a {
-  color: #666666;
+  color: #333333;
 }
 h1 a:hover,
 h2 a:hover,
@@ -5346,8 +5353,7 @@ h3 a:focus {
 .twitter-first {
   margin-right: 1px;
 }
-.trib-byline {
-  font-family: Arial, sans-serif;
+.byline {
   font-size: 16px;
   line-height: 20px;
 }
@@ -5377,13 +5383,11 @@ time {
   margin: 0 0 15px 0;
 }
 .credits-type {
-  font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
   margin: 0;
 }
 .credits-cat p {
-  font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
   margin: 0;
@@ -5392,7 +5396,6 @@ time {
   line-height: 27px;
 }
 .credits-names p {
-  font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
   margin: 0;
@@ -5452,6 +5455,26 @@ a.dropdown-toggle {
   margin-bottom: 0;
 }
 /* mobile */
+@media all and (max-width: 979px) {
+  .byline {
+    margin-bottom: 10px;
+  }
+}
+@media all and (max-width: 768px) {
+  .byline {
+    padding-bottom: 15px;
+  }
+}
+@media all and (max-width: 500px) {
+  .lead {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .byline {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+}
 @media only screen and (max-width: 480px) {
   .trib-article p {
     width: 100%;
@@ -5462,7 +5485,7 @@ a.dropdown-toggle {
     font-size: 16px;
     line-height: 26px;
   }
-  span.drop-cap {
+  .drop-cap:first-letter {
     font-size: 300%;
   }
   .small-photo,
