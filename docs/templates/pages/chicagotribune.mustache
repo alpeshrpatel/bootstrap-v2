@@ -29,23 +29,23 @@
             <!-- Headings
             ================================================== -->
             <section id="headings">
-                <div class="page-header">
-                    <h1>Headings</h1>
-                </div>
-                <h2>Adjusted headings</h2>
-                <p>HTML headings <code>h4</code> through <code>h6</code> get a reduced <code>margin-bottom</code>.</p>
-                <div class="bs-docs-example">
-                    <h4>h4. Heading 4</h4>
-                    <h5>h5. Heading 5</h5>
-                    <h6>h6. Heading 6</h6>
-                </div>
-                <h2>Section headings</h2>
-                <p>Use <code>.section-head</code> on any heading tag, but start with <code>h4</code> and work from there.</p>
-                <div class="bs-docs-example">
-                    <h4 class="section-head">H4 section/chapter heading</h4>
-                    <h3 class="section-head">H3 section/chapter heading</h3>
-                    <h5 class="section-head">H5 section/chapter heading</h5>
-                </div>
+              <div class="page-header">
+                <h1>Headings</h1>
+              </div>
+              <h2>Adjusted headings</h2>
+              <p>HTML headings <code>h4</code> through <code>h6</code> get a reduced <code>margin-bottom</code>.</p>
+              <div class="bs-docs-example">
+                <h4>h4. Heading 4</h4>
+                <h5>h5. Heading 5</h5>
+                <h6>h6. Heading 6</h6>
+              </div>
+              <h2>Section headings</h2>
+              <p>Use <code>.section-head</code> on any heading tag, but start with <code>h4</code> and work from there.</p>
+              <div class="bs-docs-example">
+                <h4 class="section-head">H4 section/chapter heading</h4>
+                <h3 class="section-head">H3 section/chapter heading</h3>
+                <h5 class="section-head">H5 section/chapter heading</h5>
+              </div>
 <pre class="prettyprint linenums">
 &lt;h4 class="section-head"&gt;&lt;h4&gt;
 </pre>
@@ -54,64 +54,61 @@
             <!-- Story copy
             ================================================== -->
             <section id="story-copy">
-                <div class="page-header">
-                    <h1>story-copy</h1>
-                </div>
-                <h2>Story body copy</h2>
-                <p>Wrap story elements in an <code>article</code> tag and use <code>.trib-article</code> to define the width of the narrative container. Use a percentage to set the <code>width</code>, which shouldn't exceed <strong>680px</strong>.</p>
-                <div class="bs-docs-example">
-                    <article class="trib-article">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam orci sapien, ullamcorper at blandit vitae, viverra sed diam. Sed id neque purus. Suspendisse potenti. Donec pretium, nunc quis cursus euismod, nibh lectus luctus sapien, vitae viverra tellus est eget enim. Nulla eu porttitor nulla. Maecenas sed dui et elit commodo interdum. Aliquam consequat ipsum ac lacus venenatis at tincidunt nunc aliquam.</p>
-                    </article>
-                </div>
+              <div class="page-header">
+                  <h1>story-copy</h1>
+              </div>
+              <h2>Story body copy</h2>
+              <p>Wrap story elements such as a headline, deck, byline, and story copy in an <code>article</code> tag. <code>p</code> tags and all headings <code>h1</code> through <code>h6</code> have a <code>max-width</code> of <strong>680px</strong>.</p>
+              <div class="bs-docs-example">
+                <article>
+                  <h1>Story headline</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam orci sapien, ullamcorper at blandit vitae, viverra sed diam. Sed id neque purus. Suspendisse potenti. Donec pretium, nunc quis cursus euismod, nibh lectus luctus sapien, vitae viverra tellus est eget enim. Nulla eu porttitor nulla. Maecenas sed dui et elit commodo interdum. Aliquam consequat ipsum ac lacus venenatis at tincidunt nunc aliquam.</p>
+                </article>
+              </div>
 <pre class="prettyprint linenums">
-&lt;article class="trib-article"&gt;
-    &lt;p&gt;&lt;/p&gt;
+&lt;article&gt;
+  &lt;h1&gt;&lt;/h1&gt;
+  &lt;p&gt;&lt;/p&gt;
 &lt;/article&gt; 
 </pre>
 
                 <h2>Drop caps</h2>
-                <p>A drop cap can be used at a start of a section or chapter. A <code>span</code> around the first letter in a paragraph and <code>.drop-cap</code> will increase the <code>font-size</code> and <code>line-height</code> and aligns the letter with the top of the paragraph.</p>
+                <p>A drop cap can be used at a start of a section or chapter by including <code>.drop-cap</code> on a <code>p</code> element.</p>
                 <div class="bs-docs-example">
-                    <article class="trib-article">
-                        <p><span class="drop-cap">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Etiam orci sapien, ullamcorper at blandit vitae, viverra sed diam. Sed id neque purus. Suspendisse potenti. Donec pretium, nunc quis cursus euismod, nibh lectus luctus sapien, vitae viverra tellus est eget enim. Nulla eu porttitor nulla. Maecenas sed dui et elit commodo interdum. Aliquam consequat ipsum ac lacus venenatis at tincidunt nunc aliquam.</p>
-                        <p>Aliquam ac augue ac nisi ullamcorper vehicula vel eget tellus. Proin venenatis ullamcorper magna, eget rutrum nunc imperdiet nec. Donec et leo mauris. Pellentesque risus felis, mollis id facilisis at, sollicitudin sit amet augue. Phasellus lobortis ullamcorper odio, eget pharetra neque dictum eget. Morbi dignissim dictum posuere. Aliquam erat volutpat. Nam at massa turpis, et aliquet urna.</p>
-                    </article>
+                  <article>
+                    <p class="drop-cap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam orci sapien, ullamcorper at blandit vitae, viverra sed diam. Sed id neque purus. Suspendisse potenti. Donec pretium, nunc quis cursus euismod, nibh lectus luctus sapien, vitae viverra tellus est eget enim. Nulla eu porttitor nulla. Maecenas sed dui et elit commodo interdum. Aliquam consequat ipsum ac lacus venenatis at tincidunt nunc aliquam.</p>
+                    <p>Aliquam ac augue ac nisi ullamcorper vehicula vel eget tellus. Proin venenatis ullamcorper magna, eget rutrum nunc imperdiet nec. Donec et leo mauris. Pellentesque risus felis, mollis id facilisis at, sollicitudin sit amet augue. Phasellus lobortis ullamcorper odio, eget pharetra neque dictum eget. Morbi dignissim dictum posuere. Aliquam erat volutpat. Nam at massa turpis, et aliquet urna.</p>
+                  </article>
                 </div>
 <pre class="prettyprint linenums">
-&lt;p&gt;&lt;span class="drop-cap"&gt;L&lt;/span&gt;orem ipsum dolor sit amet&lt;/p&gt; 
+&lt;p&gt;&lt;class="drop-cap"&gt;&lt;/p&gt; 
 </pre>
 
                 <h2>Story intro</h2>
-                <p>Wrap your paragraphs with <code>.lead-in</code> to scale up <code>p</code> elements and <code>.drop-cap</code>.</p>
+                <p>Add <code>.lead</code> to a <code>p</code> elements to increase <strong>font-size</strong> for paragraphs and drop caps.</p>
                 <div class="bs-docs-example">
-                    <article class="trib-article">
-                        <div class="lead-in">
-                            <p><span class="drop-cap">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Etiam orci sapien, ullamcorper at blandit vitae, viverra sed diam. Sed id neque purus. Suspendisse potenti. Donec pretium, nunc quis cursus euismod, nibh lectus luctus sapien, vitae viverra tellus est eget enim. Nulla eu porttitor nulla. Maecenas sed dui et elit commodo interdum. Aliquam consequat ipsum ac lacus venenatis at tincidunt nunc aliquam.</p>
-                            <p>Aliquam ac augue ac nisi ullamcorper vehicula vel eget tellus. Proin venenatis ullamcorper magna, eget rutrum nunc imperdiet nec. Donec et leo mauris. Pellentesque risus felis, mollis id facilisis at, sollicitudin sit amet augue. Phasellus lobortis ullamcorper odio, eget pharetra neque dictum eget. Morbi dignissim dictum posuere. Aliquam erat volutpat. Nam at massa turpis, et aliquet urna.</p>
-                        </div>
-                    </article>
+                  <article>
+                    <p class="drop-cap lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam orci sapien, ullamcorper at blandit vitae, viverra sed diam. Sed id neque purus. Suspendisse potenti. Donec pretium, nunc quis cursus euismod, nibh lectus luctus sapien, vitae viverra tellus est eget enim. Nulla eu porttitor nulla. Maecenas sed dui et elit commodo interdum. Aliquam consequat ipsum ac lacus venenatis at tincidunt nunc aliquam.</p>
+                    <p>Aliquam ac augue ac nisi ullamcorper vehicula vel eget tellus. Proin venenatis ullamcorper magna, eget rutrum nunc imperdiet nec. Donec et leo mauris. Pellentesque risus felis, mollis id facilisis at, sollicitudin sit amet augue. Phasellus lobortis ullamcorper odio, eget pharetra neque dictum eget. Morbi dignissim dictum posuere. Aliquam erat volutpat. Nam at massa turpis, et aliquet urna.</p>
+                  </article>
                 </div>
 <pre class="prettyprint linenums">
-&lt;article class="trib-article"&gt;
-    &lt;div class="lead-in"&gt;
-    &lt;p&gt;&lt;span class="drop-cap"&gt;L&lt;/span&gt;orem ipsum dolor sit amet&lt;/p&gt;
-    &lt;/div&gt; 
-&lt;/article&gt;
+&lt;p&gt;&lt;class="drop-cap lead"&gt;&lt;/p&gt;
 </pre>
+
                 <h2>Breakout/bullet lists within the narrative</h2>
                 <p>To separate sections of the narrative that are lists or bullets, wrap <code>.pull-out</code> around a <code>p</code> tag(s).</p>
                 <div class="bs-docs-example">
-                    <article class="trib-article">
-                        <p>Aliquam ac augue ac nisi ullamcorper vehicula vel eget tellus. Proin venenatis ullamcorper magna, eget rutrum nunc imperdiet nec. Donec et leo mauris. Pellentesque risus felis, mollis id facilisis at, sollicitudin sit amet augue. Phasellus lobortis ullamcorper odio, eget pharetra neque dictum eget. Morbi dignissim dictum posuere. Aliquam erat volutpat. Nam at massa turpis, et aliquet urna.</p>
-                        <div class="pull-out">
-                            <p><strong>Nunc diam lectus</strong>, molestie sit amet ultricies sed, molestie ac quam.</p> 
-                            <p><strong>Sed et aliquam eros</strong>. Etiam non urna in lorem vehicula interdum eu ac erat. 
-                            <p><strong>Sed mauris massa</strong>, elementum sit amet imperdiet non, suscipit id magna. </p>
-                            <p><strong>Pellentesque habitant morbi</strong> tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                        </div>
-                        <p>Duis scelerisque, felis in pretium sollicitudin, ligula nibh gravida odio, sit amet pretium lorem justo in lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam non magna metus. Sed auctor tristique condimentum. Ut non elit eget tellus vestibulum mattis.</p>
-                    </article>
+                  <article>
+                    <p>Aliquam ac augue ac nisi ullamcorper vehicula vel eget tellus. Proin venenatis ullamcorper magna, eget rutrum nunc imperdiet nec. Donec et leo mauris. Pellentesque risus felis, mollis id facilisis at, sollicitudin sit amet augue. Phasellus lobortis ullamcorper odio, eget pharetra neque dictum eget. Morbi dignissim dictum posuere. Aliquam erat volutpat. Nam at massa turpis, et aliquet urna.</p>
+                    <div class="pull-out">
+                      <p><strong>Nunc diam lectus</strong>, molestie sit amet ultricies sed, molestie ac quam.</p> 
+                      <p><strong>Sed et aliquam eros</strong>. Etiam non urna in lorem vehicula interdum eu ac erat. 
+                      <p><strong>Sed mauris massa</strong>, elementum sit amet imperdiet non, suscipit id magna. </p>
+                      <p><strong>Pellentesque habitant morbi</strong> tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    </div>
+                    <p>Duis scelerisque, felis in pretium sollicitudin, ligula nibh gravida odio, sit amet pretium lorem justo in lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam non magna metus. Sed auctor tristique condimentum. Ut non elit eget tellus vestibulum mattis.</p>
+                  </article>
                 </div>
 <pre class="prettyprint linenums">
 &lt;article class="trib-article"&gt;
@@ -128,30 +125,30 @@
             ================================================== -->
 
             <section id="media-containers">
-                <div class="page-header">
-                    <h1>media containers</h1>
-                </div>
-                <h2>Media wrapper</h2>
-                <p>A <code>figure</code> element applies to self-contained content, such as photos and captions. It applies a <code>border-top</code> and <code>border-bottom</code>.</p>
-                <div class="bs-docs-example">
-                    <figure>
-                        <h4>This is media content</h4>
-                    </figure>
-                </div>
-<pre class="prettyprint linenums">
+              <div class="page-header">
+                <h1>media containers</h1>
+              </div>
+              <h2>Media wrapper</h2>
+              <p>A <code>figure</code> element applies to self-contained content, such as photos and captions.</p>
+              <div class="bs-docs-example">
+                <figure>
+                  <h4>This is media content</h4>
+                </figure>
+              </div>
+<pre class="prtyprint linenums">
 &lt;figure&gt;
-    &lt;h4&gt;&lt;/h4&gt;
-&lt;/figure&gt; 
-</pre>
-                <h3>Other wrapper styles</h3>
-                <p><code>.left</code> applies a <code>border-left</code> when it's necessary to separate similar fonts placed next to each other.</p>
-                <div class="bs-docs-example">
-                    <figure class="left">
-                        <h4>This is media content</h4>
-                    </figure>
-                </div>
+    &lt;h4&gt;t;/h4&gt;
+&lt;/figure&gt
+</pre>        
+              <h3>Other wrapper styles</h3>
+              <p><code>figure</code> can also be styled <code>.left-rule</code> when it's necessary to separate similar fonts placed next to each other.</p>
+              <div class="bs-docs-example">
+                <figure class="left-rule">
+                  <h4>This is media content</h4>
+                </figure>
+              </div>
 <pre class="prettyprint linenums">
-&lt;figure class="left"&gt;
+&lt;figure class="left-rule"&gt;
     &lt;h4&gt;&lt;/h4&gt;
 &lt;/figure&gt; 
 </pre>
@@ -161,38 +158,38 @@
             ================================================== -->
 
             <section id="photos">
-                <div class="page-header">
-                        <h1>Photos & videos</h1>
-                </div>
-                <h2>Photo, caption, credit layout</h2>
-                <p>A <code>figure</code> element with an <code>img</code>, a <code>figcaption</code> and a <code>.media-credit</code>.</p>
-                <div class="bs-docs-example">
-                    <figure class="small-photo">
-                        <img src="http://placekitten.com/g/300/200" class="trib-img">
-                        <figcaption>This is a caption about a kitten who likes to be photographed in black and white</figcaption>
-                        <figcaption class="media-credit">First Last - Organization</figcaption>
-                    </figure>
-                </div>
+              <div class="page-header">
+                 <h1>Photos & videos</h1>
+              </div>
+              <h2>Photo, caption, credit layout</h2>
+              <p>A <code>figure</code> element with an <code>img</code>, a caption <code>figcaption</code> and a credit line <code>.media-credit</code>.</p>
+              <div class="bs-docs-example">
+                <figure class="small-photo">
+                  <img src="http://fillmurray.com/g/300/200" >
+                  <figcaption>This is a caption about a kitten who likes to be photographed in black and white</figcaption>
+                  <figcaption class="media-credit">First Last - Organization</figcaption>
+                </figure>
+              </div>
 <pre class="prettyprint linenums">
 &lt;figure&gt;
-    &lt;img src="" class="trib-img"&gt;
+    &lt;img src=""&gt;
     &lt;figcaption&gt;&lt;/figcaption&gt;
     &lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 </pre>
-                <h2>Photo sizes</h2>
-                <h3><code>.small-photo</code></h3>
-                <p>300 x 200</p>
-                <div class="bs-docs-example">
-                    <div class="media-wrapper small-photo">
-                        <img src="http://placekitten.com/g/300/200" class="trib-img">
-                        <figcaption>This is a caption about a kitten who likes to be photographed in black and white</figcaption>
-                        <figcaption class="media-credit">First Last - Organization</figcaption>
-                    </div>
+              <h2>Photo sizes</h2>
+              <h3><code>.small-photo</code></h3>
+              <p>300 x 200</p>
+              <div class="bs-docs-example">
+                <div class="media-wrapper small-photo">
+                  <img src="http://fillmurray.com/g/300/200">
+                  <figcaption>This is a caption about a kitten who likes to be photographed in black and white</figcaption>
+                  <figcaption class="media-credit">First Last - Organization</figcaption>
                 </div>
+              </div>
 <pre class="prettyprint linenums">
 &lt;figure class="small-photo"&gt;
-    &lt;img src="" class="trib-img"&gt;
+    &lt;img src=""&gt;
     &lt;figcaption&gt;&lt;/figcaption&gt;
     &lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -201,14 +198,14 @@
                 <p>500 x 325</p>
                 <div class="bs-docs-example">
                     <div class="media-wrapper medium-photo">
-                        <img src="http://placekitten.com/g/500/325" class="trib-img">
+                        <img src="http://fillmurray.com/g/500/325">
                         <figcaption>This is a caption about a kitten who likes to be photographed in black and white</figcaption>
                         <figcaption class="media-credit">First Last - Organization</figcaption>
                     </div>
                 </div>
 <pre class="prettyprint linenums">
 &lt;figure class="medium-photo"&gt;
-    &lt;img src="" class="trib-img"&gt;
+    &lt;img src=""&gt;
     &lt;figcaption&gt;&lt;/figcaption&gt;
     &lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -216,15 +213,15 @@
                 <h3><code>.large-photo</code></h3>
                 <p>620 x 450</p>
                 <div class="bs-docs-example">
-                    <div class="media-wrapper large-photo">
-                        <img src="http://placekitten.com/g/620/450" class="trib-img">
-                        <figcaption>This is a caption about a kitten who likes to be photographed in black and white</figcaption>
-                        <figcaption class="media-credit">First Last - Organization</figcaption>
-                    </div>
+                  <div class="media-wrapper large-photo">
+                    <img src="http://fillmurray.com/g/620/450">
+                    <figcaption>This is a caption about a kitten who likes to be photographed in black and white</figcaption>
+                    <figcaption class="media-credit">First Last - Organization</figcaption>
+                  </div>
                 </div>
 <pre class="prettyprint linenums">
 &lt;figure class="large-photo"&gt;
-    &lt;img src="" class="trib-img"&gt;
+    &lt;img src=""&gt;
     &lt;figcaption&gt;&lt;/figcaption&gt;
     &lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -232,13 +229,13 @@
                 <h2>Responsive video container</h2>
                 <p>Wrap the <strong>embedded</strong> video with <code>.video-wrapper</code> to apply a responsive container to the video. To adjust aspect ratio increase or decrease the <code>margin-bottom</code> applied to the <code>iframe</code>, <code>object</code> or <code>embed</code> containing the video. In this case the <code>margin-bottom</code> is <strong>50.7%</strong>.</p>
                 <div class="bs-docs-example">
-                    <div class="row-fluid">
-                        <div class="span8">
-                            <div class=" video-wrapper">
-                                <iframe width="560" height="315" src="http://www.youtube.com/embed/rnvGWHbPtZ0" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                        </div>
+                  <div class="row-fluid">
+                    <div class="span8">
+                      <div class=" video-wrapper">
+                        <iframe width="560" height="315" src="http://www.youtube.com/embed/rnvGWHbPtZ0" frameborder="0" allowfullscreen></iframe>
+                      </div>
                     </div>
+                  </div>
                 </div>
 <pre class="prettyprint linenums">
 &lt;div class="video-wrapper"&gt;
