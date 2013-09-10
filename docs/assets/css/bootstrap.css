@@ -5337,6 +5337,13 @@ h3 a:focus {
   line-height: 22px;
   font-family: Arial, sans-serif;
 }
+.text-left > a.btn {
+  text-align: left;
+  text-transform: none;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+}
 /* bylines, credits and source line */
 .twitter-follow-button {
   margin: 0 8px -5px 4px;
