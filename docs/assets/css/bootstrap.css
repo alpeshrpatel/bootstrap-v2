@@ -5219,12 +5219,12 @@ article .pull-out p:last-child {
 /* notched media styles */
 .trib-media {
   float: right;
-  width: 63%;
+  width: 66%;
   margin: 0 0 24px 40px;
 }
 .trib-media.flush {
   float: none;
-  width: 68%;
+  width: 82%;
   max-width: 680px;
   margin: 0;
 }
@@ -5235,7 +5235,7 @@ article .pull-out p:last-child {
 /* figure and aside styles */
 .media-info {
   font-family: Arial, sans-serif;
-  line-height: 19px;
+  line-height: 17px;
   margin: 0;
   color: #666666;
   width: 100%;
@@ -5261,11 +5261,11 @@ figure.left-rule {
 }
 figcaption {
   font-family: Arial, sans-serif;
-  line-height: 19px;
+  line-height: 17px;
   margin: 0;
   color: #666666;
   width: 100%;
-  font-size: 15px;
+  font-size: 14px;
   margin: 10px 0;
 }
 .media-credit {
@@ -5283,7 +5283,7 @@ figcaption {
 }
 /* image styles */
 .small-photo {
-  max-width: 300px;
+  max-width: 320px;
 }
 .medium-photo {
   max-width: 500px;
@@ -5325,22 +5325,19 @@ h3 a:focus {
   color: #17549b;
 }
 .media-link {
-  font-weight: bold;
-  font-size: 15px;
+  display: inline-block;
+  margin-bottom: 0;
+  font-family: Arial, sans-serif;
+  vertical-align: middle;
+  cursor: pointer;
+  color: #144a7c;
+}
+.text-right a.media-link {
+  text-transform: uppercase;
+  font-size: 13px;
   line-height: 20px;
-  font-family: Arial, sans-serif;
-  text-align: right;
 }
-.lite-media-link {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  font-family: Arial, sans-serif;
-}
-.text-left > a.btn {
-  text-align: left;
-  text-transform: none;
-  padding: 0;
+.related-content a.media-link {
   font-size: 16px;
   line-height: 24px;
 }
@@ -5353,7 +5350,7 @@ h3 a:focus {
 }
 .byline {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 22px;
 }
 time {
   font-style: italic;
@@ -5372,32 +5369,18 @@ time {
   padding: 10px;
   border: 1px solid #d0d0d0;
   margin-top: 20px;
+  color: #333;
 }
 .credits-box h3 {
   text-align: center;
   margin-bottom: 5px;
 }
-.credits-group {
-  margin: 0 0 15px 0;
+.credits-title {
+  text-align: center;
 }
-.credits-type {
-  font-size: 16px;
-  line-height: 20px;
-  margin: 0;
-}
-.credits-cat p {
-  font-size: 16px;
-  line-height: 20px;
-  margin: 0;
+.credits-cat {
   text-align: right;
   font-weight: bold;
-  line-height: 27px;
-}
-.credits-names p {
-  font-size: 16px;
-  line-height: 20px;
-  margin: 0;
-  line-height: 30px;
 }
 /* navbar styles */
 a.dropdown-toggle {
@@ -5421,14 +5404,7 @@ a.dropdown-toggle {
   
 }
 @media only screen and (max-width: 797px) {
-  .credits-cat p,
-  .credits-names p,
-  .credits-box h4 {
-    text-align: center;
-  }
-  .credits-box {
-    margin: 0;
-  }
+  
 }
 @media all and (max-width: 768px) {
   
@@ -5446,6 +5422,9 @@ a.dropdown-toggle {
     font-size: 15px;
     margin-bottom: 10px;
     padding-bottom: 25px;
+  }
+  .credits-cat {
+    text-align: left;
   }
 }
 @media only screen and (max-width: 480px) {

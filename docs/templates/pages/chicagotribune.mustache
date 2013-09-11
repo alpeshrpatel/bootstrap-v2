@@ -18,7 +18,6 @@
                 <li><a href="#related-media"><i class="icon-chevron-right"></i> Related media</a></li>
                 <li><a href="#integration"><i class="icon-chevron-right"></i> Integration</a></li>
                 <li><a href="#credits-bylines"><i class="icon-chevron-right"></i> Bylines, credits & sourcing</a></li>
-                <li><a href="#navpills"><i class="icon-chevron-right"></i> Chapter/project navigation</a></li>
                 <li><a href="#tables"><i class="icon-chevron-right"></i> Tables</a></li>
                 <li><a href="#icons"><i class="icon-chevron-right"></i> Icons</a></li>
                 <li><a href="#colors"><i class="icon-chevron-right"></i>Colour</a></li>
@@ -252,7 +251,7 @@
                 <h1>Related media</h1>
               </div>
               <h2>Text and links</h2>
-              <p>Use <code>aside</code> for content that is related to the main article, such as a sidebar, and will display notched in the article. Use <code>.related-content</code> to style an overview of the sidebar and <code>.btn-link</code> to apply the link style. The <code>.sublabel</code> class can be used for additional description of the sidebar copy block.</p>
+              <p>Use <code>aside</code> for content that is related to the main article, such as a sidebar, and will display notched in the article. Use <code>.related-content</code> to style an overview of the sidebar and <code>.media-link</code> to apply the link style. The <code>.sublabel</code> class can be used for additional description of the sidebar copy block.</p>
               <div class="bs-docs-example">
                 <div class="row-fluid">
                   <div class="span7">
@@ -260,7 +259,7 @@
                       <h3>Related headline</h3>
                       <p class="sublabel">Optional subject description sublabel</p>
                       <p class="related-content">This is information related to the story with more detailed information available elsewhere and that we can link to</p>
-                      <p class="text-right"><a href="#" class="btn btn-link">This link goes elsewhere</a></p>    
+                      <p class="text-right"><a href="#" class="media-link">This link goes elsewhere</a></p>    
                     </aside>
                   </div>
                 </div>
@@ -270,24 +269,23 @@
   &lt;h3&gt;&lt;h3&gt;
   &lt;p class="sublabel"&gt;&lt;/p&gt;
   &lt;p class="related-content"&gt;&lt;/p&gt;
-  &lt;p class="text-right"&gt;&lt;a href="#" class="btn btn-link"&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;p class="text-right"&gt;&lt;a href="#" class="media-link"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/aside&gt;
 </pre>
               <h3>Related content as a link</h3>
-              <p><code>.text-left</code> and <code>.btn-link</code> applies link styles to a copy block.</p>
               <div class="bs-docs-example">
                 <div class="row-fluid">
                   <div class="span7">
                     <aside>
                       <h3>Related headline</h3>
-                      <p class="text-left"><a href="" class="btn btn-link">Sed vel leo lorem. Duis risus erat, aliquam at aliquam et, vehicula id ante. Nunc in nibh tellus. Sed eget lacus ac leo mollis suscipit.</a></p>
+                      <p class="related-content"><a href="" class="media-link">Sed vel leo lorem. Duis risus erat, aliquam at aliquam et, vehicula id ante. Nunc in nibh tellus. Sed eget lacus ac leo mollis suscipit.</a></p>
                     </aside>
                   </div>
                 </div>
               </div>
 <pre class="prettyprint linenums">
 &lt;aside&gt;
-  &lt;p class="text-left"&gt;&lt;a href="" class="btn btn-link"&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;p class="related-content"&gt;&lt;a href="" class="media-link"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/aside&gt;
 </pre>
               <h3>Related content as navigation</h3>
@@ -297,14 +295,14 @@
                   <div class="span7">
                     <aside class="related-feature">
                       <h3>Related headline</h3>
-                      <p class="text-left"><a href="" class="btn btn-link">Sed vel leo lorem. Duis risus erat, aliquam at aliquam et, vehicula id ante. Nunc in nibh tellus. Sed eget lacus ac leo mollis suscipit.</a></p>
+                      <p class="related-content"><a href="" class="media-link">Sed vel leo lorem. Duis risus erat, aliquam at aliquam et, vehicula id ante. Nunc in nibh tellus. Sed eget lacus ac leo mollis suscipit.</a></p>
                     </aside>
                   </div>
                 </div>
               </div>
 <pre class="prettyprint linenums">
 &lt;aside class="related-feature"&gt;
-  &lt;p class="text-left"&gt;&lt;a href="" class="btn btn-link"&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;p class="related-content"&gt;&lt;a href="" class="media-link"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/aside&gt;
 </pre>
             </section>
@@ -313,68 +311,67 @@
             ================================================== -->
 
             <section id="integration">
-                <div class="page-header">
-                    <h1>Story asset integration</h1>
-                </div>
-
-                <h2>Notched media</h2>
-                <p>To integrate story assets with the main narrative, wrap a <code>figure</code> in a div with class <code>.trib-media</code>, which will notch the content into the <code>.trib-article</code> paragraphs.</p>
-                <div class="bs-docs-example">
-                    <article class="trib-article">
-                        <p>Morbi iaculis erat egestas turpis rhoncus pharetra. Suspendisse potenti. Nunc bibendum fringilla mi, sed suscipit mi feugiat a. Vestibulum tincidunt congue ornare. Proin sit amet mi nunc. Quisque tellus quam, faucibus vitae sagittis sit amet, consequat ut quam. Vestibulum sodales lacus in ligula aliquet congue. Ut dictum, enim at consectetur ullamcorper, tellus leo convallis odio, ut tempor sem nisi at ante.</p>
-                        <div class="trib-media">
-                            <figure class="small-photo">
-                                <img src="http://placekitten.com/g/300/200" class="trib-img">
-                                <figcaption>This is a caption about a kitten who likes to be photographed in black and white</figcaption>
-                                <figcaption class="media-credit">First Last - Organization</figcaption>
-                            </figure>
-                        </div>
-                        <p>Aliquam ac augue ac nisi ullamcorper vehicula vel eget tellus. Proin venenatis ullamcorper magna, eget rutrum nunc imperdiet nec. Donec et leo mauris. Pellentesque risus felis, mollis id facilisis at, sollicitudin sit amet augue. Phasellus lobortis ullamcorper odio, eget pharetra neque dictum eget. Morbi dignissim dictum posuere. Aliquam erat volutpat. Nam at massa turpis, et aliquet urna.</p>
-                        <p>Duis scelerisque, felis in pretium sollicitudin, ligula nibh gravida odio, sit amet pretium lorem justo in lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam non magna metus. Sed auctor tristique condimentum. Ut non elit eget tellus vestibulum mattis.</p>
-                    </article>
-                </div>
+              <div class="page-header">
+                  <h1>Story asset integration</h1>
+              </div>
+              <h2>Notched media</h2>
+              <p>To integrate story assets with the main narrative, wrap a <code>figure</code> in a div with class <code>.trib-media</code>, which will notch the content into the story paragraphs.</p>
+              <div class="bs-docs-example">
+                <article>
+                  <p>Morbi iaculis erat egestas turpis rhoncus pharetra. Suspendisse potenti. Nunc bibendum fringilla mi, sed suscipit mi feugiat a. Vestibulum tincidunt congue ornare. Proin sit amet mi nunc. Quisque tellus quam, faucibus vitae sagittis sit amet, consequat ut quam. Vestibulum sodales lacus in ligula aliquet congue. Ut dictum, enim at consectetur ullamcorper, tellus leo convallis odio, ut tempor sem nisi at ante.</p>
+                  <div class="trib-media">
+                    <figure class="medium-photo">
+                      <img src="http://fillmurray.com/g/500/325">
+                      <figcaption>This is a caption about a kitten who likes to be photographed in black and white</figcaption>
+                      <figcaption class="media-credit">First Last - Organization</figcaption>
+                    </figure>
+                  </div>
+                  <p>Aliquam ac augue ac nisi ullamcorper vehicula vel eget tellus. Proin venenatis ullamcorper magna, eget rutrum nunc imperdiet nec. Donec et leo mauris. Pellentesque risus felis, mollis id facilisis at, sollicitudin sit amet augue. Phasellus lobortis ullamcorper odio, eget pharetra neque dictum eget. Morbi dignissim dictum posuere. Aliquam erat volutpat. Nam at massa turpis, et aliquet urna.</p>
+                  <p>Duis scelerisque, felis in pretium sollicitudin, ligula nibh gravida odio, sit amet pretium lorem justo in lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam non magna metus. Sed auctor tristique condimentum. Ut non elit eget tellus vestibulum mattis.</p>
+                </article>
+              </div>
 <pre class="prettyprint linenums">
-&lt;article class="trib-article"&gt;
-    &lt;p&gt;&lt;/p&gt;
-    &lt;div class="trib-media"&gt;
-        &lt;figure class="small-photo"&gt;
-           &lt;img src="" class="trib-img"&gt;
-           &lt;figcaption&gt;&lt;/figcaption&gt;
-           &lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
-        &lt;/figure&gt;
-    &lt;/div&gt;
-    &lt;p&gt;&lt;/p&gt;
+&lt;article&gt;
+  &lt;p&gt;&lt;/p&gt;
+  &lt;div class="trib-media"&gt;
+    &lt;figure class="medium-photo"&gt;
+      &lt;img src="" class="trib-img"&gt;
+      &lt;figcaption&gt;&lt;/figcaption&gt;
+      &lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
+    &lt;/figure&gt;
+  &lt;/div&gt;
+  &lt;p&gt;&lt;/p&gt;
 &lt;/article&gt;
 
 </pre>
 
-                <h2>Flush notched media</h2>
-                <p>To get the media to sit flush with the right edge of the text, add <code>flush</code> to your div with class <code>trib-media</code>.</p>
-                <div class="bs-docs-example">
-                    <article class="trib-article">
-                        <p>Morbi iaculis erat egestas turpis rhoncus pharetra. Suspendisse potenti. Nunc bibendum fringilla mi, sed suscipit mi feugiat a. Vestibulum tincidunt congue ornare. Proin sit amet mi nunc. Quisque tellus quam, faucibus vitae sagittis sit amet, consequat ut quam. Vestibulum sodales lacus in ligula aliquet congue. Ut dictum, enim at consectetur ullamcorper, tellus leo convallis odio, ut tempor sem nisi at ante.</p>
-                        <div class="trib-media flush">
-                            <figure class="small-photo">
-                                <img src="http://placekitten.com/g/300/200" class="trib-img">
-                                <figcaption>This is a caption about a kitten who likes to be photographed in black and white</figcaption>
-                                <figcaption class="media-credit">First Last - Organization</figcaption>
-                            </figure>
-                        </div>
-                        <p>Aliquam ac augue ac nisi ullamcorper vehicula vel eget tellus. Proin venenatis ullamcorper magna, eget rutrum nunc imperdiet nec. Donec et leo mauris. Pellentesque risus felis, mollis id facilisis at, sollicitudin sit amet augue. Phasellus lobortis ullamcorper odio, eget pharetra neque dictum eget. Morbi dignissim dictum posuere. Aliquam erat volutpat. Nam at massa turpis, et aliquet urna.</p>
-                        <p>Duis scelerisque, felis in pretium sollicitudin, ligula nibh gravida odio, sit amet pretium lorem justo in lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam non magna metus. Sed auctor tristique condimentum. Ut non elit eget tellus vestibulum mattis.</p>
-                    </article>
-                </div>
+              <h2>Flush notched media</h2>
+              <p>To get the media to sit flush with the right edge of the text, add <code>flush</code> to your div with class <code>trib-media</code>.</p>
+              <div class="bs-docs-example">
+                <article>
+                  <p>Morbi iaculis erat egestas turpis rhoncus pharetra. Suspendisse potenti. Nunc bibendum fringilla mi, sed suscipit mi feugiat a. Vestibulum tincidunt congue ornare. Proin sit amet mi nunc. Quisque tellus quam, faucibus vitae sagittis sit amet, consequat ut quam. Vestibulum sodales lacus in ligula aliquet congue. Ut dictum, enim at consectetur ullamcorper, tellus leo convallis odio, ut tempor sem nisi at ante.</p>
+                  <div class="trib-media flush">
+                    <figure class="small-photo">
+                      <img src="http://fillmurray.com/g/320/200" class="trib-img">
+                      <figcaption>This is a caption about a kitten who likes to be photographed in black and white</figcaption>
+                      <figcaption class="media-credit">First Last - Organization</figcaption>
+                    </figure>
+                  </div>
+                  <p>Aliquam ac augue ac nisi ullamcorper vehicula vel eget tellus. Proin venenatis ullamcorper magna, eget rutrum nunc imperdiet nec. Donec et leo mauris. Pellentesque risus felis, mollis id facilisis at, sollicitudin sit amet augue. Phasellus lobortis ullamcorper odio, eget pharetra neque dictum eget. Morbi dignissim dictum posuere. Aliquam erat volutpat. Nam at massa turpis, et aliquet urna.</p>
+                  <p>Duis scelerisque, felis in pretium sollicitudin, ligula nibh gravida odio, sit amet pretium lorem justo in lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam non magna metus. Sed auctor tristique condimentum. Ut non elit eget tellus vestibulum mattis.</p>
+                </article>
+              </div>
 <pre class="prettyprint linenums">
-&lt;article class="trib-article"&gt;
-    &lt;p&gt;&lt;/p&gt;
-    &lt;div class="trib-media flush"&gt;
-        &lt;figure class="small-photo"&gt;
-           &lt;img src="" class="trib-img"&gt;
-           &lt;figcaption&gt;&lt;/figcaption&gt;
-           &lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
-        &lt;/figure&gt;
-    &lt;/div&gt;
-    &lt;p&gt;&lt;/p&gt;
+&lt;article&gt;
+  &lt;p&gt;&lt;/p&gt;
+  &lt;div class="trib-media flush"&gt;
+    &lt;figure class="small-photo"&gt;
+     &lt;img src="" class="trib-img"&gt;
+     &lt;figcaption&gt;&lt;/figcaption&gt;
+     &lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
+    &lt;/figure&gt;
+  &lt;/div&gt;
+  &lt;p&gt;&lt;/p&gt;
 &lt;/article&gt;
 
 </pre>
@@ -385,186 +382,93 @@
             ================================================== -->
 
             <section id="credits-bylines">
-                <div class="page-header">
-                    <h1>Bylines, Credits and Sourcing</h1>
+              <div class="page-header">
+                <h1>Bylines, Credits and Sourcing</h1>
+              </div>
+              <h2>Bylines</h2>
+              <p>Story/article byline style</p>
+              <div class="bs-docs-example">
+                <div>
+                  <p class="byline">By Trib Apps <a href="https://twitter.com/tribapps" class="twitter-follow-button" data-show-count="false">Follow @tribapps</a>
+                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>&nbsp|&nbsp&nbspTribune reporter</p>
+                  <time>Month Day, Year</time>
                 </div>
-                <h2>Bylines</h2>
-                <p>Story/article byline style</p>
-                <div class="bs-docs-example">
-                    <div>
-                        <p class="trib-byline"><span class="caps">By Trib Apps</span> <a href="https://twitter.com/tribapps" class="twitter-follow-button" data-show-count="false">Follow @tribapps</a>
-                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>&nbsp|&nbsp&nbspTribune reporter</p>
-                        <time>Month Day, Year</time>
-                    </div>
-                </div>
+              </div>
 <pre class="prettyprint linenums">
-&lt;div&gt;
-    &lt;p class="trib-byline"&gt;&lt;span class="caps"&gt;By Trib Apps&lt;/span&gt; Twitter handle&lt;/p&gt;
-    &lt;time&gt;Month Day, Year&lt;/time&gt;
-&lt;/div&gt;
-</pre>
-
-                <h2>Credits</h2>
-                <p>Credits go at the bottom of the page and used in projects with a smaller team and produced mostly by one department. It should include bylines and organization.</p>
-                <div class="bs-docs-example">
-                    <p class="credits">By <span class="caps">First Last</span>, <span class="caps">First Last</span> and <span class="caps">First Last</span> - <span class="caps">Chicago Tribune</span></p>
-                </div>
+&lt;div&gt;   
+  &lt;p class="byline"&gt;&lt;By Trib Apps&lt;Twitter handle&lt;/p&gt;
+  &lt;time&gt;Month Day, Year&lt;/time&gt;
+&lt;/div&gt;  
+</pre>        
+              
+              <h2>Credits</h2>
+              <p>Credits go at the bottom of the page and used in projects with a smaller team and produced mostly by one department. It should include bylines and organization.</p>
+              <div class="bs-docs-example">
+                <p class="credits">By First Last, First Last and First Last - Chicago Tribune</p>
+              </div>
 <pre class="prettyprint linenums">
-&lt;p class="credits"&gt;&lt;span class="caps"&gt;&lt;/span&gt;&lt;/p&gt;
-</pre>
-                <h3>Project credits box</h3>
-                <p>Use a project credits box when bylines from multiple departments should appear. This style of credit box should be reserved for larger projects.</p>
-                <div class="bs-docs-example">
+&lt;p class="credits"&gt;&lt;/p&gt;
+</pre>        
+              <h3>Project credits box</h3>
+              <p>Use a project credits box when bylines from multiple departments should appear. This style of credit box should be reserved for larger projects.</p>
+              <div class="bs-docs-example">
+                <div class="row-fluid">
+                  <div class="span12 credits-box">
+                    <h2 class="credits-title">Credits</h2>
                     <div class="row-fluid">
-                        <div class="span12 credits-box">
-                            <h3>Credits</h3>
-                            <div class="row-fluid credits-group">
-                                <div class="span6 credits-cat">
-                                    <p>Reporting</p>
-                                </div>
-                                <div class="span6 credits-names">
-                                    <p>First Last and First Last</p>
-                                </div>
-                            </div>
-                            <div class="row-fluid credits-group">
-                                <div class="span6 credits-cat">
-                                    <p>Photography</p>
-                                </div>
-                                <div class="span6 credits-names">
-                                    <p>First Last and First Last</p>
-                                </div>
-                            </div>
-                            <div class="row-fluid credits-group">
-                                <div class="span6 credits-cat">
-                                    <p>Applications & Design</p>
-                                </div>
-                                <div class="span6 credits-names">
-                                    <p>First Last, First Last and First Last</p>
-                                </div>
-                            </div>
-                        </div>
+                      <div class="span6">
+                        <p class="byline credits-cat">Reporting</p>
+                      </div>
+                      <div class="span6">
+                        <p class="byline">First Last and First Last</p>
+                      </div>
                     </div>
+                    <div class="row-fluid">
+                      <div class="span6">
+                        <p class="byline credits-cat">Photography</p>
+                      </div>
+                      <div class="span6">
+                        <p class="byline">First Last and First Last</p>
+                      </div>
+                    </div>
+                    <div class="row-fluid">
+                      <div class="span6">
+                        <p class="byline credits-cat">Applications & Design</p>
+                      </div>
+                      <div class="span6">
+                        <p class="byline">First Last, First Last and First Last</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
 <pre class="prettyprint linenums">
 &lt;div class="row-fluid"&gt;
-    &lt;div class="span12 credits-box"&gt;
-    &lt;h4&gt;&lt;/h4&gt;
-    &lt;div class="row-fluid credits-group"&gt;
-        &lt;div class="span6 credits-cat"&gt;
-            &lt;p&gt;&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class="span6 credits-names"&gt;
-            &lt;p&gt;&lt;/p&gt;
-        &lt;/div&gt;
+  &lt;div class="span12 credits-box"&gt;
+  &lt;h2 class="credits-title"&gt;/h2&gt;
+  &lt;div class="row-fluid"&gt;
+    &lt;div class="span6"&gt;
+      &lt;p class="byline credits-cat"&gt;&lt;/p&gt;
     &lt;/div&gt;
-&lt;/div&gt;
-</pre>
-
-                <h2>Source and credits</h2>
-                <p></p>
-                <div class="bs-docs-example">
-                    <div class="credits">
-                        <p>Source: Where did the information come from?</p>
-                        <p>By <span class="caps">First Last</span>, <span class="caps">First Last</span> and <span class="caps">First Last</span> - <span class="caps">Chicago Tribune</span></p>
-                    </div>
-                </div>
+    &lt;div class="span6"&gt;
+      &lt;p class="byline credits-cat"&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;  
+</pre>        
+              
+              <h2>Source and credits</h2>
+              <p></p>
+              <div class="bs-docs-example">
+                  <div class="credits">
+                      <p>Source: Where did the information come from?</p>
+                      <p>By <span class="caps">First Last</span>, <span class="caps">First Last</span> and <span class="caps">First Last</span> - <span class="caps">Chicago Tribune</span></p>
+                  </div>
+              </div>
 <pre class="prettyprint linenums">
 &lt;div class="credits"&gt;
     &lt;p&gt;&lt;/p&gt;
     &lt;p&gt;&lt;span class="caps"&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-</pre>
-            </section>
-
-
-            <!-- Chapter and project navigation
-            ================================================== -->
-
-            <section id="navpills">
-                <div class="page-header">
-                    <h1>Chapter/project header navigation</h1>
-                </div>
-                <h2>Fixed traveling header</h2>
-                <p>The default "traveling" header is held in an element with ID <code>#social-media</code>. Once the user scrolls past this element, it sticks to top of the page, providing the user with social media buttons, page navigation, and project title.</p>
-                <p>The behavior is controlled by the <code>{% setup_scripts %}</code> block in the base Tribune Graphics template. This block also sets up "scrollspy" behavior, as seen in the next section.</p>
-
-<pre class="prettyprint linenums">
-{% block setup_scripts %}
-&lt;script type="text/javascript"&gt;
-$.waypoints.settings.scrollThrottle = 30;
-$('body').scrollspy({ offset: $('#social-media').height(), target: "#social-media"});
-$('.advert-wrapper').each(function() {
- new AdvertView({ el: $(this), path: '{{ ad_path }}' });
-});
-$('#social-media').height($('#social-media').outerHeight());
-new TravelerView({ traveler: $('#social-media'), target: $('#page-body') });
-&lt;/script&gt;
-{% endblock %}              
-</pre>
-
-                <p>Line 9 is of particular interest, as it sets up the traveling behavior using <code>TravelerView</code> in the Tribune Graphics <code>app.js</code>. The <code>traveler</code> configuration option represents the element that will be fixed, the <code>target</code> option means that the traveler will be fixed when the target element is within the browser viewport.</p>  
-
-                <h2>Nav pills in the header</h2>
-                <p>Wrap a regular <code>ul</code> of links with <code>.nav</code> and <code>nav-pills</code> and placed to the right of a <code>.trib-title</code>.
-                    Wrap everything with <code>#social-media</code>.</p>
-
-                <p>If the pills link to anchors on the page, the pills will automatically get the <code>active</code> class as the anchors scroll through the viewport. This is configured using Twitter Bootstrap's default "scrollspy" mechanism, and can be seen in line 4 above.</p>
-                <div class="bs-docs-example">
-                    <div class="container">
-                        <div class="trib-title"><a href="">project title</a></div>
-                        <div class="nav-items">
-                            <ul class="nav nav-pills">
-                                 <li class="active"><a href="#">Ch.1 pill</a></li>
-                                 <li><a href="#">Ch.2 link</a></li>
-                                 <li><a href="#">Ch.3 link</a></li>
-                                 <li><a href="#">Ch.4 link</a></li>
-                                 <li><a href="#">New page link</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-<pre class="prettyprint linenums">
-&lt;div id="social-media"&gt;
-    &lt;div class="container"&gt;
-        &lt;div class="trib-title"&gt;&lt;a href=""&gt;project title&lt;/a&gt;&lt;/div&gt;
-        &lt;div class="nav-items"&gt;
-            &lt;ul class="nav nav-pills"&gt;
-                &lt;li class="active"&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</pre>
-                <h3>Alternative style</h3>
-                <p>Take the format above and wrap the <code>ul</code> with <code>.alt</code>.</p>
-                <div class="bs-docs-example">
-                    <div id="social-media">
-                        <div class="container">
-                            <div class="trib-title"><a href="">project title</a></div>
-                            <div class="nav-items nav-items-alt">
-                                <ul class="nav nav-pills">
-                                    <li class="active"><a href="#">Ch.1 pill</a></li>
-                                    <li><a href="#">Ch.2 link</a></li>
-                                    <li><a href="#">Ch.3 link</a></li>
-                                    <li><a href="#">Ch.4 link</a></li>
-                                    <li><a href="#">New page link</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-<pre class="prettyprint linenums">
-&lt;div id="social-media"&gt;
-    &lt;div class="container"&gt;
-        &lt;div class="trib-title"&gt;&lt;a href=""&gt;project title&lt;/a&gt;&lt;/div&gt;
-        &lt;div class="nav-items nav-items-alt"&gt;
-            &lt;ul class="nav nav-pills"&gt;
-                &lt;li class="active"&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
 &lt;/div&gt;
 </pre>
             </section>
