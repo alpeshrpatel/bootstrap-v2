@@ -38,6 +38,32 @@
                 <h5>h5. Heading 5</h5>
                 <h6>h6. Heading 6</h6>
               </div>
+              <h2>{{_i}}Chapter header{{/i}}</h2>
+              <p>Add <code>.chapter-header</code> to any heading and wrap the content in a <code>span</code>.</p>
+              <div class="bs-docs-example">
+                <h2 class="chapter-header">
+                  <span>chapter headline</span>
+                </h2>
+              </div>
+<pre class="prettyprint linenums">
+&lt;h2 class="page-header"&gt;
+  &lt;span&gt;{{_i}}Example chapter heading{{/i}}&lt;/span&gt;
+&lt;/h2&gt;
+</pre>
+              <h2>{{_i}}Add a publication date{{/i}}</h2>
+              <p>Add a publication date to the chapter header by wrapping the date in a <code>small</code> tag after the <code>span</code>.</p>
+              <div class="bs-docs-example">
+                <h2 class="chapter-header">
+                  <span>chapter headline</span>
+                  <small>Published on a date with a time</small>
+                </h2>
+              </div>
+<pre class="prettyprint linenums">
+&lt;h2 class="page-header"&gt;
+  &lt;span&gt;{{_i}}Example chapter heading{{/i}}&lt;/span&gt;
+  &lt;small&gt;{{_i}}Example heading{{/i}}&lt;/small&gt;
+&lt;/h2&gt;
+</pre>
               <h2>Section headings</h2>
               <p>Use <code>.section-head</code> on any heading tag, but start with <code>h4</code> and work from there.</p>
               <div class="bs-docs-example">

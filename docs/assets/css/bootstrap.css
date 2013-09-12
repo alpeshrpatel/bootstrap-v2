@@ -5435,6 +5435,26 @@ a.dropdown-toggle {
   margin-right: auto;
   margin-bottom: 0;
 }
+/* chapter header styles */
+.chapter-header {
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #333;
+  text-align: center;
+  margin: 11px 0 30px;
+}
+.chapter-header > span {
+  border-bottom: 1px solid;
+}
+.chapter-header > small {
+  display: block;
+  text-transform: none;
+  font-size: 15px;
+  margin-top: 14px;
+  color: #777;
+  font-style: italic;
+  font-family: 'helevtica neue', 'arial', sans-serif;
+}
 /* mobile */
 @media all and (max-width: 979px) {
   
