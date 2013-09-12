@@ -127,7 +127,7 @@ time { font-style: italic; font-size: 13px; }
   margin-bottom: 0;
 }
 
-.social-wrapper ul { margin: 0; }
+.social-wrapper ul { margin: 10px 0 0; }
 .social-wrapper ul > li {
   display: inline-block;
   font-size: 42px;
@@ -137,11 +137,15 @@ time { font-style: italic; font-size: 13px; }
 
 .social-wrapper ul > li a:hover { text-decoration: none; }
 
-.social-wrapper-vertical { float: left; }
+.social-wrapper-vertical { float: left; text-align: center; }
 .social-wrapper-vertical ul > li { 
   display: block; 
   font-size: 40px;
   line-height: 36px;
+}
+
+li [class^="icon-"], .nav li [class^="icon-"], li [class*=" icon-"], .nav li [class*=" icon-"] {
+  width: 1em; 
 }
 
 /* drop down styles */

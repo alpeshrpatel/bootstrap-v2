@@ -5392,7 +5392,7 @@ time {
   margin-bottom: 0;
 }
 .social-wrapper ul {
-  margin: 0;
+  margin: 10px 0 0;
 }
 .social-wrapper ul > li {
   display: inline-block;
@@ -5405,11 +5405,18 @@ time {
 }
 .social-wrapper-vertical {
   float: left;
+  text-align: center;
 }
 .social-wrapper-vertical ul > li {
   display: block;
   font-size: 40px;
   line-height: 36px;
+}
+li [class^="icon-"],
+.nav li [class^="icon-"],
+li [class*=" icon-"],
+.nav li [class*=" icon-"] {
+  width: 1em;
 }
 /* drop down styles */
 a.dropdown-toggle {
