@@ -5334,12 +5334,19 @@ h3 a:focus {
   cursor: pointer;
   color: #144a7c;
 }
-.text-right a.media-link {
+.digital-plus-icon:after {
+  position: relative;
+  content: url(//members.chicagotribune.com/static/images/plus-icon.gif);
+  top: -5px;
+  margin-left: 4px;
+}
+a.media-link {
   text-transform: uppercase;
   font-size: 13px;
   line-height: 20px;
 }
 .related-content a.media-link {
+  text-transform: none;
   font-size: 16px;
   line-height: 24px;
 }

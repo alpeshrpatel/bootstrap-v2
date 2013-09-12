@@ -276,8 +276,20 @@
               <div class="page-header">
                 <h1>Related media</h1>
               </div>
-              <h2>Text and links</h2>
-              <p>Use <code>aside</code> for content that is related to the main article, such as a sidebar, and will display notched in the article. Use <code>.related-content</code> to style an overview of the sidebar and <code>.media-link</code> to apply the link style. The <code>.sublabel</code> class can be used for additional description of the sidebar copy block.</p>
+              <h2>Links</h2>
+              <p>Add the <code>.media-link</code> class to a <code>a</code> tag to apply the link styles. If the content is part of Digital Plus, use the <code>digital-plus-icon</code> class to add the plus icon to the end of the link.</p>
+              <div class="bs-docs-example">
+                <div class="row-fluid">
+                  <div class="span7">
+                    <p><a href="" class="media-link digital-plus-icon">This link goes elsewhere</a></p>
+                  </div>
+                </div>
+              </div>
+<pre class="prettyprint linenums">
+&lt;p class="text-right"&gt;&lt;a href="#" class="media-link digital-plus-icon"&gt;&lt;/a&gt;&lt;/p&gt;
+</pre>              
+              <h2>Linking to sidebar or other related content</h2>
+              <p>Use <code>aside</code> for content that is related to the main article, such as a sidebar, and will display notched in the article. Use <code>.related-content</code> to style an overview of the sidebar. The <code>.sublabel</code> class can be used for additional description of the sidebar copy block.</p>
               <div class="bs-docs-example">
                 <div class="row-fluid">
                   <div class="span7">
@@ -285,7 +297,7 @@
                       <h3>Related headline</h3>
                       <p class="sublabel">Optional subject description sublabel</p>
                       <p class="related-content">This is information related to the story with more detailed information available elsewhere and that we can link to</p>
-                      <p class="text-right"><a href="#" class="media-link">This link goes elsewhere</a></p>    
+                      <p class="text-right"><a href="#" class="media-link digital-plus-icon">This link goes elsewhere</a></p>    
                     </aside>
                   </div>
                 </div>
@@ -295,7 +307,7 @@
   &lt;h3&gt;&lt;h3&gt;
   &lt;p class="sublabel"&gt;&lt;/p&gt;
   &lt;p class="related-content"&gt;&lt;/p&gt;
-  &lt;p class="text-right"&gt;&lt;a href="#" class="media-link"&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;p class="text-right"&gt;&lt;a href="#" class="media-link digital-plus-icon"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/aside&gt;
 </pre>
               <h3>Related content as a link</h3>
