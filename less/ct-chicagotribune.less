@@ -59,6 +59,30 @@ figcaption { .media-info; font-size: 14px; margin: 10px 0; }
 .related-content { font-size: 18px; line-height: 28px; color: @gray; }
 .related-feature { border: none; }
 
+.nav-related { border-top: 2px solid #333; }
+.nav-related > li > a {
+  margin: 0;
+  line-height: 28px;
+  padding: 10px 5px;
+  font-size:22.75px;
+  color:#333;
+}
+
+.nav-related > li > a > p {
+  margin-bottom:10px;
+}
+.nav.nav-related > li > a > img {
+  max-width:100%;
+}
+.nav.nav-related p{
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.nav-related > li+li {
+  border-top: 1px solid #ddd;
+}
+
 /* image styles */
 .small-photo { max-width: 320px; }
 .medium-photo { max-width: 500px; }
@@ -80,13 +104,17 @@ h1, h2, h3 {
     color:lighten(@blue, 15%);
   }
 }
-.media-link { 
+
+a.media-link { 
   display: inline-block;
   margin-bottom: 0;
   font-family: Arial, sans-serif;
   vertical-align: middle;
   cursor: pointer;
   color: #144a7c;
+  text-transform: uppercase; 
+  font-size: 13px;
+  line-height: 20px;
 }
 
 .digital-plus-icon:after {
@@ -96,11 +124,10 @@ h1, h2, h3 {
   margin-left:4px;
 }
 
-a.media-link { 
-  text-transform: uppercase; 
-  font-size: 13px;
-  line-height: 20px;
+article a.media-link {
+  font-size: 15px; 
 }
+
 .related-content a.media-link { 
   text-transform: none; 
   font-size: 16px;

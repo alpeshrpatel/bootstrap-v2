@@ -360,7 +360,7 @@
 <pre class="prettyprint linenums">
 &lt;p class="text-right"&gt;&lt;a href="#" class="media-link digital-plus-icon"&gt;&lt;/a&gt;&lt;/p&gt;
 </pre>              
-              <h2>Linking to sidebar or other related content</h2>
+              <h3>Linking to sidebar or other related content</h3>
               <p>Use <code>aside</code> for content that is related to the main article, such as a sidebar, and will display notched in the article. Use <code>.related-content</code> to style an overview of the sidebar. The <code>.sublabel</code> class can be used for additional description of the sidebar copy block.</p>
               <div class="bs-docs-example">
                 <div class="row-fluid">
@@ -414,6 +414,54 @@
 &lt;aside class="related-feature"&gt;
   &lt;p class="related-content"&gt;&lt;a href="" class="media-link"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/aside&gt;
+</pre>
+              <h2>Related headlines as navigation</h2>
+              <p>For a list of related headlines apply a <code>.nav-related</code> class to a <code>ul</code>.</p>
+              <div class="bs-docs-example">
+                <div class="row-fluid">
+                  <div class="span4">
+                    <ul class="nav nav-related">
+                      <li><a href="#">Related content</a></li>
+                      <li><a href="#">Related content</a></li>
+                      <li><a href="#">Related content</a></li>
+                      <li><a href="#">Related content</a></li>
+                      <li><a href="#">Related content</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+<pre class="prettyprint linenums">
+&lt;ul class="nav nav-related"&gt;
+  &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+              <h3>Add a descriptions and image</h3>
+              <div class="bs-docs-example">
+                <div class="row-fluid">
+                  <div class="span4">
+                    <ul class="nav nav-related">
+                      <li>
+                        <a href="">Related content
+                        <p>Content description</p>
+                        <img src="http://fillmurray.com/325/200"></a>
+                      </li>
+                      <li><a href="#">Related content</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+<pre class="prettyprint linenums">
+&lt;ul class="nav nav-related"&gt;
+  &lt;li&gt;&lt;a href=""&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;img&gt;&lt;/img&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </pre>
             </section>
 
