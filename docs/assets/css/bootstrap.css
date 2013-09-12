@@ -5186,7 +5186,9 @@ article h2,
 article h3,
 article h4,
 article h5,
-article h6 {
+article h6,
+article article .social-wrapper,
+article article .article-media {
   max-width: 680px;
 }
 /* lead in styles */
@@ -5342,12 +5344,6 @@ h3 a:focus {
   line-height: 24px;
 }
 /* bylines, credits and source line */
-.twitter-follow-button {
-  margin: 0 8px -5px 4px;
-}
-.twitter-first {
-  margin-right: 1px;
-}
 .byline {
   font-size: 16px;
   line-height: 22px;
@@ -5382,7 +5378,40 @@ time {
   text-align: right;
   font-weight: bold;
 }
-/* navbar styles */
+/* social media styles */
+.twitter-follow-button {
+  margin: 0 8px -5px 4px;
+}
+.twitter-first {
+  margin-right: 1px;
+}
+.social-wrapper small {
+  font-family: 'helvetica neue', 'arial', sans-serif;
+  font-size: 15px;
+  color: #aaa;
+  margin-bottom: 0;
+}
+.social-wrapper ul {
+  margin: 0;
+}
+.social-wrapper ul > li {
+  display: inline-block;
+  font-size: 42px;
+  line-height: 57px;
+  margin-bottom: 2px;
+}
+.social-wrapper ul > li a:hover {
+  text-decoration: none;
+}
+.social-wrapper-vertical {
+  float: left;
+}
+.social-wrapper-vertical ul > li {
+  display: block;
+  font-size: 40px;
+  line-height: 36px;
+}
+/* drop down styles */
 a.dropdown-toggle {
   cursor: pointer;
 }

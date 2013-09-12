@@ -1,8 +1,8 @@
     <header class="jumbotron subhead" id="overview">
-        <div class="container">
-            <h1>Chicago Tribune styleguide</h1>
-            <p class="lead">Photos, captions, stories and more</p>
-        </div>
+      <div class="container">
+        <h1>Chicago Tribune styleguide</h1>
+        <p class="lead">Photos, captions, stories and more</p>
+      </div>
     </header>
 
     <div class="container">
@@ -10,18 +10,19 @@
     ================================================== -->
     <div class="row">
         <div class="span3 bs-docs-sidebar">
-            <ul class="nav nav-list bs-docs-sidenav">
-                <li><a href="#headings"><i class="icon-chevron-right"></i> Headings</a></li>
-                <li><a href="#story-copy"><i class="icon-chevron-right"></i> Story copy</a></li>
-                <li><a href="#media-containers"><i class="icon-chevron-right"></i> Media containers</a></li>
-                <li><a href="#photos"><i class="icon-chevron-right"></i> Photos & videos</a></li>
-                <li><a href="#related-media"><i class="icon-chevron-right"></i> Related media</a></li>
-                <li><a href="#integration"><i class="icon-chevron-right"></i> Integration</a></li>
-                <li><a href="#credits-bylines"><i class="icon-chevron-right"></i> Bylines, credits & sourcing</a></li>
-                <li><a href="#icons"><i class="icon-chevron-right"></i> Icons</a></li>
-                <li><a href="#colors"><i class="icon-chevron-right"></i>Colour</a></li>
-								<li><a href="#ads"><i class="icon-chevron-right"></i>Ads</a></li>
-            </ul>
+          <ul class="nav nav-list bs-docs-sidenav">
+            <li><a href="#headings"><i class="icon-chevron-right"></i> Headings</a></li>
+            <li><a href="#story-copy"><i class="icon-chevron-right"></i> Story copy</a></li>
+            <li><a href="#media-containers"><i class="icon-chevron-right"></i> Media containers</a></li>
+            <li><a href="#photos"><i class="icon-chevron-right"></i> Photos & videos</a></li>
+            <li><a href="#related-media"><i class="icon-chevron-right"></i> Related media</a></li>
+            <li><a href="#integration"><i class="icon-chevron-right"></i> Integration</a></li>
+            <li><a href="#credits-bylines"><i class="icon-chevron-right"></i> Bylines, credits & sourcing</a></li>
+            <li><a href="#icons"><i class="icon-chevron-right"></i> Icons</a></li>
+            <li><a href="#social-media"><i class="icon-chevron-right"></i>Social media buttons</a></li>
+            <li><a href="#colors"><i class="icon-chevron-right"></i>Colour</a></li>
+            <li><a href="#ads"><i class="icon-chevron-right"></i>Ads</a></li>
+          </ul>
         </div>
         <div class="span9">
             <!-- Headings
@@ -53,7 +54,7 @@
             ================================================== -->
             <section id="story-copy">
               <div class="page-header">
-                  <h1>story-copy</h1>
+                  <h1>Story copy</h1>
               </div>
               <h2>Story body copy</h2>
               <p>Wrap story elements such as a headline, deck, byline, and story copy in an <code>article</code> tag. <code>p</code> tags and all headings <code>h1</code> through <code>h6</code> have a <code>max-width</code> of <strong>680px</strong>.</p>
@@ -124,7 +125,7 @@
 
             <section id="media-containers">
               <div class="page-header">
-                <h1>media containers</h1>
+                <h1>Media containers</h1>
               </div>
               <h2>Media wrapper</h2>
               <p>A <code>figure</code> element applies to self-contained content, such as photos and captions.</p>
@@ -382,7 +383,7 @@
 
             <section id="credits-bylines">
               <div class="page-header">
-                <h1>Bylines, Credits and Sourcing</h1>
+                <h1>Bylines, credits and sourcing</h1>
               </div>
               <h2>Bylines</h2>
               <p>Story/article byline style</p>
@@ -459,10 +460,10 @@
               <h2>Source and credits</h2>
               <p></p>
               <div class="bs-docs-example">
-                  <div class="credits">
-                      <p>Source: Where did the information come from?</p>
-                      <p>By <span class="caps">First Last</span>, <span class="caps">First Last</span> and <span class="caps">First Last</span> - <span class="caps">Chicago Tribune</span></p>
-                  </div>
+                <div class="credits">
+                  <p>Source: Where did the information come from?</p>
+                  <p>By <span class="caps">First Last</span>, <span class="caps">First Last</span> and <span class="caps">First Last</span> - <span class="caps">Chicago Tribune</span></p>
+                </div>
               </div>
 <pre class="prettyprint linenums">
 &lt;div class="credits"&gt;
@@ -550,6 +551,109 @@
             </ul>
             </section>
 
+            <!-- Colors
+            ================================================== -->
+            
+            <section id="social-media">
+              <div class="page-header">
+                <h1>Social media buttons</h1>
+              </div>
+              <h2>Horizontal social media group</h2>
+              <p>First, make sure Font Awesome is included in your project. Then wrap a <code>ul</code> in a div with class <code>.social-wrapper</code>. Use a <code>small</code> element for the buttons label and <code>.text-center</code> on the wrapping <code>div</code> to center the label and buttons.</p>
+              <div class="bs-docs-example">
+                <div class="row-fluid">
+                  <div class="span12">
+                    <div class="social-wrapper text-center">
+                      <small>Share this page</small>
+                      <ul>
+                        <li>
+                          <a target="_blank" href="">
+                            <i class="icon-twitter-sign"></i> <span class="hidden">Twitter</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a target="_blank" href="">
+                            <i class="icon-facebook-sign"></i> <span class="hidden">Facebook</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a target="_blank" href="">
+                            <i class="icon-google-plus-sign"></i> <span class="hidden">Google+</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a target="_blank" href="">
+                            <i class="icon-pinterest-sign"></i> <span class="hidden">Pinterest</span>
+                          </a>  
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2>Vertical social media group</h2>
+              <p>Add <code>.social-wrapper-vertical</code> to the wrapping <code>div</code>.</p>
+              <div class="bs-docs-example">
+                <div class="row-fluid">
+                  <div class="span12">
+                    <div class="social-wrapper social-wrapper-vertical text-center">
+                      <small>Share</small>
+                      <ul>
+                        <li>
+                          <a target="_blank" href="">
+                            <i class="icon-twitter-sign"></i> <span class="hidden">Twitter</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a target="_blank" href="">
+                            <i class="icon-facebook-sign"></i> <span class="hidden">Facebook</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a target="_blank" href="">
+                            <i class="icon-google-plus-sign"></i> <span class="hidden">Google+</span>
+                          </a>  
+                        </li>
+                        <li>
+                          <a target="_blank" href="">
+                            <i class="icon-pinterest-sign"></i> <span class="hidden">Pinterest</span>
+                          </a>  
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            
+<pre class="prettyprint linenums">
+&lt;div class="social-wrapper text-center"&gt;
+  &lt;small&gt;&lt;/small&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;a target="_blank" href=""&gt;
+        &lt;i class="icon-twitter-sign"&gt;&lt;/i&gt;&lt;span class="hidden"&gt;Twitter&lt;/span&gt;
+      &lt;/a&gt;  
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a target="_blank" href=""&gt;
+        &lt;i class="icon-facebook-sign"&gt;&lt;/i&gt;&lt;span class="hidden"&gt;Facebook&lt;/span&gt;
+      &lt;/a&gt;  
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a target="_blank" href=""&gt;
+        &lt;i class="icon-google-plus-sign"&gt;&lt;/i&gt;&lt;span class="hidden"&gt;Google+&lt;/span&gt;
+      &lt;/a&gt;  
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a target="_blank" href=""&gt;
+        &lt;i class="icon-pintrest-sign"&gt;&lt;/i&gt;&lt;span class="hidden"&gt;Pintrest&lt;/span&gt;
+      &lt;/a&gt;  
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+            
             <!-- Colors
             ================================================== -->
 
