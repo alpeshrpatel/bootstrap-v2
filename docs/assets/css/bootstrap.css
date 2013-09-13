@@ -5192,7 +5192,7 @@ article article .article-media {
   max-width: 680px;
 }
 /* lead in styles */
-article .lead {
+.lead {
   font-size: 19px;
   line-height: 33px;
 }
@@ -5488,19 +5488,10 @@ a.dropdown-toggle {
   font-family: 'helevtica neue', 'arial', sans-serif;
 }
 /* mobile */
-@media all and (max-width: 979px) {
-  
-}
-@media only screen and (max-width: 797px) {
-  
-}
-@media all and (max-width: 768px) {
-  
-}
 @media all and (max-width: 500px) {
   .lead {
     font-size: 15px;
-    line-height: 25px;
+    line-height: 22px;
   }
   .lead.drop-cap:first-letter {
     font-size: 475%;
