@@ -46,7 +46,7 @@
                 </h2>
               </div>
 <pre class="prettyprint linenums">
-&lt;h2 class="page-header"&gt;
+&lt;h2 class="chapter-header"&gt;
   &lt;span&gt;{{_i}}Example chapter heading{{/i}}&lt;/span&gt;
 &lt;/h2&gt;
 </pre>
@@ -59,7 +59,7 @@
                 </h2>
               </div>
 <pre class="prettyprint linenums">
-&lt;h2 class="page-header"&gt;
+&lt;h2 class="chapter-header"&gt;
   &lt;span&gt;{{_i}}Example chapter heading{{/i}}&lt;/span&gt;
   &lt;small&gt;{{_i}}Example heading{{/i}}&lt;/small&gt;
 &lt;/h2&gt;
@@ -106,7 +106,12 @@
                   </article>
                 </div>
 <pre class="prettyprint linenums">
-&lt;p&gt;&lt;class="drop-cap"&gt;&lt;/p&gt; 
+&lt;article&gt;
+  &lt;h1&gt;...&lt;/h1&gt;
+  &lt;p class="drop-cap"&gt;
+    ...
+  &lt;/p&gt; 
+&lt;/article&gt; 
 </pre>
 
                 <h2>Story intro</h2>
@@ -118,7 +123,12 @@
                   </article>
                 </div>
 <pre class="prettyprint linenums">
-&lt;p&gt;&lt;class="drop-cap lead"&gt;&lt;/p&gt;
+&lt;article&gt;
+  &lt;h1&gt;...&lt;/h1&gt;
+  &lt;p class="drop-cap lead"&gt;
+    ...
+  &lt;/p&gt; 
+&lt;/article&gt; 
 </pre>
 
                 <h2>Breakout/bullet lists within the narrative</h2>
@@ -286,7 +296,7 @@
                 </div>
               </div>
 <pre class="prettyprint linenums">
-&lt;p class="text-right"&gt;&lt;a href="#" class="media-link digital-plus-icon"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;a href="..." class="media-link digital-plus-icon"&gt;...&lt;/a&gt;
 </pre>              
               <h3>Linking to sidebar or other related content</h3>
               <p>Use <code>aside</code> for content that is related to the main article, such as a sidebar, and will display notched in the article. Use <code>.related-content</code> to style an overview of the sidebar. The <code>.sublabel</code> class can be used for additional description of the sidebar copy block.</p>
@@ -304,26 +314,10 @@
               </div>     
 <pre class="prettyprint linenums">
 &lt;aside&gt;
-  &lt;h3&gt;&lt;h3&gt;
-  &lt;p class="sublabel"&gt;&lt;/p&gt;
-  &lt;p class="related-content"&gt;&lt;/p&gt;
-  &lt;p class="text-right"&gt;&lt;a href="#" class="media-link digital-plus-icon"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/aside&gt;
-</pre>
-              <h3>Related content as a link</h3>
-              <div class="bs-docs-example">
-                <div class="row-fluid">
-                  <div class="span7">
-                    <aside>
-                      <h3>Related headline</h3>
-                      <p class="related-content"><a href="" class="media-link">Sed vel leo lorem. Duis risus erat, aliquam at aliquam et, vehicula id ante. Nunc in nibh tellus. Sed eget lacus ac leo mollis suscipit.</a></p>
-                    </aside>
-                  </div>
-                </div>
-              </div>
-<pre class="prettyprint linenums">
-&lt;aside&gt;
-  &lt;p class="related-content"&gt;&lt;a href="" class="media-link"&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;h3&gt;Related headline&lt;h3&gt;
+  &lt;p class="sublabel"&gt;Optional subject description sublabel&lt;/p&gt;
+  &lt;p class="related-content"&gt;This is information ...&lt;/p&gt;
+  &lt;p class="text-right"&gt;&lt;a href="#" class="media-link digital-plus-icon"&gt;THIS LINK GOES ELSEWHERE&lt;/a&gt;&lt;/p&gt;
 &lt;/aside&gt;
 </pre>
               <h3>Related content as navigation</h3>
@@ -333,14 +327,16 @@
                   <div class="span7">
                     <aside class="related-feature">
                       <h3>Related headline</h3>
-                      <p class="related-content"><a href="" class="media-link">Sed vel leo lorem. Duis risus erat, aliquam at aliquam et, vehicula id ante. Nunc in nibh tellus. Sed eget lacus ac leo mollis suscipit.</a></p>
+                      <p class="sublabel">Optional subject description sublabel</p>
+                      <p class="related-content">This is information related to the story with more detailed information available elsewhere and that we can link to</p>
+                      <p class="text-right"><a href="#" class="media-link digital-plus-icon">This link goes elsewhere</a></p>    
                     </aside>
                   </div>
                 </div>
               </div>
 <pre class="prettyprint linenums">
 &lt;aside class="related-feature"&gt;
-  &lt;p class="related-content"&gt;&lt;a href="" class="media-link"&gt;&lt;/a&gt;&lt;/p&gt;
+  ...
 &lt;/aside&gt;
 </pre>
               <h2>Related headlines as navigation</h2>
@@ -385,8 +381,9 @@
 <pre class="prettyprint linenums">
 &lt;ul class="nav nav-related"&gt;
   &lt;li&gt;&lt;a href=""&gt;
-    &lt;p&gt;&lt;/p&gt;
-    &lt;img&gt;&lt;/img&gt;&lt;/a&gt;
+    Related content
+    &lt;p&gt;Content description&lt;/p&gt;
+    &lt;img src="" /&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
