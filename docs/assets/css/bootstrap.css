@@ -5194,8 +5194,8 @@ article h3,
 article h4,
 article h5,
 article h6,
-article article .social-wrapper,
-article article .article-media {
+article .social-wrapper,
+article .article-media {
   max-width: 680px;
 }
 .mm-wrapper {
