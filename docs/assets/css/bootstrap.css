@@ -5242,7 +5242,7 @@ article .pull-out p:last-child {
 }
 .trib-media.flush {
   float: none;
-  width: 82%;
+  width: auto;
   max-width: 680px;
   margin: 0;
 }
