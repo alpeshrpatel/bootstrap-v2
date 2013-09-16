@@ -5145,6 +5145,13 @@ a.badge:focus {
   margin-left: auto;
   margin-right: auto;
 }
+.underline {
+  border-bottom: 1px solid;
+}
+.top-line {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
 .sublabel {
   font-size: 15px;
   font-family: Arial, sans-serif;
@@ -5190,6 +5197,15 @@ article h6,
 article article .social-wrapper,
 article article .article-media {
   max-width: 680px;
+}
+.mm-wrapper {
+  margin-left: 85px;
+}
+article .article-media {
+  margin-bottom: 20px;
+}
+article h1 {
+  margin: 0 0 18px;
 }
 /* lead in styles */
 .lead {
@@ -5378,7 +5394,7 @@ article a.media-link {
 /* bylines, credits and source line */
 .byline {
   font-size: 16px;
-  line-height: 22px;
+  line-height: 25px;
 }
 time {
   font-style: italic;
@@ -5488,6 +5504,16 @@ a.dropdown-toggle {
   font-family: 'helevtica neue', 'arial', sans-serif;
 }
 /* mobile */
+@media all and (max-width: 1065px) {
+  .mm-wrapper {
+    margin-left: 80px;
+  }
+}
+@media all and (max-width: 979px) {
+  .mm-wrapper {
+    margin-left: 0;
+  }
+}
 @media all and (max-width: 500px) {
   .lead {
     font-size: 15px;
