@@ -5219,20 +5219,17 @@ article h1 {
 }
 /* breakout/bullet styles */
 article .pull-out {
-  font-family: Arial, sans-serif;
-  padding: 20px;
+  padding: 0 20px;
   border-left: 2px solid #666666;
   margin: 35px 0;
-  background-color: #eeeeee;
-  width: 680px;
-}
-article .pull-out p {
-  width: 100%;
-  font-size: 16px;
-  line-height: 20px;
+  width: 640px;
+  font-style: italic;
 }
 article .pull-out p:last-child {
   margin-bottom: 0;
+}
+article .pull-out strong {
+  color: #666;
 }
 /* notched media styles */
 .trib-media {
