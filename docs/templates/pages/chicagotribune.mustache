@@ -61,7 +61,7 @@
 <pre class="prettyprint linenums">
 &lt;h2 class="chapter-header"&gt;
   &lt;span&gt;{{_i}}Example chapter heading{{/i}}&lt;/span&gt;
-  &lt;small&gt;{{_i}}Example heading{{/i}}&lt;/small&gt;
+  &lt;small&gt;{{_i}}Example publication date{{/i}}&lt;/small&gt;
 &lt;/h2&gt;
 </pre>
               <h2>Section headings</h2>
@@ -72,7 +72,7 @@
                 <h5 class="section-head">H5 section/chapter heading</h5>
               </div>
 <pre class="prettyprint linenums">
-&lt;h4 class="section-head"&gt;&lt;h4&gt;
+&lt;h4 class="section-head"&gt;...&lt;h4&gt;
 </pre>
             </section>
 
@@ -92,8 +92,8 @@
               </div>
 <pre class="prettyprint linenums">
 &lt;article&gt;
-  &lt;h1&gt;&lt;/h1&gt;
-  &lt;p&gt;&lt;/p&gt;
+  &lt;h1&gt;...&lt;/h1&gt;
+  &lt;p&gt;...&lt;/p&gt;
 &lt;/article&gt; 
 </pre>
 
@@ -115,7 +115,7 @@
 </pre>
 
                 <h2>Story intro</h2>
-                <p>Add <code>.lead</code> to a <code>p</code> elements to increase <strong>font-size</strong> for paragraphs and drop caps.</p>
+                <p>Add <code>.lead</code> to a <code>p</code> element to increase <strong>font-size</strong> for paragraphs and drop caps.</p>
                 <div class="bs-docs-example">
                   <article>
                     <p class="drop-cap lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam orci sapien, ullamcorper at blandit vitae, viverra sed diam. Sed id neque purus. Suspendisse potenti. Donec pretium, nunc quis cursus euismod, nibh lectus luctus sapien, vitae viverra tellus est eget enim. Nulla eu porttitor nulla. Maecenas sed dui et elit commodo interdum. Aliquam consequat ipsum ac lacus venenatis at tincidunt nunc aliquam.</p>
@@ -146,7 +146,7 @@
                   </article>
                 </div>
 <pre class="prettyprint linenums">
-&lt;article class="trib-article"&gt;
+&lt;article&gt;
   &lt;p&gt;&lt;/p&gt;
   &lt;div class="pull-out"&gt;
   &lt;p&gt;&lt;strong&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -173,7 +173,7 @@
 <pre class="prtyprint linenums">
 &lt;figure&gt;
   &lt;h4&gt;t;/h4&gt;
-&lt;/figure&gt
+&lt;/figure&gt;
 </pre>        
               <h3>Other wrapper styles</h3>
               <p><code>figure</code> can also be styled <code>.left-rule</code> when it's necessary to separate similar fonts placed next to each other.</p>
@@ -208,8 +208,8 @@
 <pre class="prettyprint linenums">
 &lt;figure&gt;
   &lt;img src=""&gt;
-  &lt;figcaption&gt;&lt;/figcaption&gt;
-  &lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
+  &lt;figcaption&gt;...&lt;/figcaption&gt;
+  &lt;figcaption class="media-credit"&gt;...&lt;/figcaption&gt;
 &lt;/figure&gt;
 </pre>
               <h2>Photo sizes</h2>
@@ -403,7 +403,7 @@
                 <article>
                   <p>Morbi iaculis erat egestas turpis rhoncus pharetra. Suspendisse potenti. Nunc bibendum fringilla mi, sed suscipit mi feugiat a. Vestibulum tincidunt congue ornare. Proin sit amet mi nunc. Quisque tellus quam, faucibus vitae sagittis sit amet, consequat ut quam. Vestibulum sodales lacus in ligula aliquet congue. Ut dictum, enim at consectetur ullamcorper, tellus leo convallis odio, ut tempor sem nisi at ante.</p>
                   <div class="trib-media">
-                    <figure class="medium-photo">
+                    <figure class="small-photo">
                       <img src="http://fillmurray.com/g/500/325">
                       <figcaption>This is a caption about a kitten who likes to be photographed in black and white</figcaption>
                       <figcaption class="media-credit">First Last - Organization</figcaption>
@@ -417,7 +417,7 @@
 &lt;article&gt;
   &lt;p&gt;&lt;/p&gt;
   &lt;div class="trib-media"&gt;
-    &lt;figure class="medium-photo"&gt;
+    &lt;figure class="small-photo"&gt;
       &lt;img src="" class="trib-img"&gt;
       &lt;figcaption&gt;&lt;/figcaption&gt;
       &lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
@@ -471,19 +471,14 @@
               <h2>Bylines</h2>
               <p>Story/article byline style</p>
               <div class="bs-docs-example">
-                <div>
-                  <p class="byline">By Trib Apps <a href="https://twitter.com/tribapps" class="twitter-follow-button" data-show-count="false">Follow @tribapps</a>
+                <p class="byline">By Trib Apps <a href="https://twitter.com/tribapps" class="twitter-follow-button" data-show-count="false">Follow @tribapps</a>
                   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>&nbsp|&nbsp&nbspTribune reporter</p>
-                  <time>Month Day, Year</time>
-                </div>
+                <time>Month Day, Year</time>
               </div>
-<pre class="prettyprint linenums">
-&lt;div&gt;   
-  &lt;p class="byline"&gt;&lt;By Trib Apps&lt;Twitter handle&lt;/p&gt;
-  &lt;time&gt;Month Day, Year&lt;/time&gt;
-&lt;/div&gt;  
+<pre class="prettyprint linenums"> 
+&lt;p class="byline"&gt;&lt;By Trib Apps ...&lt;/p&gt;
+&lt;time&gt;Month Day, Year&lt;/time&gt; 
 </pre>        
-              
               <h2>Credits</h2>
               <p>Credits go at the bottom of the page and used in projects with a smaller team and produced mostly by one department. It should include bylines and organization.</p>
               <div class="bs-docs-example">
@@ -492,55 +487,7 @@
 <pre class="prettyprint linenums">
 &lt;p class="credits"&gt;&lt;/p&gt;
 </pre>        
-              <h3>Project credits box</h3>
-              <p>Use a project credits box when bylines from multiple departments should appear. This style of credit box should be reserved for larger projects.</p>
-              <div class="bs-docs-example">
-                <div class="row-fluid">
-                  <div class="span12 credits-box">
-                    <h2 class="credits-title">Credits</h2>
-                    <div class="row-fluid">
-                      <div class="span6">
-                        <p class="byline credits-cat">Reporting</p>
-                      </div>
-                      <div class="span6">
-                        <p class="byline">First Last and First Last</p>
-                      </div>
-                    </div>
-                    <div class="row-fluid">
-                      <div class="span6">
-                        <p class="byline credits-cat">Photography</p>
-                      </div>
-                      <div class="span6">
-                        <p class="byline">First Last and First Last</p>
-                      </div>
-                    </div>
-                    <div class="row-fluid">
-                      <div class="span6">
-                        <p class="byline credits-cat">Applications & Design</p>
-                      </div>
-                      <div class="span6">
-                        <p class="byline">First Last, First Last and First Last</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-<pre class="prettyprint linenums">
-&lt;div class="row-fluid"&gt;
-  &lt;div class="span12 credits-box"&gt;
-  &lt;h2 class="credits-title"&gt;/h2&gt;
-  &lt;div class="row-fluid"&gt;
-    &lt;div class="span6"&gt;
-      &lt;p class="byline credits-cat"&gt;&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class="span6"&gt;
-      &lt;p class="byline credits-cat"&gt;&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;  
-</pre>        
-              
-              <h2>Source and credits</h2>
+              <h3>Source and credits</h3>
               <p></p>
               <div class="bs-docs-example">
                 <div class="credits">
@@ -550,10 +497,32 @@
               </div>
 <pre class="prettyprint linenums">
 &lt;div class="credits"&gt;
-    &lt;p&gt;&lt;/p&gt;
-    &lt;p&gt;&lt;span class="caps"&gt;&lt;/span&gt;&lt;/p&gt;
+    &lt;p&gt;...&lt;/p&gt;
+    &lt;p&gt;...&lt;/p&gt;
 &lt;/div&gt;
 </pre>
+              <h3>Project credits box</h3>
+              <p>Use a project credits box at the bottom of the page before the footer when bylines from multiple departments should appear. This style of credit box should be reserved for larger projects.</p>
+              <div class="bs-docs-example">
+                <div class="credits-wrapper">
+                  <div class="credits-inner">
+                    <p>Reporting by <span>First Last and First Last</span></p>
+                    <p>Photography by <span>First Last and First Last</span></p>
+                    <p>Graphics by <span>First Last and First Last</span></p>
+                    <p>Applications and design by <span>First Last and First Last</span></p>
+                  </div>
+                </div>
+              </div>
+<pre class="prettyprint linenums">
+&lt;div class="credits-wrapper"&gt;
+  &lt;div class="credits-inner"&gt;
+    &lt;p&gt;Reporting by &lt;span&gt;First Last and First Last&lt;/span&gt;&lt;/p&gt;
+    &lt;p&gt;Photography by &lt;span&gt;First Last and First Last&lt;/span&gt;&lt;/p&gt;
+    &lt;p&gt;Graphics by &lt;span&gt;First Last and First Last&lt;/span&gt;&lt;/p&gt;
+    &lt;p&gt;Applications and design by &lt;span&gt;First Last and First Last&lt;/span&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;  
+</pre>        
             </section>
             
             <!-- Icons
@@ -676,7 +645,7 @@
               </div>
 <pre class="prettyprint linenums">
 &lt;div class="social-wrapper text-center"&gt;
-  &lt;small&gt;&lt;/small&gt;
+  &lt;small&gt;...&lt;/small&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;a target="_blank" href=""&gt;
@@ -736,7 +705,7 @@
               </div>
 <pre class="prettyprint linenums">
 &lt;div class="social-wrapper social-wrapper-vertical"&gt;
-  &lt;small&gt;&lt;/small&gt;
+  &lt;small&gt;...&lt;/small&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;a target="_blank" href=""&gt;

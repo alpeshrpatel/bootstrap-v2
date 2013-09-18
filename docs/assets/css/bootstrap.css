@@ -5392,6 +5392,30 @@ article a.media-link {
   line-height: 22px;
 }
 /* bylines, credits and source line */
+.ct-byline {
+  color: #666;
+  font-size: 13px;
+  line-height: 20px;
+  margin: 0;
+}
+.ct-byline span {
+  color: #144A7C;
+  font-weight: bold;
+  font-size: 14px;
+}
+.ct-byline-source {
+  color: #666;
+  font-size: 11px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.ct-time-stamp {
+  color: #999;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: 'arial', sans-serif;
+  text-transform: uppercase;
+}
 .byline {
   font-size: 16px;
   line-height: 25px;
@@ -5409,22 +5433,28 @@ time {
   font-size: 14px;
   line-height: 20px;
 }
-.credits-box {
-  padding: 10px;
-  border: 1px solid #d0d0d0;
-  margin-top: 20px;
-  color: #333;
+.credits-wrapper {
+  background-color: #eee;
+  padding: 25px;
+  margin-top: 10px;
 }
-.credits-box h3 {
-  text-align: center;
-  margin-bottom: 5px;
+.credits-inner {
+  max-width: 970px;
+  margin: 0 auto;
+  color: #999;
 }
-.credits-title {
-  text-align: center;
+.credits-inner p {
+  font-size: 16px;
+  line-height: 1.4em;
 }
-.credits-cat {
-  text-align: right;
-  font-weight: bold;
+.credits-inner p > span {
+  color: #666;
+}
+.credits-inner p:last-child {
+  margin-bottom: 0;
+}
+.credits-wrapper + #footer > .page-footer {
+  margin-top: 0;
 }
 /* social media styles */
 .twitter-follow-button {
@@ -5495,13 +5525,12 @@ a.dropdown-toggle {
   border-bottom: 1px solid;
 }
 .chapter-header > small {
-  display: block;
-  text-transform: none;
-  font-size: 15px;
+  font-size: 13px;
   margin-top: 14px;
   color: #777;
-  font-style: italic;
-  font-family: 'helevtica neue', 'arial', sans-serif;
+  font-family: 'arial', sans-serif;
+  display: block;
+  text-transform: uppercase;
 }
 /* mobile */
 @media all and (max-width: 1065px) {
