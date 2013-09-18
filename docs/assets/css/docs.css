@@ -1134,18 +1134,14 @@ form.bs-docs-example {
 }
 
 /* color ramps */
-.tribgreendark { background-color: #254117; }
-.tribgreen { background-color: #4E9258; }
+.tribgreendark { background-color: #285014; }
+.tribgreen { background-color: #347235; }
 .tribgreenlite { background-color: #8BB381; }
-
-.tribdarkblue { background-color: #2B547E; }
-.tribblue { background-color: #4c7dae; }
-.tribbluelite { background-color: #549ac4; }
   
-.tribreddark { background-color: #990012;}
-.tribred { background-color: #C34A2C; }
-.tribredlite { background-color: #E77471; }
+.tribreddark { background-color: #8c001a;}
+.tribred { background-color: #c11b17; }
+.tribredlite { background-color: #E8adaa; }
 
-.tribyellow { background-color: #C8B560; }
-.tribyellowlite { background-color: #ECD872; }
+.tribyellow { background-color: #eac117; }
+.tribyellowlite { background-color: #ffdb58; }
 .tribpurple { background-color: #7E587E; }

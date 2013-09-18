@@ -5525,12 +5525,12 @@ a.dropdown-toggle {
   border-bottom: 1px solid;
 }
 .chapter-header > small {
-  font-size: 13px;
-  margin-top: 14px;
-  color: #777;
-  font-family: 'arial', sans-serif;
   display: block;
-  text-transform: uppercase;
+  text-transform: none;
+  font-size: 14px;
+  margin-top: 15px;
+  color: #777;
+  font-family: 'helevtica neue', 'arial', sans-serif;
 }
 /* mobile */
 @media all and (max-width: 1065px) {
