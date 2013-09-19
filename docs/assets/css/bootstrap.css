@@ -5225,7 +5225,7 @@ article .pull-out {
   padding: 0 20px;
   border-left: 2px solid #666666;
   margin: 35px 0;
-  width: 640px;
+  max-width: 640px;
   font-style: italic;
 }
 article .pull-out p:last-child {
