@@ -51,7 +51,7 @@
 &lt;/h2&gt;
 </pre>
               <h2>{{_i}}Add a publication date{{/i}}</h2>
-              <p>Add a publication date to the chapter header by wrapping the date in a <code>small</code> tag after the <code>span</code>.</p>
+              <p>Add a publication date to the chapter header by wrapping the date in a <code>small</code> element after the <code>span</code>.</p>
               <div class="bs-docs-example">
                 <h2 class="chapter-header">
                   <span>chapter headline</span>
@@ -65,7 +65,7 @@
 &lt;/h2&gt;
 </pre>
               <h2>Section headings</h2>
-              <p>Use <code>.section-head</code> on any heading tag, but start with <code>h4</code> and work from there.</p>
+              <p>Use <code>.section-head</code> on any heading, but start with <code>h4</code> and work from there.</p>
               <div class="bs-docs-example">
                 <h4 class="section-head">H4 section/chapter heading</h4>
                 <h3 class="section-head">H3 section/chapter heading</h3>
@@ -83,7 +83,7 @@
                   <h1>Story copy</h1>
               </div>
               <h2>Story body copy</h2>
-              <p>Wrap story elements such as a headline, deck, byline, and story copy in an <code>article</code> tag. <code>p</code> tags and all headings <code>h1</code> through <code>h6</code> have a <code>max-width</code> of <strong>680px</strong>.</p>
+              <p>Wrap story elements such as a headline, deck, byline, and story copy in an <code>article</code> element. <code>p</code> elements and all headings <code>h1</code> through <code>h6</code> have a <code>max-width</code> of <strong>680px</strong>.</p>
               <div class="bs-docs-example">
                 <article>
                   <h1>Story headline</h1>
@@ -132,7 +132,7 @@
 </pre>
 
                 <h2>Breakout/bullet lists within the narrative</h2>
-                <p>To separate sections of the narrative that are lists or bullets, wrap <code>.pull-out</code> around a <code>p</code> tag(s).</p>
+                <p>To separate sections of the narrative that are lists or bullets, wrap <code>p</code> element(s) in a <code>div</code> with a <code>.pull-out</code> class.</p>
                 <div class="bs-docs-example">
                   <article>
                     <p>Aliquam ac augue ac nisi ullamcorper vehicula vel eget tellus. Proin venenatis ullamcorper magna, eget rutrum nunc imperdiet nec. Donec et leo mauris. Pellentesque risus felis, mollis id facilisis at, sollicitudin sit amet augue. Phasellus lobortis ullamcorper odio, eget pharetra neque dictum eget. Morbi dignissim dictum posuere. Aliquam erat volutpat. Nam at massa turpis, et aliquet urna.</p>
@@ -149,7 +149,7 @@
 &lt;article&gt;
   &lt;p&gt;&lt;/p&gt;
   &lt;div class="pull-out"&gt;
-  &lt;p&gt;&lt;strong&gt;&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;&lt;/strong&gt;&lt;/p&gt;
   &lt;/div&gt;
   &lt;p&gt;&lt;/p&gt; 
 &lt;/article&gt;
@@ -170,9 +170,9 @@
                   <h4>This is media content</h4>
                 </figure>
               </div>
-<pre class="prtyprint linenums">
+<pre class="prettyprint linenums">
 &lt;figure&gt;
-  &lt;h4&gt;t;/h4&gt;
+  &lt;h4&gt;...&lt;/h4&gt;
 &lt;/figure&gt;
 </pre>        
               <h3>Other wrapper styles</h3>
@@ -184,7 +184,7 @@
               </div>
 <pre class="prettyprint linenums">
 &lt;figure class="left-rule"&gt;
-  &lt;h4&gt;&lt;/h4&gt;
+  &lt;h4&gt;...&lt;/h4&gt;
 &lt;/figure&gt; 
 </pre>
             </section>
@@ -207,9 +207,9 @@
               </div>
 <pre class="prettyprint linenums">
 &lt;figure&gt;
-  &lt;img src=""&gt;
-  &lt;figcaption&gt;...&lt;/figcaption&gt;
-  &lt;figcaption class="media-credit"&gt;...&lt;/figcaption&gt;
+  &lt;img src="..."&gt;
+  &lt;figcaption&gt;This is a caption ...&lt;/figcaption&gt;
+  &lt;figcaption class="media-credit"&gt;First Last - Organization&lt;/figcaption&gt;
 &lt;/figure&gt;
 </pre>
               <h2>Photo sizes</h2>
@@ -224,9 +224,7 @@
               </div>
 <pre class="prettyprint linenums">
 &lt;figure class="small-photo"&gt;
-  &lt;img src=""&gt;
-  &lt;figcaption&gt;&lt;/figcaption&gt;
-  &lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
+  ...
 &lt;/figure&gt;
 </pre>
                 <h3><code>.medium-photo</code></h3>
@@ -240,9 +238,7 @@
                 </div>
 <pre class="prettyprint linenums">
 &lt;figure class="medium-photo"&gt;
-  &lt;img src=""&gt;
-  &lt;figcaption&gt;&lt;/figcaption&gt;
-  &lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
+  ...
 &lt;/figure&gt;
 </pre>
                 <h3><code>.large-photo</code></h3>
@@ -256,13 +252,11 @@
                 </div>
 <pre class="prettyprint linenums">
 &lt;figure class="large-photo"&gt;
-  &lt;img src=""&gt;
-  &lt;figcaption&gt;&lt;/figcaption&gt;
-  &lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
+  ...
 &lt;/figure&gt;
 </pre>
                 <h2>Responsive video container</h2>
-                <p>Wrap the <strong>embedded</strong> video with <code>.video-wrapper</code> to apply a responsive container to the video. To adjust aspect ratio increase or decrease the <code>margin-bottom</code> applied to the <code>iframe</code>, <code>object</code> or <code>embed</code> containing the video. In this case the <code>margin-bottom</code> is <strong>50.7%</strong>.</p>
+                <p>Wrap the <strong>embedded</strong> video with <code>.video-wrapper</code> to apply a responsive container to the video. To adjust aspect ratio increase, decrease the <code>margin-bottom</code> applied to the <code>iframe</code>, <code>object</code> or <code>embed</code> containing the video.</p>
                 <div class="bs-docs-example">
                   <div class="row-fluid">
                     <div class="span8">
@@ -274,7 +268,7 @@
                 </div>
 <pre class="prettyprint linenums">
 &lt;div class="video-wrapper"&gt;
-  &lt;iframe&gt;&lt;/iframe&gt;
+  &lt;iframe&gt;...&lt;/iframe&gt;
 &lt;/div&gt;
 </pre>
             </section>
@@ -287,7 +281,7 @@
                 <h1>Related media</h1>
               </div>
               <h2>Links</h2>
-              <p>Add the <code>.media-link</code> class to a <code>a</code> tag to apply the link styles. If the content is part of Digital Plus, use the <code>digital-plus-icon</code> class to add the plus icon to the end of the link.</p>
+              <p>Add the <code>.media-link</code> class to a <code>a</code> element to apply the link styles. If the content is part of Digital Plus, use the <code>digital-plus-icon</code> class to add the plus icon to the end of the link.</p>
               <div class="bs-docs-example">
                 <div class="row-fluid">
                   <div class="span7">
@@ -321,7 +315,7 @@
 &lt;/aside&gt;
 </pre>
               <h3>Related content as navigation</h3>
-              <p>Use <code>.related-feature</code> when related content will not be notched into the narrative, such as a refer to a photo gallery or graphic, but is still related to the main article to drop the borders. </p>
+              <p>Use <code>.related-feature</code> to drop the borders when related content will not be notched into the narrative, such as a refer to a photo gallery or graphic, but is still related to the main article.</p>
               <div class="bs-docs-example">
                 <div class="row-fluid">
                   <div class="span7">
@@ -340,7 +334,7 @@
 &lt;/aside&gt;
 </pre>
               <h2>Related headlines as navigation</h2>
-              <p>For a list of related headlines apply a <code>.nav-related</code> class to a <code>ul</code>.</p>
+              <p>For a list of related headlines apply a <code>.nav-related</code> class to a <code>ul</code> element.</p>
               <div class="bs-docs-example">
                 <div class="row-fluid">
                   <div class="span4">
@@ -356,11 +350,11 @@
               </div>
 <pre class="prettyprint linenums">
 &lt;ul class="nav nav-related"&gt;
-  &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=""&gt;...&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=""&gt;...&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=""&gt;...&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=""&gt;...&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=""&gt;...&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </pre>
               <h3>Add a descriptions and image</h3>
@@ -383,9 +377,9 @@
   &lt;li&gt;&lt;a href=""&gt;
     Related content
     &lt;p&gt;Content description&lt;/p&gt;
-    &lt;img src="" /&gt;&lt;/a&gt;
+    &lt;img src="..." /&gt;&lt;/a&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="..."&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </pre>
             </section>
@@ -398,7 +392,7 @@
                   <h1>Story asset integration</h1>
               </div>
               <h2>Notched media</h2>
-              <p>To integrate story assets with the main narrative, wrap a <code>figure</code> in a div with class <code>.trib-media</code>, which will notch the content into the story paragraphs. Wrap story body <code>p</code> and <code>.trib-media</code> content in an <code>article</code> with a <code>ct-article</code> class. This technique works best when all the content is within a none nested <code>span12</code>. Otherwise the <code>width</code> of the body copy <code>p</code> tags needs to be adjusted to line up with <code>trib-media</code> content.</p>
+              <p>To integrate story assets with the main narrative, wrap a <code>figure</code> in a <code>div</code> with class <code>.trib-media</code>, which will notch the content into the story paragraphs. Wrap story body copy <code>p</code> elements and <code>.trib-media</code> content in an <code>article</code> with a <code>ct-article</code> class. This technique works best when all the content is within a none nested <code>span12</code>. Otherwise the <code>width</code> of the body copy <code>p</code> elements needs to be adjusted to line up with <code>trib-media</code> content.</p>
               <div class="bs-docs-example">
                 <article>
                   <h1>Story headline</h1>
@@ -425,7 +419,7 @@
     &lt;p&gt;&lt;/p&gt;
     &lt;div class="trib-media"&gt;
       &lt;figure class="small-photo"&gt;
-        &lt;img src="" class="trib-img"&gt;
+        &lt;img src="..." class="trib-img"&gt;
         &lt;figcaption&gt;...&lt;/figcaption&gt;
         &lt;figcaption class="media-credit"&gt;...&lt;/figcaption&gt;
       &lt;/figure&gt;
@@ -433,7 +427,6 @@
     &lt;p&gt;...&lt;/p&gt;
   &lt;/article&gt;
 &lt;/article&gt;
-
 </pre>
             </section>
 
@@ -444,17 +437,18 @@
               <div class="page-header">
                 <h1>Bylines, credits and sourcing</h1>
               </div>
-              <h2>Bylines</h2>
-              <p>Story/article byline style</p>
+              <h2>CT.com bylines</h2>
+              <p>Add a <code>ct-byline</code> class to a <code>p</code> element and wrap the authors name(s) in a <code>span</code>. Add <code>ct-byline-source</code> to a <code>p</code>element to style the author's organization. Add a <code>ct-time-stamp</code> class to a <code>p</code> element to style the publication date and time. Bylines on apps projects will have an increased <code>font-size</code>.</p>
               <div class="bs-docs-example">
-                <p class="byline">By Trib Apps <a href="https://twitter.com/tribapps" class="twitter-follow-button" data-show-count="false">Follow @tribapps</a>
-                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>&nbsp|&nbsp&nbspTribune reporter</p>
-                <time>Month Day, Year</time>
+                <p class="ct-byline">By <span>First Last</span></p>
+                <p class="ct-byline-source">Chicago Tribune</p>
+                <p class="ct-time-stamp">September 19, 2013</p>
               </div>
-<pre class="prettyprint linenums"> 
-&lt;p class="byline"&gt;&lt;By Trib Apps ...&lt;/p&gt;
-&lt;time&gt;Month Day, Year&lt;/time&gt; 
-</pre>        
+<pre class="prettyprint linenums">
+&lt;p class="ct-byline"&gt;&lt;span&gt;First Last&lt;/span&gt;&lt;/p&gt;
+&lt;p class="ct-byline-source"&gt;Chicago Tribune&lt;/p&gt;
+&lt;p class="ct-time-stamp"&gt;September 19, 2013&lt;/p&gt;
+</pre>
               <h2>Credits</h2>
               <p>Credits go at the bottom of the page and used in projects with a smaller team and produced mostly by one department. It should include bylines and organization.</p>
               <div class="bs-docs-example">
@@ -587,7 +581,7 @@
                 <h1>Social media buttons</h1>
               </div>
               <h2>Horizontal social media group</h2>
-              <p>First, make sure Font Awesome is included in your project. Then wrap a <code>ul</code> in a div with class <code>.social-wrapper</code>. Use a <code>small</code> element for the buttons label and <code>.text-center</code> on the wrapping <code>div</code> to center the label and buttons.</p>
+              <p>First, make sure Font Awesome is included in your project. Then wrap a <code>ul</code> in a <code>div</code> with class <code>.social-wrapper</code>. Use a <code>small</code> element for the buttons label and <code>.text-center</code> on the wrapping <code>div</code> to center the label and buttons.</p>
               <div class="bs-docs-example">
                 <div class="row-fluid">
                   <div class="span12">
@@ -647,7 +641,7 @@
 &lt;/div&gt;
 </pre>
               <h2>Vertical social media group</h2>
-              <p>Add <code>.social-wrapper-vertical</code> to the wrapping <code>div</code> to align the buttons vertically and center the text.</p>
+              <p>Add <code>.social-wrapper-vertical</code> to the wrapping <code>div</code> to align the buttons vertically and center the text. Shorten the label to "Share" so it fits neatly above the buttons.</p>
               <div class="bs-docs-example">
                 <div class="row-fluid">
                   <div class="span12">
