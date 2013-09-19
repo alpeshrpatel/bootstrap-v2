@@ -5176,7 +5176,7 @@ tr:last-child {
 }
 /* drop cap styles */
 .drop-cap:first-letter {
-  margin: 0 7px -1px 0;
+  margin: 0 7px -3px 0;
   font-size: 325%;
   line-height: 100%;
   float: left;
