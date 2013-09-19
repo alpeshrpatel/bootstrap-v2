@@ -398,67 +398,43 @@
                   <h1>Story asset integration</h1>
               </div>
               <h2>Notched media</h2>
-              <p>To integrate story assets with the main narrative, wrap a <code>figure</code> in a div with class <code>.trib-media</code>, which will notch the content into the story paragraphs.</p>
+              <p>To integrate story assets with the main narrative, wrap a <code>figure</code> in a div with class <code>.trib-media</code>, which will notch the content into the story paragraphs. Wrap story body <code>p</code> and <code>.trib-media</code> content in an <code>article</code> with a <code>ct-article</code> class. This technique works best when all the content is within a none nested <code>span12</code>. Otherwise the <code>width</code> of the body copy <code>p</code> tags needs to be adjusted to line up with <code>trib-media</code> content.</p>
               <div class="bs-docs-example">
                 <article>
-                  <p>Morbi iaculis erat egestas turpis rhoncus pharetra. Suspendisse potenti. Nunc bibendum fringilla mi, sed suscipit mi feugiat a. Vestibulum tincidunt congue ornare. Proin sit amet mi nunc. Quisque tellus quam, faucibus vitae sagittis sit amet, consequat ut quam. Vestibulum sodales lacus in ligula aliquet congue. Ut dictum, enim at consectetur ullamcorper, tellus leo convallis odio, ut tempor sem nisi at ante.</p>
-                  <div class="trib-media">
-                    <figure class="small-photo">
-                      <img src="http://fillmurray.com/g/500/325">
-                      <figcaption>This is a caption about a kitten who likes to be photographed in black and white</figcaption>
-                      <figcaption class="media-credit">First Last - Organization</figcaption>
-                    </figure>
-                  </div>
-                  <p>Aliquam ac augue ac nisi ullamcorper vehicula vel eget tellus. Proin venenatis ullamcorper magna, eget rutrum nunc imperdiet nec. Donec et leo mauris. Pellentesque risus felis, mollis id facilisis at, sollicitudin sit amet augue. Phasellus lobortis ullamcorper odio, eget pharetra neque dictum eget. Morbi dignissim dictum posuere. Aliquam erat volutpat. Nam at massa turpis, et aliquet urna.</p>
-                  <p>Duis scelerisque, felis in pretium sollicitudin, ligula nibh gravida odio, sit amet pretium lorem justo in lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam non magna metus. Sed auctor tristique condimentum. Ut non elit eget tellus vestibulum mattis.</p>
+                  <h1>Story headline</h1>
+                  <p class="byline">By Trib Apps</p>
+                  <article class="ct-article">
+                    <p style="width: 73%;">Morbi iaculis erat egestas turpis rhoncus pharetra. Suspendisse potenti. Nunc bibendum fringilla mi, sed suscipit mi feugiat a. Vestibulum tincidunt congue ornare. Proin sit amet mi nunc. Quisque tellus quam, faucibus vitae sagittis sit amet, consequat ut quam. Vestibulum sodales lacus in ligula aliquet congue. Ut dictum, enim at consectetur ullamcorper, tellus leo convallis odio, ut tempor sem nisi at ante.</p>
+                    <div class="trib-media">
+                      <figure class="small-photo">
+                        <img src="http://fillmurray.com/g/500/325">
+                        <figcaption>This is a caption about a kitten who likes to be photographed in black and white</figcaption>
+                        <figcaption class="media-credit">First Last - Organization</figcaption>
+                      </figure>
+                    </div>
+                    <p style="width: 73%;">Aliquam ac augue ac nisi ullamcorper vehicula vel eget tellus. Proin venenatis ullamcorper magna, eget rutrum nunc imperdiet nec. Donec et leo mauris. Pellentesque risus felis, mollis id facilisis at, sollicitudin sit amet augue. Phasellus lobortis ullamcorper odio, eget pharetra neque dictum eget. Morbi dignissim dictum posuere. Aliquam erat volutpat. Nam at massa turpis, et aliquet urna.</p>
+                    <p style="width: 73%;">Duis scelerisque, felis in pretium sollicitudin, ligula nibh gravida odio, sit amet pretium lorem justo in lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam non magna metus. Sed auctor tristique condimentum. Ut non elit eget tellus vestibulum mattis.</p>
+                  </article>
                 </article>
               </div>
 <pre class="prettyprint linenums">
 &lt;article&gt;
-  &lt;p&gt;&lt;/p&gt;
-  &lt;div class="trib-media"&gt;
-    &lt;figure class="small-photo"&gt;
-      &lt;img src="" class="trib-img"&gt;
-      &lt;figcaption&gt;&lt;/figcaption&gt;
-      &lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
-    &lt;/figure&gt;
-  &lt;/div&gt;
-  &lt;p&gt;&lt;/p&gt;
+  &lt;h1&gt;...&lt;/h1&gt;
+  &lt;p class="byline"&gt;...&lt;/p&gt;
+  &lt;article class="ct-article"&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;div class="trib-media"&gt;
+      &lt;figure class="small-photo"&gt;
+        &lt;img src="" class="trib-img"&gt;
+        &lt;figcaption&gt;...&lt;/figcaption&gt;
+        &lt;figcaption class="media-credit"&gt;...&lt;/figcaption&gt;
+      &lt;/figure&gt;
+    &lt;/div&gt;
+    &lt;p&gt;...&lt;/p&gt;
+  &lt;/article&gt;
 &lt;/article&gt;
 
 </pre>
-
-              <h2>Flush notched media</h2>
-              <p>To get the media to sit flush with the right edge of the text, add <code>flush</code> to your div with class <code>trib-media</code>.</p>
-              <div class="bs-docs-example">
-                <article>
-                  <p>Morbi iaculis erat egestas turpis rhoncus pharetra. Suspendisse potenti. Nunc bibendum fringilla mi, sed suscipit mi feugiat a. Vestibulum tincidunt congue ornare. Proin sit amet mi nunc. Quisque tellus quam, faucibus vitae sagittis sit amet, consequat ut quam. Vestibulum sodales lacus in ligula aliquet congue. Ut dictum, enim at consectetur ullamcorper, tellus leo convallis odio, ut tempor sem nisi at ante.</p>
-                  <div class="trib-media flush">
-                    <figure class="small-photo">
-                      <img src="http://fillmurray.com/g/320/200" class="trib-img">
-                      <figcaption>This is a caption about a kitten who likes to be photographed in black and white</figcaption>
-                      <figcaption class="media-credit">First Last - Organization</figcaption>
-                    </figure>
-                  </div>
-                  <p>Aliquam ac augue ac nisi ullamcorper vehicula vel eget tellus. Proin venenatis ullamcorper magna, eget rutrum nunc imperdiet nec. Donec et leo mauris. Pellentesque risus felis, mollis id facilisis at, sollicitudin sit amet augue. Phasellus lobortis ullamcorper odio, eget pharetra neque dictum eget. Morbi dignissim dictum posuere. Aliquam erat volutpat. Nam at massa turpis, et aliquet urna.</p>
-                  <p>Duis scelerisque, felis in pretium sollicitudin, ligula nibh gravida odio, sit amet pretium lorem justo in lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam non magna metus. Sed auctor tristique condimentum. Ut non elit eget tellus vestibulum mattis.</p>
-                </article>
-              </div>
-<pre class="prettyprint linenums">
-&lt;article&gt;
-  &lt;p&gt;&lt;/p&gt;
-  &lt;div class="trib-media flush"&gt;
-    &lt;figure class="small-photo"&gt;
-     &lt;img src="" class="trib-img"&gt;
-     &lt;figcaption&gt;&lt;/figcaption&gt;
-     &lt;figcaption class="media-credit"&gt;&lt;/figcaption&gt;
-    &lt;/figure&gt;
-  &lt;/div&gt;
-  &lt;p&gt;&lt;/p&gt;
-&lt;/article&gt;
-
-</pre>
-
             </section>
 
             <!-- Bylines and credits
