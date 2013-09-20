@@ -880,38 +880,81 @@
                     <h1>Ads</h1>
                 </div>
                 <h2>How it works</h2>
-                <p>Our current ad JS is located at <a href="http://media.apps.chicagotribune.com/ads/v1/ads.js">http://media.apps.chicagotribune.com/ads/v1/ads.js</a>. You're going to load that script and some dependencies, create one or more elements to contain the actual ads with the <code>advert-wrapper</code> class, make sure to serve an <a href="http://media.apps.chicagotribune.com/ads/v1/ad-iframe.html">ad-iframe.html file</a> from the same domain you're on, include a brief template somewhere on the page, run a line of JS and set the ad-path in order to get the right inventory displayed. Easy enough! (It's easier than it sounds, promise :)</p>
-								<h3>Dependencies</h3>
-								<p>You'll need to include the following, in order:</p>
+                <p>Include the javascript, add <code>&lt;div class="advert"&gt;&lt;/div&gt;</code> where you want an ad to show up, specifiy a ad path and page type for the page, and presto!</p>
+
 <pre class="prettyprint linenums">
-&lt;script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="//media.apps.chicagotribune.com/ads/v1/ads.js"&gt;&lt;/script&gt;
+&lt;body data-ad-path="sports" data-ad-ptype="sf" data-ad-iframe-url="/static/ad-iframe.html"&gt;
+
+&lt;div class="advert"&gt;&lt;/div&gt;
+
+&lt;div class="advert" data-ad-type="cube"&gt;&lt;/div&gt;
+&lt;div class="advert" data-ad-type="cube"&gt;&lt;/div&gt;
+
+&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="//s3.amazonaws.com/media.apps.chicagotribune.com/ads/v2.0.0/ads.min.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
 </pre>
-								<p>You'll also need to include an <a href="http://media.apps.chicagotribune.com/ads/v1/ad-iframe.html">ad-iframe.html</a> file served from the same domain your app will be running on. The easiest way to do this is probably to make a copy of that file and include it directly in your repo.</p>
+
+                <h4>Best practice</h4>
+                <p>Ads should be handled all together at once on a page. Ads shouldn't be treated as individual elements, but rather as an ad map or group of ads. Best practice is to include one leaderboard and two cube ads. The leaderboard should be at the top of the page, and the first cube placed on the the right side of the page, very close to the leaderboard. The second cube can be placed somewhere further down the page, on the right.</p>
+                <p>Unless you have different requirements that you've discussed with Ad Ops, you should follow this pattern.</p>
+
+								<h3>Setup</h3>
+								<p>You'll need to include this script, after your include for jquery:</p>
+<pre class="prettyprint linenums">
+&lt;script src="//s3.amazonaws.com/media.apps.chicagotribune.com/ads/v2.0.0/ads.min.js"&gt;&lt;/script&gt;
+</pre>
+								<p>You'll need to include an <a href="http://media.apps.chicagotribune.com/ads/v2.0.0/ad-iframe.html">ad-iframe.html</a> file served from the same domain your app will be running on. The easiest way to do this is to make a copy of that file and include it the static assets directory of your app.</p>
 								
-								<h3>Create an ad container</h3>
-								<p>This is just a straightforward div (or other DOM element) with the <code>advert-wrapper</code> class, meant to be the placeholder for the actual ad, which will get imported via Backbone and the ad-iframe.html file. For instance:
-								<br><br><code>&lt;div class="advert-wrapper"&gt;&lt;/div&gt;</code>
+                <h3>Configure the page</h3>
+                <p>To get ads to serve properly, they need to know the ad path, page type, and where to find the ad iframe. Since these settings cannot vary ad to ad, we specify them on the body tag:</p>
+<pre class="prettyprint linenums">
+&lt;body data-ad-path="sports" data-ad-ptype="sf" data-ad-iframe-url="/static/ad-iframe.html"&gt;
+</pre>
+                <h4>Ad paths</h4>
+                <p>Ad paths sometimes resemble the URL path, i.e. <code>sports/bears</code>. You can always steal the path from an existing section on chicagotribune.com by inspecting an ad and looking at the url of the javascript tag that loads the ad. The ad path is the final bit of the path after the domain, account id and publication name. When in doubt, contact ad ops.</p>
+                <p>The ad path is always specifed in the body tag with the <code>data-ad-path</code> attribute.</p>
+
+                <h4>Page type</h4>
+                <p>There are two page type values: <code>s</code> for a story page and <code>sf</code> for a section front page. A story page is any page that displays a single content item, and a section front page is anything that displays a list or lists of stories or links. Always specify the page type in the body tag with the <code>data-ad-ptype</code> attribute.</p>
+
+								<h3>Create your ad containers</h3>
+								<p>This is just a straightforward div (or other DOM element) with the <code>advert</code> class, meant to be the placeholder for the actual ad:
+								<br><br><code>&lt;div class="advert"&gt;&lt;/div&gt;</code>
 								<br><br>And if you'd like a cube ad instead:
-								<br><br><code>&lt;div class="advert-wrapper" data-ad-type="cube"&gt;&lt;/div&gt;</code>
-								
-								<h3>Include a template</h3>
-								<p>You need to include a brief template on the page that governs how the ads are presented (for instance, if you want to include the word "Advertisement" below each ad or something). The basic template looks like this:
-								<br>
+								<br><br><code>&lt;div class="advert" data-ad-type="cube"&gt;&lt;/div&gt;</code>
+
+                <h3>Refreshing ads</h3>
+                <p>Sometimes you'll need to refresh the ads, if your dynamically changing the page contents without loading a new url</p>
 <pre class="prettyprint linenums">
-&lt;script type="text/template" id="advert-template"&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="advert-inner-wrapper"&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;iframe width="&lt;%= width %&gt;" height="&lt;%= height %&gt;" scrolling="no" frameBorder="0"&gt;&lt;/iframe&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
-&lt;/script&gt;
+$('.advert').ad('refresh');
 </pre>
-								<h3>Load the ads and set the ad path</h3>
-								<p>We're almost done! All you need to do now is wait for document.ready and run the following JS to load the ads and set the proper ad path (replacing {{ ad_path }} with the correct one for your app, of course):
-								<br>
+                <p>Refreshing ads will trigger special events that you can attach a listener to.</p>
+
 <pre class="prettyprint linenums">
-$('.advert-wrapper').each(function() {
-&nbsp;&nbsp;&nbsp;&nbsp;new AdvertView({ el: $(this), path: '{{ ad_path }}' });
+$('body').on('ad-refresh', function() {
+  alert('Somewhere ads have been refreshed...');
+})
+</pre>
+
+                <p>Or for a specific ad container.</p>
+
+<pre class="prettyprint linenums">
+$('#my-special-ad').on('refresh', function() {
+  alert('My special ad has been refreshed...');
+})
+</pre>
+
+                <h3>No magic</h4>
+                <p>The ads javascript will automatically load and initialize all elements with class <code>.advert</code>. If you want to use a different class name, or handle the loading yourself, you can use the <code>$.ad()</code> jQuery plugin.</p>
+								
+<pre class="prettyprint linenums">
+$('.my-ads').ad({
+  path: 'sports',                      // Optional: defaults to data-ad-path on the body tag
+  ptype: 'sf',                         // Optional: defaults to data-ad-ptype on the body tag
+  iframeUrl: '/static/ad-iframe.html', // Optional: defaults to data-ad-iframe-url on the body tag, then 'ad-iframe.html'
+  type: 'cube',                        // Optional: defaults to data-ad-type on each selected element, then 'leaderboard'
+  debug: true                          // Optional: defaults to false
 });
 </pre>
             </section>
