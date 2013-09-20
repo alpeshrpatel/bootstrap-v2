@@ -6098,8 +6098,8 @@ tr:last-child {
 
 .drop-cap:first-letter {
   float: left;
-  margin: 0 7px -1px 0;
-  font-size: 325%;
+  margin: 0 7px -5px 0;
+  font-size: 335%;
   line-height: 100%;
 }
 
@@ -6108,7 +6108,7 @@ tr:last-child {
 article p {
   margin-bottom: 22px;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 27px;
 }
 
 article p,
@@ -6121,6 +6121,10 @@ article h6,
 article .social-wrapper,
 article .article-media {
   max-width: 680px;
+}
+
+.ct-article p {
+  width: 67%;
 }
 
 .mm-wrapper {
@@ -6151,22 +6155,19 @@ article h1 {
 /* breakout/bullet styles */
 
 article .pull-out {
-  width: 680px;
-  padding: 20px;
+  max-width: 640px;
+  padding: 0 20px;
   margin: 35px 0;
-  font-family: Arial, sans-serif;
-  background-color: #eeeeee;
+  font-style: italic;
   border-left: 2px solid #666666;
-}
-
-article .pull-out p {
-  width: 100%;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 article .pull-out p:last-child {
   margin-bottom: 0;
+}
+
+article .pull-out strong {
+  color: #666;
 }
 
 /* notched media styles */
@@ -6177,16 +6178,8 @@ article .pull-out p:last-child {
   margin: 0 0 24px 40px;
 }
 
-.trib-media.flush {
-  float: none;
-  width: auto;
-  max-width: 680px;
-  margin: 0;
-}
-
-.trib-media.flush figure {
-  float: right;
-  margin: 0 0 20px 40px;
+.trib-media p {
+  width: 100%;
 }
 
 /* figure and aside styles */
@@ -6362,6 +6355,35 @@ article a.media-link {
 
 /* bylines, credits and source line */
 
+.ct-byline {
+  margin: 0;
+  font-size: 13px;
+  line-height: 20px;
+  color: #666;
+}
+
+.ct-byline span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #144A7C;
+}
+
+.ct-byline-source {
+  font-size: 11px;
+  line-height: 20px;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.ct-time-stamp {
+  font-family: 'arial', sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 13px;
+  color: #999;
+  text-transform: uppercase;
+}
+
 .byline {
   font-size: 16px;
   line-height: 25px;
@@ -6383,25 +6405,33 @@ time {
   line-height: 20px;
 }
 
-.credits-box {
-  padding: 10px;
-  margin-top: 20px;
-  color: #333;
-  border: 1px solid #d0d0d0;
+.credits-wrapper {
+  padding: 25px;
+  margin-top: 10px;
+  background-color: #eee;
 }
 
-.credits-box h3 {
-  margin-bottom: 5px;
-  text-align: center;
+.credits-inner {
+  max-width: 970px;
+  margin: 0 auto;
+  color: #999;
 }
 
-.credits-title {
-  text-align: center;
+.credits-inner p {
+  font-size: 16px;
+  line-height: 1.4em;
 }
 
-.credits-cat {
-  font-weight: bold;
-  text-align: right;
+.credits-inner p > span {
+  color: #666;
+}
+
+.credits-inner p:last-child {
+  margin-bottom: 0;
+}
+
+.credits-wrapper + #footer > .page-footer {
+  margin-top: 0;
 }
 
 /* social media styles */
@@ -6492,10 +6522,9 @@ a.dropdown-toggle {
 
 .chapter-header > small {
   display: block;
-  margin-top: 14px;
+  margin-top: 15px;
   font-family: 'helevtica neue', 'arial', sans-serif;
-  font-size: 15px;
-  font-style: italic;
+  font-size: 14px;
   color: #777;
   text-transform: none;
 }
@@ -6506,11 +6535,32 @@ a.dropdown-toggle {
   .mm-wrapper {
     margin-left: 80px;
   }
+  .ct-article p {
+    width: 69%;
+  }
 }
 
 @media all and (max-width: 979px) {
   .mm-wrapper {
     margin-left: 0;
+  }
+}
+
+@media all and (max-width: 915px) {
+  .ct-article p {
+    width: 72%;
+  }
+}
+
+@media all and (max-width: 840px) {
+  .ct-article p {
+    width: 75%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .ct-article p {
+    width: 79%;
   }
 }
 
@@ -6550,6 +6600,9 @@ a.dropdown-toggle {
 }
 
 @media only screen and (max-width: 480px) {
+  .ct-article p {
+    width: 100%;
+  }
   .drop-cap:first-letter {
     font-size: 300%;
   }
