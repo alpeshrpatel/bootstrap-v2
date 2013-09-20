@@ -8,6 +8,7 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.2/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
@@ -15,7 +16,7 @@
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="assets/js/html5shiv.js"></script>
     <![endif]-->
 
     <!-- Le fav and touch icons -->
@@ -59,9 +60,6 @@
               </li>
               <li class="">
                 <a href="./javascript.html">JavaScript</a>
-              </li>
-              <li class="">
-                <a href="./customize.html">Customize</a>
               </li>
               <li class="">
                 <a href="./chicagotribune.html">Chicago Tribune</a>
@@ -163,6 +161,25 @@
 <pre class="prettyprint linenums">
 &lt;ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel"&gt;
   ...
+&lt;/ul&gt;
+</pre>
+
+          <h3>Disabled menu options</h3>
+          <p>Add <code>.disabled</code> to a <code>&lt;li&gt;</code> in the dropdown to disable the link.</p>
+          <div class="bs-docs-example">
+            <div class="dropdown clearfix">
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static; margin-bottom: 5px; *width: 180px;">
+                <li><a tabindex="-1" href="#">Regular link</a></li>
+                <li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>
+                <li><a tabindex="-1" href="#">Another link</a></li>
+              </ul>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu"&gt;
+  &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Regular link&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="disabled"&gt;&lt;a tabindex="-1" href="#"&gt;Disabled link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Another link&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </pre>
 
@@ -275,9 +292,9 @@
           </div>
 <pre class="prettyprint linenums">
 &lt;div class="btn-group"&gt;
-  &lt;button class="btn"&gt;1&lt;/button&gt;
-  &lt;button class="btn"&gt;2&lt;/button&gt;
-  &lt;button class="btn"&gt;3&lt;/button&gt;
+  &lt;button class="btn"&gt;Left&lt;/button&gt;
+  &lt;button class="btn"&gt;Middle&lt;/button&gt;
+  &lt;button class="btn"&gt;Right&lt;/button&gt;
 &lt;/div&gt;
 </pre>
 
@@ -1088,61 +1105,6 @@
 &lt;/div&gt;
 </pre>
 
-
-        <h2>Chicago Tribune navbar</h2>
-        <div class="navbar navbar-ct">
-            <div class="navbar-inner">
-                <div class="container">
-                    <ul class="nav">
-                        <li><a href="http://chicagotribune.com"><i class="icon-home"></i> Home</a></li>
-                        <li class="dropdown btn-navbar">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                Member Center <i class="caret"></i></a>
-                            <ul class="dropdown-menu">
-                                <li class="active"><a href="/">Home</a></li>
-                                <li><a href="/ebooks/">E-books</a></li>
-                                <li><a href="/events/">Events</a></li>
-                                <li><a href="/apps/">Mobile apps</a></li>
-                            </ul>
-                        </li>
-                    </a>
-                    </ul>
-
-                    <div class="nav-collapse">
-                        <ul class="nav">
-                            <li class="active"><a href="/">Member Center</a></li>
-                            <li><a href="/ebooks/">E-books</a></li>
-                            <li><a href="/events/">Events</a></li>
-                            <li><a href="/apps/">Mobile apps</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-<pre class="prettyprint linenums">
- &lt;div class="navbar navbar-ct"&gt;
-        &lt;div class="navbar-inner"&gt;
-            &lt;div class="container"&gt;
-                &lt;ul class="nav"&gt;
-                    &lt;li&gt;&lt;a href="http://chicagotribune.com"&gt;&lt;i class="icon-home"&gt;&lt;/i&gt; Home&lt;/a&gt;&lt;/li&gt;
-                    &lt;li class="dropdown btn-navbar"&gt;
-                        &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown"&gt;
-                            Member Center &lt;i class="caret"&gt;&lt;/i&gt;&lt;/a&gt;
-                        &lt;ul class="dropdown-menu"&gt;
-                            &lt;li class="active"&gt;&lt;a href="/"&gt;Home&lt;/a&gt;&lt;/li&gt;
-                        &lt;/ul&gt;
-                    &lt;/li&gt;
-                &lt;/a&gt;
-                &lt;/ul&gt;
-                &lt;div class="nav-collapse"&gt;
-                    &lt;ul class="nav"&gt;
-                        &lt;li class="active"&gt;&lt;a href="/"&gt;Member Center&lt;/a&gt;&lt;/li&gt;
-                    &lt;/ul&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-</pre>
           <hr class="bs-docs-separator">
 
 
@@ -1343,18 +1305,13 @@
 
 
           <h2>Responsive navbar</h2>
-          <p>To implement a collapsing responsive navbar, wrap your navbar content in a containing div, <code>.nav-collapse.collapse</code>, and add the navbar toggle button, <code>.btn-navbar</code>.</p>
+          <p>To implement a responsive navbar, you have two utility classes: <code>.nav-full</code> and <code>.nav-compact</code>. The compact one shows for mobile and table, full shows for full width.</p>
           <div class="bs-docs-example">
             <div class="navbar">
               <div class="navbar-inner">
                 <div class="container">
-                  <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </a>
                   <a class="brand" href="#">Title</a>
-                  <div class="nav-collapse collapse navbar-responsive-collapse">
+                  <div class="nav-full">
                     <ul class="nav">
                       <li class="active"><a href="#">Home</a></li>
                       <li><a href="#">Link</a></li>
@@ -1390,6 +1347,47 @@
                       </li>
                     </ul>
                   </div><!-- /.nav-collapse -->
+                  <div class="nav-compact">
+                    <ul class="nav">
+                    	<li class="dropdown">
+                    		<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-th-list"></i><span class="hidden-mobile">&nbsp;Sections</span></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li class="active"><a href="#">Home</a></li>
+                          <li><a href="#">Link</a></li>
+                          <li><a href="#">Link</a></li>
+                          <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Action</a></li>
+                              <li><a href="#">Another action</a></li>
+                              <li><a href="#">Something else here</a></li>
+                              <li class="divider"></li>
+                              <li class="nav-header">Nav header</li>
+                              <li><a href="#">Separated link</a></li>
+                              <li><a href="#">One more separated link</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <form class="navbar-search pull-left" action="">
+                              <input type="text" class="search-query span2" placeholder="Search">
+                            </form>
+                          </li>
+                          <li><a href="#">Link</a></li>
+                          <li class="divider"></li>
+                          <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Action</a></li>
+                              <li><a href="#">Another action</a></li>
+                              <li><a href="#">Something else here</a></li>
+                              <li class="divider"></li>
+                              <li><a href="#">Separated link</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                    	</li>
+                    </ul>
+                  </div><!-- /.nav-collapse -->
                 </div>
               </div><!-- /navbar-inner -->
             </div><!-- /navbar -->
@@ -1399,18 +1397,16 @@
   &lt;div class="navbar-inner"&gt;
     &lt;div class="container"&gt;
 
-      &lt;!-- .btn-navbar is used as the toggle for collapsed navbar content --&gt;
-      &lt;a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"&gt;
-        &lt;span class="icon-bar"&gt;&lt;/span&gt;
-        &lt;span class="icon-bar"&gt;&lt;/span&gt;
-        &lt;span class="icon-bar"&gt;&lt;/span&gt;
-      &lt;/a&gt;
-
       &lt;!-- Be sure to leave the brand out there if you want it shown --&gt;
       &lt;a class="brand" href="#"&gt;Project name&lt;/a&gt;
 
-      &lt;!-- Everything you want hidden at 940px or less, place within here --&gt;
-      &lt;div class="nav-collapse collapse"&gt;
+      &lt;!-- Everything you want visible at 940px or more, place within here --&gt;
+      &lt;div class="nav-full"&gt;
+        &lt;!-- .nav, .navbar-search, .navbar-form, etc --&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Everything you want visible at 940px or less, place within here --&gt;
+      &lt;div class="nav-compact"&gt;
         &lt;!-- .nav, .navbar-search, .navbar-form, etc --&gt;
       &lt;/div&gt;
 
@@ -1418,9 +1414,6 @@
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
-          <div class="alert alert-info">
-            <strong>Heads up!</strong> The responsive navbar requires the <a href="./javascript.html#collapse">collapse plugin</a> and <a href="./scaffolding.html#responsive">responsive Bootstrap CSS file</a>.
-          </div>
 
 
           <hr class="bs-docs-separator">
@@ -1432,13 +1425,8 @@
             <div class="navbar navbar-inverse" style="position: static;">
               <div class="navbar-inner">
                 <div class="container">
-                  <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-inverse-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </a>
                   <a class="brand" href="#">Title</a>
-                  <div class="nav-collapse collapse navbar-inverse-collapse">
+                  <div class="nav-full">
                     <ul class="nav">
                       <li class="active"><a href="#">Home</a></li>
                       <li><a href="#">Link</a></li>
@@ -1472,6 +1460,47 @@
                           <li><a href="#">Separated link</a></li>
                         </ul>
                       </li>
+                    </ul>
+                  </div><!-- /.nav-collapse -->
+                  <div class="nav-compact">
+                    <ul class="nav">
+                    	<li class="dropdown">
+                    		<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-th-list icon-white"></i><span class="hidden-mobile">&nbsp;Sections</span></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li class="active"><a href="#">Home</a></li>
+                          <li><a href="#">Link</a></li>
+                          <li><a href="#">Link</a></li>
+                          <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Action</a></li>
+                              <li><a href="#">Another action</a></li>
+                              <li><a href="#">Something else here</a></li>
+                              <li class="divider"></li>
+                              <li class="nav-header">Nav header</li>
+                              <li><a href="#">Separated link</a></li>
+                              <li><a href="#">One more separated link</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <form class="navbar-search pull-left" action="">
+                              <input type="text" class="search-query span2" placeholder="Search">
+                            </form>
+                          </li>
+                          <li><a href="#">Link</a></li>
+                          <li class="divider"></li>
+                          <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Action</a></li>
+                              <li><a href="#">Another action</a></li>
+                              <li><a href="#">Something else here</a></li>
+                              <li class="divider"></li>
+                              <li><a href="#">Separated link</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                    	</li>
                     </ul>
                   </div><!-- /.nav-collapse -->
                 </div>
@@ -1553,6 +1582,7 @@
     &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#"&gt;Next&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
@@ -1582,7 +1612,7 @@
 <pre class="prettyprint linenums">
 &lt;div class="pagination"&gt;
   &lt;ul&gt;
-    &lt;li class="disabled"&gt;&lt;a href="#"&gt;Prev&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="disabled"&gt;&lt;a href="#"&gt;&amp;laquo;&lt;/a&gt;&lt;/li&gt;
     &lt;li class="active"&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
     ...
   &lt;/ul&gt;
@@ -1592,7 +1622,7 @@
 <pre class="prettyprint linenums">
 &lt;div class="pagination"&gt;
   &lt;ul&gt;
-    &lt;li class="disabled"&gt;&lt;span&gt;Prev&lt;/span&gt;&lt;/li&gt;
+    &lt;li class="disabled"&gt;&lt;span&gt;&amp;laquo;&lt;/span&gt;&lt;/li&gt;
     &lt;li class="active"&gt;&lt;span&gt;1&lt;/span&gt;&lt;/li&gt;
     ...
   &lt;/ul&gt;
@@ -1952,15 +1982,15 @@
 </pre>
 
           <h2>Page header</h2>
-          <p>A simple shell for an <code>h1</code> to appropriately space out and segment sections of content on a page. It can utilize the <code>h1</code>'s default <code>small</code>, element as well most other components (with additional styles).</p>
+          <p>A simple shell for an <code>h1</code> to appropriately space out and segment sections of content on a page. It can utilize the <code>h1</code>'s default <code>small</code>, element as well most other components (with additional styles). You must wrap the main text component of the header with a <code>span</code> in order to get the extra spacing.</p>
           <div class="bs-docs-example">
             <div class="page-header">
-              <h1>Example page header <small>Subtext for header</small></h1>
+              <h1><span>Example page header</span> <small>Subtext for header</small></h1>
             </div>
           </div>
 <pre class="prettyprint linenums">
 &lt;div class="page-header"&gt;
-  &lt;h1&gt;Example page header &lt;small&gt;Subtext for header&lt;/small&gt;&lt;/h1&gt;
+  &lt;h1&gt;&lt;span&gt;Example page header&lt;/span&gt; &lt;small&gt;Subtext for header&lt;/small&gt;&lt;/h1&gt;
 &lt;/div&gt;
 </pre>
 
@@ -2545,7 +2575,7 @@
             <p><button class="close" style="float: none;">&times;</button></p>
           </div>
           <pre class="prettyprint linenums">&lt;button class="close"&gt;&amp;times;&lt;/button&gt;</pre>
-          <p>iOS devices require an href="#" for click events if you would rather use an anchor.</p>
+          <p>iOS devices require an <code>href="#"</code> for click events if you would rather use an anchor.</p>
           <pre class="prettyprint linenums">&lt;a class="close" href="#"&gt;&amp;times;&lt;/a&gt;</pre>
 
           <h2>Helper classes</h2>
@@ -2627,7 +2657,7 @@ class="clearfix"
           <li class="muted">&middot;</li>
           <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Issues</a></li>
           <li class="muted">&middot;</li>
-          <li><a href="https://github.com/twitter/bootstrap/wiki">Roadmap and changelog</a></li>
+          <li><a href="https://github.com/twitter/bootstrap/blob/master/CHANGELOG.md">Changelog</a></li>
         </ul>
       </div>
     </footer>
