@@ -216,12 +216,12 @@ body {
   background-color: #fbfcfc;
 }
 a {
-  color: #900000;
+  color: #116677;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #900000;
+  color: #116677;
   text-decoration: underline;
 }
 .img-rounded {
@@ -3029,14 +3029,14 @@ input[type="submit"].btn.btn-mini {
 .btn-link {
   border-color: transparent;
   cursor: pointer;
-  color: #900000;
+  color: #116677;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #900000;
+  color: #116677;
   text-decoration: underline;
   background-color: transparent;
   border-color: transparent;
@@ -3339,13 +3339,13 @@ input[type="submit"].btn.btn-mini {
   list-style: none;
 }
 .nav > li > a {
-  color: #900000;
+  color: #116677;
   display: block;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  color: #900000;
+  color: #116677;
   background-color: #eeeeee;
 }
 .nav > li > a > img {
@@ -3386,7 +3386,7 @@ input[type="submit"].btn.btn-mini {
 .nav-list > .active > a:focus {
   color: #fbfcfc;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-  background-color: #900000;
+  background-color: #116677;
 }
 .nav-list [class^="icon-"],
 .nav-list [class*=" icon-"] {
@@ -3469,7 +3469,7 @@ input[type="submit"].btn.btn-mini {
 .nav-pills > .active > a:hover,
 .nav-pills > .active > a:focus {
   color: #fbfcfc;
-  background-color: #900000;
+  background-color: #116677;
 }
 .nav-stacked > li {
   float: none;
@@ -3522,14 +3522,14 @@ input[type="submit"].btn.btn-mini {
 }
 */
 .nav .dropdown-toggle .caret {
-  border-top-color: #900000;
-  border-bottom-color: #900000;
+  border-top-color: #116677;
+  border-bottom-color: #116677;
   margin-top: 6px;
 }
 .nav .dropdown-toggle:hover .caret,
 .nav .dropdown-toggle:focus .caret {
-  border-top-color: #900000;
-  border-bottom-color: #900000;
+  border-top-color: #116677;
+  border-bottom-color: #116677;
 }
 /* move down carets for tabs */
 .nav-tabs .dropdown-toggle .caret {
@@ -4628,7 +4628,7 @@ input[type="submit"].btn.btn-mini {
 }
 a.thumbnail:hover,
 a.thumbnail:focus {
-  border-color: #900000;
+  border-color: #116677;
   -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
