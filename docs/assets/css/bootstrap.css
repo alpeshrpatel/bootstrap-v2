@@ -2838,9 +2838,9 @@ input[type="button"].btn-block {
 .btn-primary {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #144a7c;
-  border-color: #144a7c;
-  *background-color: #1f71be;
+  background-color: #44b8d2;
+  border-color: #44b8d2;
+  *background-color: #82cfe1;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
@@ -2852,14 +2852,14 @@ input[type="button"].btn-block {
 .btn-primary.disabled,
 .btn-primary[disabled] {
   color: #ffffff;
-  background-color: #1f71be;
-  border-color: #1f71be;
-  *background-color: #1b64a8;
+  background-color: #82cfe1;
+  border-color: #82cfe1;
+  *background-color: #6dc8dc;
 }
 .btn-primary:active,
 .btn-primary.active {
-  border-color: #185792 \9;
-  background-color: #185792 \9;
+  border-color: #59c0d7 \9;
+  background-color: #59c0d7 \9;
 }
 .btn-warning {
   color: #ffffff;
@@ -3179,7 +3179,7 @@ input[type="submit"].btn.btn-mini {
   background-color: #eaeaea;
 }
 .btn-group.open .btn-primary.dropdown-toggle {
-  background-color: #1f71be;
+  background-color: #82cfe1;
 }
 .btn-group.open .btn-warning.dropdown-toggle {
   background-color: #fbb450;
