@@ -4684,7 +4684,7 @@ a.thumbnail:focus {
   vertical-align: baseline;
   white-space: nowrap;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #666666;
+  background-color: #999999;
 }
 .label {
   -webkit-border-radius: 0px;
@@ -4728,11 +4728,11 @@ a.badge:focus {
 }
 .label-success,
 .badge-success {
-  background-color: #468847;
+  background-color: #5cb85c;
 }
 .label-success[href],
 .badge-success[href] {
-  background-color: #356635;
+  background-color: #449d44;
 }
 .label-info,
 .badge-info {
