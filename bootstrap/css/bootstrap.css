@@ -234,7 +234,7 @@ body {
   font-family: Georgia, Times, serif;
   font-size: 13px;
   line-height: 20px;
-  color: #333333;
+  color: #555555;
   background-color: #fbfcfc;
 }
 
@@ -1011,7 +1011,7 @@ pre {
   padding: 0 3px 2px;
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
   font-size: 11px;
-  color: #333333;
+  color: #555555;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
@@ -1078,7 +1078,7 @@ legend {
   margin-bottom: 20px;
   font-size: 19.5px;
   line-height: 40px;
-  color: #333333;
+  color: #555555;
   border: 0;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -1687,7 +1687,7 @@ select:focus:invalid:focus {
 .help-block,
 .help-inline {
   font-family: Arial, sans-serif;
-  color: #595959;
+  color: #7b7b7b;
 }
 
 .help-block {
@@ -3004,7 +3004,7 @@ table th[class*="span"],
   clear: both;
   font-weight: normal;
   line-height: 20px;
-  color: #333333;
+  color: #555555;
   text-shadow: 0 0 0 transparent;
   white-space: nowrap;
 }
@@ -3595,7 +3595,7 @@ input[type="submit"].btn.btn-mini {
 
 .btn-link[disabled]:hover,
 .btn-link[disabled]:focus {
-  color: #333333;
+  color: #555555;
   text-decoration: none;
 }
 
@@ -4821,7 +4821,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .navbar-search .search-query:focus,
 .navbar-inverse .navbar-search .search-query.focused {
   padding: 5px 15px;
-  color: #333333;
+  color: #555555;
   text-shadow: 0 1px 0 #fbfcfc;
   background-color: #fbfcfc;
   border: 0;
@@ -5595,12 +5595,12 @@ a.badge:focus {
 
 .label-inverse,
 .badge-inverse {
-  background-color: #333333;
+  background-color: #555555;
 }
 
 .label-inverse[href],
 .badge-inverse[href] {
-  background-color: #1a1a1a;
+  background-color: #3b3b3b;
 }
 
 .btn .label,
@@ -5982,7 +5982,7 @@ a.badge:focus {
   bottom: 0;
   left: 0;
   padding: 15px;
-  background: #333333;
+  background: #555555;
   background: rgba(0, 0, 0, 0.75);
 }
 
@@ -6006,7 +6006,7 @@ a.badge:focus {
   font-size: 18px;
   font-weight: 200;
   line-height: 30px;
-  color: #333333;
+  color: #555555;
   background-color: #eeeeee;
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
@@ -6218,7 +6218,7 @@ figure.left-rule {
   padding: 5px 0 5px 15px;
   border-top: none;
   border-bottom: none;
-  border-left: 2px solid #333333;
+  border-left: 2px solid #555555;
 }
 
 figcaption {
@@ -6319,7 +6319,7 @@ figcaption {
 h1 a,
 h2 a,
 h3 a {
-  color: #333333;
+  color: #555555;
 }
 
 h1 a:hover,
@@ -6504,6 +6504,11 @@ a.dropdown-toggle {
   margin-top: 20px;
   text-align: center;
   border-top: 1px solid #dfdfdf;
+}
+
+.page-footer a {
+  font-weight: bold;
+  color: #555555;
 }
 
 .page-footer .nav-pills {
