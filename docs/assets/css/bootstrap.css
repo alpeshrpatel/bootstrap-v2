@@ -5507,7 +5507,8 @@ a.dropdown-toggle {
   text-align: center;
   border-top: 1px solid #dfdfdf;
 }
-.page-footer a {
+.page-footer a,
+.page-footer .nav > li > a {
   color: #555555;
   font-weight: bold;
 }
