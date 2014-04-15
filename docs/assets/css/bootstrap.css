@@ -209,7 +209,7 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: Georgia, Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 13px;
   line-height: 20px;
   color: #333333;
@@ -621,7 +621,7 @@ h4,
 h5,
 h6 {
   margin: 10px 0;
-  font-family: Georgia, Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-weight: normal;
   line-height: 20px;
   color: #0d1123;
@@ -921,7 +921,7 @@ input,
 button,
 select,
 textarea {
-  font-family: Georgia, Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 label {
   display: block;
@@ -2890,9 +2890,9 @@ input[type="button"].btn-block {
 .btn-danger {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #990012;
-  border-color: #990012;
-  *background-color: #cc0018;
+  background-color: #c52026;
+  border-color: #c52026;
+  *background-color: #df393f;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
@@ -2904,14 +2904,14 @@ input[type="button"].btn-block {
 .btn-danger.disabled,
 .btn-danger[disabled] {
   color: #ffffff;
-  background-color: #cc0018;
-  border-color: #cc0018;
-  *background-color: #b30015;
+  background-color: #df393f;
+  border-color: #df393f;
+  *background-color: #db242a;
 }
 .btn-danger:active,
 .btn-danger.active {
-  border-color: #990012 \9;
-  background-color: #990012 \9;
+  border-color: #c52026 \9;
+  background-color: #c52026 \9;
 }
 .btn-success {
   color: #ffffff;
@@ -3185,7 +3185,7 @@ input[type="submit"].btn.btn-mini {
   background-color: #fbb450;
 }
 .btn-group.open .btn-danger.dropdown-toggle {
-  background-color: #cc0018;
+  background-color: #df393f;
 }
 .btn-group.open .btn-success.dropdown-toggle {
   background-color: #66ad70;
@@ -3970,7 +3970,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .nav > li > a:hover,
 .navbar-inverse .brand:focus,
 .navbar-inverse .nav > li > a:focus {
-  color: #fbfcfc;
+  color: #333333;
 }
 .navbar-inverse .brand {
   color: #fbfcfc;
@@ -3981,12 +3981,12 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .nav > li > a:focus,
 .navbar-inverse .nav > li > a:hover {
   background-color: #17274a;
-  color: #fbfcfc;
+  color: #333333;
 }
 .navbar-inverse .nav .active > a,
 .navbar-inverse .nav .active > a:hover,
 .navbar-inverse .nav .active > a:focus {
-  color: #fbfcfc;
+  color: #ffffff;
   background-color: #17274a;
 }
 .navbar-inverse .navbar-link {
@@ -3994,7 +3994,7 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar-inverse .navbar-link:hover,
 .navbar-inverse .navbar-link:focus {
-  color: #fbfcfc;
+  color: #333333;
 }
 .navbar-inverse .divider-vertical {
   border-left-color: #0d1123;
@@ -4004,12 +4004,12 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
   background-color: #17274a;
-  color: #fbfcfc;
+  color: #ffffff;
 }
 .navbar-inverse .nav li.dropdown > a:hover .caret,
 .navbar-inverse .nav li.dropdown > a:focus .caret {
-  border-top-color: #fbfcfc;
-  border-bottom-color: #fbfcfc;
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
 }
 .navbar-inverse .nav li.dropdown > .dropdown-toggle .caret {
   border-top-color: #fbfcfc;
@@ -4018,11 +4018,11 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .nav li.dropdown.open > .dropdown-toggle .caret,
 .navbar-inverse .nav li.dropdown.active > .dropdown-toggle .caret,
 .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle .caret {
-  border-top-color: #fbfcfc;
-  border-bottom-color: #fbfcfc;
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
 }
 .navbar-inverse .dropdown-submenu:hover > a:before {
-  border-left-color: #fbfcfc;
+  border-left-color: #333333;
 }
 .navbar-inverse .dropdown-menu {
   background-color: #17274a;
@@ -4871,18 +4871,18 @@ a.badge:focus {
 }
 .progress-danger .bar,
 .progress .bar-danger {
-  background-color: #990012;
-  background-image: -moz-linear-gradient(top, #990012, #990012);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#990012), to(#990012));
-  background-image: -webkit-linear-gradient(top, #990012, #990012);
-  background-image: -o-linear-gradient(top, #990012, #990012);
-  background-image: linear-gradient(to bottom, #990012, #990012);
+  background-color: #c52026;
+  background-image: -moz-linear-gradient(top, #c52026, #c52026);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#c52026), to(#c52026));
+  background-image: -webkit-linear-gradient(top, #c52026, #c52026);
+  background-image: -o-linear-gradient(top, #c52026, #c52026);
+  background-image: linear-gradient(to bottom, #c52026, #c52026);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff990012', endColorstr='#ff990012', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc52026', endColorstr='#ffc52026', GradientType=0);
 }
 .progress-danger.progress-striped .bar,
 .progress-striped .bar-danger {
-  background-color: #990012;
+  background-color: #c52026;
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -5506,6 +5506,10 @@ a.dropdown-toggle {
   padding: 10px 0 8px;
   text-align: center;
   border-top: 1px solid #dfdfdf;
+}
+.page-footer a {
+  font-weight: bold;
+  color: #555;
 }
 .page-footer .nav-pills {
   display: inline-block;
