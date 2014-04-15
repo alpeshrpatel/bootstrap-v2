@@ -416,9 +416,8 @@
 
   .dropdown-menu {
     background-color:@navbarInverseLinkBackgroundActive;
-    border:0;
     & > li > a {
-      color:@navbarInverseLinkColor;
+      color:@navbarInverseLinkColorHover;
     }
   }
 
@@ -427,6 +426,7 @@
   .dropdown-submenu:hover > a,
   .dropdown-submenu:focus > a {
     background-color:@navbarInverseBackground;
+    color:@navbarInverseLinkColor;
   }
 
   .dropdown-menu .divider {

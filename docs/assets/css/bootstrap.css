@@ -4026,16 +4026,16 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar-inverse .dropdown-menu {
   background-color: #ffffff;
-  border: 0;
 }
 .navbar-inverse .dropdown-menu > li > a {
-  color: #fbfcfc;
+  color: #1a1a1a;
 }
 .navbar-inverse .dropdown-menu > li > a:hover,
 .navbar-inverse .dropdown-menu > li > a:focus,
 .navbar-inverse .dropdown-submenu:hover > a,
 .navbar-inverse .dropdown-submenu:focus > a {
   background-color: #0d1123;
+  color: #fbfcfc;
 }
 .navbar-inverse .dropdown-menu .divider {
   border: 0;
