@@ -4752,7 +4752,7 @@ input[type="submit"].btn.btn-mini {
   border-bottom-color: #1a1a1a;
 }
 
-.navbar-inverse .nav li.dropdown > .dropdown-toggle:hover {
+.navbar-inverse .nav li > .dropdown-toggle:hover {
   border-right: 1px solid #d0d0d0;
   border-left: 1px solid #d0d0d0;
 }
