@@ -3970,7 +3970,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .nav > li > a:hover,
 .navbar-inverse .brand:focus,
 .navbar-inverse .nav > li > a:focus {
-  color: #333333;
+  color: #1a1a1a;
 }
 .navbar-inverse .brand {
   color: #fbfcfc;
@@ -3980,21 +3980,21 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar-inverse .nav > li > a:focus,
 .navbar-inverse .nav > li > a:hover {
-  background-color: #17274a;
-  color: #333333;
+  background-color: #ffffff;
+  color: #1a1a1a;
 }
 .navbar-inverse .nav .active > a,
 .navbar-inverse .nav .active > a:hover,
 .navbar-inverse .nav .active > a:focus {
-  color: #ffffff;
-  background-color: #17274a;
+  color: #1a1a1a;
+  background-color: #ffffff;
 }
 .navbar-inverse .navbar-link {
   color: #fbfcfc;
 }
 .navbar-inverse .navbar-link:hover,
 .navbar-inverse .navbar-link:focus {
-  color: #333333;
+  color: #1a1a1a;
 }
 .navbar-inverse .divider-vertical {
   border-left-color: #0d1123;
@@ -4003,13 +4003,13 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
-  background-color: #17274a;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #1a1a1a;
 }
 .navbar-inverse .nav li.dropdown > a:hover .caret,
 .navbar-inverse .nav li.dropdown > a:focus .caret {
-  border-top-color: #ffffff;
-  border-bottom-color: #ffffff;
+  border-top-color: #1a1a1a;
+  border-bottom-color: #1a1a1a;
 }
 .navbar-inverse .nav li.dropdown > .dropdown-toggle .caret {
   border-top-color: #fbfcfc;
@@ -4018,14 +4018,14 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .nav li.dropdown.open > .dropdown-toggle .caret,
 .navbar-inverse .nav li.dropdown.active > .dropdown-toggle .caret,
 .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle .caret {
-  border-top-color: #ffffff;
-  border-bottom-color: #ffffff;
+  border-top-color: #1a1a1a;
+  border-bottom-color: #1a1a1a;
 }
 .navbar-inverse .dropdown-submenu:hover > a:before {
-  border-left-color: #333333;
+  border-left-color: #1a1a1a;
 }
 .navbar-inverse .dropdown-menu {
-  background-color: #17274a;
+  background-color: #ffffff;
   border: 0;
 }
 .navbar-inverse .dropdown-menu > li > a {
@@ -5507,7 +5507,8 @@ a.dropdown-toggle {
   text-align: center;
   border-top: 1px solid #dfdfdf;
 }
-.page-footer a {
+.page-footer a,
+.page-footer .nav-pills a {
   font-weight: bold;
   color: #555;
 }
