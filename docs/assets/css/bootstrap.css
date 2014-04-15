@@ -4011,6 +4011,10 @@ input[type="submit"].btn.btn-mini {
   border-top-color: #1a1a1a;
   border-bottom-color: #1a1a1a;
 }
+.navbar-inverse .nav li.dropdown > .dropdown-toggle:hover {
+  border-left: 1px solid #d0d0d0;
+  border-right: 1px solid #d0d0d0;
+}
 .navbar-inverse .nav li.dropdown > .dropdown-toggle .caret {
   border-top-color: #fbfcfc;
   border-bottom-color: #fbfcfc;
