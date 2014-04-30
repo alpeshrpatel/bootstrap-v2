@@ -210,7 +210,7 @@ textarea {
 body {
   margin: 0;
   font-family: "Times New Roman", Times, serif;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 20px;
   color: #333333;
   background-color: #fbfcfc;
@@ -554,7 +554,7 @@ p {
 }
 .lead {
   margin-bottom: 20px;
-  font-size: 19.5px;
+  font-size: 21px;
   font-weight: 200;
   line-height: 30px;
 }
@@ -643,34 +643,34 @@ h3 {
   line-height: 40px;
 }
 h1 {
-  font-size: 35.75px;
+  font-size: 38.5px;
 }
 h2 {
-  font-size: 29.25px;
+  font-size: 31.5px;
 }
 h3 {
-  font-size: 22.75px;
+  font-size: 24.5px;
 }
 h4 {
-  font-size: 16.25px;
+  font-size: 17.5px;
 }
 h5 {
-  font-size: 13px;
+  font-size: 14px;
 }
 h6 {
-  font-size: 11.049999999999999px;
+  font-size: 11.9px;
 }
 h1 small {
-  font-size: 22.75px;
+  font-size: 24.5px;
 }
 h2 small {
-  font-size: 16.25px;
+  font-size: 17.5px;
 }
 h3 small {
-  font-size: 13px;
+  font-size: 14px;
 }
 h4 small {
-  font-size: 13px;
+  font-size: 14px;
 }
 .page-header {
   margin: 20px 0 30px;
@@ -795,7 +795,7 @@ blockquote {
 }
 blockquote p {
   margin-bottom: 0;
-  font-size: 16.25px;
+  font-size: 17.5px;
   font-weight: 300;
   line-height: 1.25;
 }
@@ -840,7 +840,7 @@ code,
 pre {
   padding: 0 3px 2px;
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-  font-size: 11px;
+  font-size: 12px;
   color: #333333;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -857,7 +857,7 @@ pre {
   display: block;
   padding: 9.5px;
   margin: 0 0 10px;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 20px;
   word-break: break-all;
   word-wrap: break-word;
@@ -898,7 +898,7 @@ legend {
   width: 100%;
   padding: 0;
   margin-bottom: 20px;
-  font-size: 19.5px;
+  font-size: 21px;
   line-height: 40px;
   color: #333333;
   border: 0;
@@ -913,7 +913,7 @@ input,
 button,
 select,
 textarea {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: normal;
   line-height: 20px;
 }
@@ -948,7 +948,7 @@ input[type="color"],
   height: 20px;
   padding: 4px 6px;
   margin-bottom: 10px;
-  font-size: 13px;
+  font-size: 14px;
   font-family: Arial, sans-serif;
   line-height: 20px;
   color: #666666;
@@ -1465,7 +1465,7 @@ select:focus:invalid:focus {
 .input-prepend .dropdown-menu,
 .input-append .popover,
 .input-prepend .popover {
-  font-size: 13px;
+  font-size: 14px;
 }
 .input-append input,
 .input-prepend input,
@@ -1496,7 +1496,7 @@ select:focus:invalid:focus {
   height: 20px;
   min-width: 16px;
   padding: 4px 5px;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: normal;
   line-height: 20px;
   text-align: center;
@@ -2706,7 +2706,7 @@ button.close {
   *zoom: 1;
   padding: 4px 12px;
   margin-bottom: 0;
-  font-size: 13px;
+  font-size: 14px;
   font-family: Arial, sans-serif;
   text-transform: uppercase;
   line-height: 20px;
@@ -2779,7 +2779,7 @@ button.close {
 }
 .btn-large {
   padding: 11px 19px;
-  font-size: 16.25px;
+  font-size: 17.5px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
@@ -2790,7 +2790,7 @@ button.close {
 }
 .btn-small {
   padding: 2px 10px;
-  font-size: 11.700000000000001px;
+  font-size: 12.6px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
@@ -2805,7 +2805,7 @@ button.close {
 }
 .btn-mini {
   padding: 0 6px;
-  font-size: 10.4px;
+  font-size: 11.200000000000001px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
@@ -3087,16 +3087,16 @@ input[type="submit"].btn.btn-mini {
 .btn-group > .btn,
 .btn-group > .dropdown-menu,
 .btn-group > .popover {
-  font-size: 13px;
+  font-size: 14px;
 }
 .btn-group > .btn-mini {
-  font-size: 10.4px;
+  font-size: 11.200000000000001px;
 }
 .btn-group > .btn-small {
-  font-size: 11.700000000000001px;
+  font-size: 12.6px;
 }
 .btn-group > .btn-large {
-  font-size: 16.25px;
+  font-size: 17.5px;
 }
 .btn-group > .btn:first-child {
   margin-left: 0;
@@ -4185,7 +4185,7 @@ input[type="submit"].btn.btn-mini {
 .pagination-large ul > li > a,
 .pagination-large ul > li > span {
   padding: 11px 19px;
-  font-size: 16.25px;
+  font-size: 17.5px;
 }
 .pagination-large ul > li:first-child > a,
 .pagination-large ul > li:first-child > span {
@@ -4230,12 +4230,12 @@ input[type="submit"].btn.btn-mini {
 .pagination-small ul > li > a,
 .pagination-small ul > li > span {
   padding: 2px 10px;
-  font-size: 11.700000000000001px;
+  font-size: 12.6px;
 }
 .pagination-mini ul > li > a,
 .pagination-mini ul > li > span {
   padding: 0 6px;
-  font-size: 10.4px;
+  font-size: 11.200000000000001px;
 }
 .pager {
   margin: 20px 0;
@@ -4681,7 +4681,7 @@ a.thumbnail:focus {
   font-family: Arial, sans-serif;
   display: inline-block;
   padding: 2px 4px;
-  font-size: 10.998px;
+  font-size: 11.844px;
   font-weight: bold;
   line-height: 14px;
   color: #fbfcfc;
